@@ -1,0 +1,707 @@
+#fixation{
+    width:50px;
+    height:50px;
+    background:#7C8994;
+    position:fixed;
+    left:0rem;
+    top:5rem;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    display: none;
+}
+.fixation-tb{
+    margin:6px 0 0 4px;
+    width:38px;
+    height:38px;
+    border-radius: 50%;
+    background:url(../img/leftgd/Image.png) no-repeat 0px 0px;
+}
+#fixation2{
+    width:30px;
+    height: 100%;
+    background:#7C8994;
+    position: fixed;
+    text-align: center;
+    white-space: nowrap;
+    font-size:10px;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#fixation2 .fixation2-one>div:first-child{
+    padding:1rem 0 0 0;
+}
+#fixation2 .fixation2-one>div:last-child{
+    padding:5rem 0 0 0;
+}
+#fixation2 .fixation2-two>div{
+   padding:1em 0;
+}
+#fixation2 .fixation2-three>div{
+    padding:3rem 0 3rem 0;
+}
+#fixation2 .fixation2-three{
+position:relative;}
+#fixation2 .fixation2-three>div:last-child{
+    position:absolute;
+    right:-280px;
+    top:-200px;
+    display: none;
+}
+
+.tbody{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    width:75%;
+}
+.aww_left{
+    width:100%;
+}
+.aww_left2{
+    display: none;
+}  
+.aww_left3{
+    display: none;
+}
+
+/* 导航a标签 */
+.aww_left_head{
+    width:100%;
+    border-bottom:2px solid #00AFC7;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+.aww_left_head_a{
+    display: inline-block;
+    padding:15px;
+    margin:10px;
+    text-decoration: none;
+    font-weight: bolder;
+    color:#3BB0D0;
+
+}
+.aww_left_head_a:hover{
+    background:#3BB0D0;
+    color:white;
+}
+.aww_left_head_b{
+    display: inline-block;
+    padding:32px 0 0 0;
+    text-decoration: none;
+    font-size:10px;
+    color:#666;
+    
+}
+.left_one{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin:1rem 0;
+}
+.left_label{
+    display: flex;
+    justify-content: space-between;
+    width:40%;
+    border:1px solid #999;
+}
+.left_label:hover{
+    border:1px solid #3BB0D0;
+}
+.left_img{
+    width:60%;    
+}
+.left_imgs{
+    width:100%;
+    height:100%;
+}
+.left_text{
+    width:40%;
+    text-align: center;
+}
+.left_labels{
+    width:28%;
+    border:1px solid #999;
+}
+.left_labels:hover{
+    border:1px solid #3BB0D0;
+}
+.left_img2,.left_imgs2{
+   width:100%;
+}
+
+.left_text{
+    text-align:center;
+}
+.left_text .p1{
+    text-decoration: none;
+    font-size:18px;
+    background:#3BB0D0;
+    padding:20px 0;
+    color:white;
+}
+.left_text .p2{
+    padding-top:10px;
+    text-decoration: none;
+    font-size:15px;
+    font-weight: 100;
+    color:#666;
+}
+.p3{
+    color:#FF5555;
+    font-weight: 900;
+    font-size:20px;
+}
+.left_text .pd{
+    padding:60px 80px 0 0;
+}
+.left_text2 .ap1{
+    font-size:15px;
+    font-weight: 900;
+    padding:8px 0;
+}
+.left_text2 .ap2{
+    font-size:10px;
+    font-weight: 100;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+/* 轮播图 */
+#carousel{
+    width:900px;
+    height:400px;
+    margin-top:2rem;
+    position: relative;
+    border:1px solid red;
+}
+#carousel>.carousel-lb>img{
+    width:100%;
+    height:400px;
+}
+#carousel>.carousel-lb>img:not(:first-child){
+    display: none;
+}
+#list{
+    position: absolute;
+    left:23rem;
+    bottom:0;
+}
+#list>li{
+    list-style: none;
+    width:10px;height:10px;
+    background:yellow;
+    float: left;
+    border-radius: 50%;
+    margin-left:1rem;
+}
+.reds{
+    background:red;
+}
+.yellows{
+    background:yellow;
+}
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+/* 右侧 */
+.right{
+    width:25%;
+    margin:4.5rem 0 0 0;
+}
+/* 公告 */
+.notice{
+    margin:0 0 0 1rem;
+    border:1px solid #999;
+}
+.notice_board{
+    border:1px solid #999;
+    border-left:0;
+    border-right:0;
+    padding:1rem 0 1rem 10px;
+    font-weight: 100;
+}
+.notice_board p a{
+    text-decoration: none;
+    font-size:10px;
+    line-height: 20px;
+    color:#999;
+}
+.service{
+    padding:1rem 0 1rem 0;
+}
+.service .spana{
+    padding:1rem 0 0 10px;
+    font-size:15px;
+    font-weight: 900;
+}
+.service .spanb{
+    padding:10px 0 0 10px;
+    font-size:10px;
+    font-weight: 100;
+}
+.service .span1{
+   margin:0 0 0 58px;
+   position: relative;
+   font-size: 10px;
+}
+.service .span1 b{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    position:absolute;
+    top:-2px;
+    right:88px;
+    background: url(../img/body/Image\ 1.png) no-repeat 0px 0px;
+}
+.service .span2{
+    margin:0 0 0 158px;
+ }
+ .service .span3{
+    margin:0 0 0 87px;
+ }
+ .service .span2,.span3{
+     font-size: 10px;
+     font-weight: 900;
+     color:#CE0101;
+ }
+/* 广告 */
+.advertising{
+    background:#F9FBFB;
+    margin:2rem 0 0 1rem ;
+    padding:0 2rem;
+}
+.advertising span{
+    display: inline-block;
+    padding:1rem 0 0 0;
+    font-size:10px;
+    color:#666;
+}
+.advertising img{
+    padding:1rem 0 0 0 ;
+}
+/* 旅行小贴士 */
+.tips{
+    margin:1rem 1rem 0 3rem;
+    border:1px solid #999;
+}
+.tips span{
+    font-size:10px;
+    color:#333;
+    font-weight: 300;
+    padding:0 0 0 1rem;
+}
+.tips .tips_a{
+    border:1px solid #999;
+    border-left:0;
+    border-right:0;
+    padding:1rem 0 1rem 1rem;
+}
+.tips .tips_a a{
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 100;
+    color:#999;
+    display: block;
+    line-height: 1.5rem;
+}
+/* 超值酒店 */
+.hotela{
+    margin-top:1rem;
+}
+.hotela a img{
+    width:100%;
+}
+/* 当季热门度假 */
+.holiday-text{
+    width:100%;
+    border-bottom:2px solid #00AFC7;
+    display: flex;
+    justify-content: space-between;
+}
+.holiday-text span{
+    display: inline-block;
+    padding:1rem 0 1rem 0;
+    font-size:1.5rem;
+    color:#00AFC7;
+}
+.holiday-text a{
+    text-decoration: none;
+    font-size: 10px;
+    color:#333;
+    padding-top:2rem;
+}
+.holiday{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.holiday-left{
+    width:18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* 左边文字 */
+.holiday-zb{
+    border:1px solid #E2F3F8;
+    margin-top:1rem;
+}
+.holiday-zby{
+    padding:10px;
+}
+.holiday-p1{
+    font-size:15px;
+    font-weight: 800;
+    background:#E2F3F8;
+    padding:5px 0 5px 15px;
+    color:#0286B3;
+}
+.holiday-pn a{
+    text-decoration: none;
+    font-size:12px;
+    color:#666;
+    padding:3px;
+}
+/* 右边图片 */
+.holiday-right{
+    margin-top:1rem;
+    width:80%;
+}
+.holiday-one{
+    display: flex;
+    justify-content: space-between;
+    height:49%;
+}
+.card1{
+    border:1px solid #999;
+    width:32%;
+}
+.card1:hover{
+    border:1px solid #00AFC7;
+}
+.card-img{
+    width:100%;
+    height:65%;
+    position: relative;
+}
+.card-img>img{
+	width:100%;
+	height:100%;
+}
+.card-loge{
+    margin:0 0 0 142px;
+   position: absolute;
+   right:0;
+   top:0;
+}
+.card-bg{
+    background:rgba(0,0,0,0.6);
+    text-align: center;
+    padding:1rem 2rem;
+    position: absolute;
+    bottom: 0;
+    left:2.4rem;
+}
+.card-bg .card-p1 a{
+    text-decoration: none;
+    font-weight: 900;
+    color:white;
+    font-size:20px;
+}
+.card-bg .card-p2 a{
+    text-decoration: none;
+    font-size:15px;
+    color:#ffde00;
+}
+.card-p3{
+    margin:1rem 0 1rem 0.5rem;
+}
+.card-p3 a{
+    word-wrap: normal;
+    text-decoration: none;
+    font-size:15px;
+    font-weight: 600;
+    color:#666;
+}
+.card-p4{
+    color: #FF5555;
+    font-weight: 900;
+    font-size: 20px;
+    margin:1rem 0 1rem 0.5rem;
+}
+.holiday-two{
+    margin-top:2%;
+}
+/* 当季热门景点 */
+.Hot_spots_hover{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:1rem;
+}
+.Hot_spots_hover1 a{
+    text-decoration: none;
+    color:#333;
+    font-size:15px;
+    padding:0.4rem;
+}
+.Hot_spots_hover1 a:hover{
+    background:#3BB0D0;
+    color:white;
+}
+.Hot_spots_gd a{
+    text-decoration: none;
+    font-size:10px;
+    color:#333;
+}
+.Hot_spots_img{
+    width: 66%;
+    border:1px solid rgba(255,255,255, 255);
+}
+.Hot_spots_img:hover{
+    border:1px solid #00AFC7;
+}
+.Hot_spots_img img{
+    width:100%;
+    height:100%;
+}
+.Hot_spots_img2{
+    width:32%;
+    border:1px solid #999;
+}
+.Hot_spots_img2 img{
+    width:100%;
+}
+.Hot_spots_p1{
+    font-size:15px;
+    font-weight: 800;
+    color:#666;
+    padding-left:0.5rem;
+}
+.Hot_spots_p2{
+    padding:1rem 0 0 0.5rem;
+    font-size:10px;
+    color:#666;
+}
+.Hot_spots_p3{
+    font-size: 10px;
+    color:#666;
+    padding-left:1rem;
+    padding-top:0.5rem;
+    position: relative;
+}
+.Hot_spots_p3 b{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    vertical-align:sub;
+}
+.Hot_spots_b1{
+    background:url(../img/body/wifi.png) no-repeat -2px 3px;
+}
+.Hot_spots_b2{
+    background:url(../img/body/wifi.png) no-repeat -29px 3px;
+}
+.Hot_spots_b3{
+    background:url(../img/body/wifi.png) no-repeat -55px 3px;
+}
+.Hot_spots_img2:hover{
+    border:1px solid #00AFC7;
+}
+.Hot_spots_b{
+    display: inline-block;
+    width:20px;height:20px;
+    background: url(../img/body/dingwei.png) no-repeat 10px 9px;
+}
+/* 旅行攻略 */
+.Travel_guide{
+    width:100%;
+    border-bottom: #00AFC7 2px solid;
+    display: flex;
+    justify-content: space-between;
+    margin-top:2rem;
+    padding-bottom:0.5rem;
+}
+.Travel_guide_span1{
+    color:#00AFC7;
+    font-size:25px; 
+}
+.Travel_guide_span2{
+    color:#666;
+    font-size:15px;
+    margin-left:1rem;
+}
+.Travel_guide2{
+    padding-top:0.6rem;
+}
+.Travel_guide2 a{
+    text-decoration: none;
+    color:#00AFC7; 
+}
+.Travel_guide2 b{
+    margin:1rem;
+}
+.Travel_guide_img{
+    vertical-align: sub;
+}
+/* 图片 */
+.mn-img{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:1rem;
+}
+.mn-img img{
+    width:100%;
+    height:100%;
+}
+.mn-img1{
+    width:44%;  
+}
+.mn-position-overflow{
+    position: relative;
+    overflow: hidden;
+}
+.mn-img2{
+    width:54%;
+}
+.mn-imga{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mn-imgb{
+    margin-top:1rem;
+}
+.mn-img-a{
+    width:48%;
+}
+.mn-hover{
+    padding-left:10px;
+    width:100%;
+    background: rgba(0, 0, 0,0.5);
+    position:absolute;
+    bottom: -40px;
+    left:0;transition: all 0.2s linear;
+}
+.mn-hover:hover{
+    bottom:0;
+}
+.mn-text-spcolor{
+    color:white;
+}
+.mn-hovera{
+    display: flex; 
+    height:42px;
+}
+.mn-text-color{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+}
+.mn-text-pcolor{
+    font-size: 10px;
+    color:#AAAAAA;
+}
+.mn-hovera img{
+    width:38px;
+    height: 41px;
+}
+/* 底部文字 */
+.base-text{
+    margin-top:1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.base-text-aa{
+    width:44%
+}
+.base-text-bb{
+    width:53.5%;
+}
+.base-text-b{
+    display: flex;
+    justify-content: space-between;
+}
+.base-text-c{
+    width:48%;
+}
+.base-title{
+    font-size:20px;
+    color:#333;
+}
+.base-subtitle{
+    text-decoration:none;
+    font-size:12px;
+    color:#666;
+}
+.base-subtitle-span{
+    color:#0DB1D3;
+}
+.base-border-blue{
+    border-left:5px solid #0DB1D3;
+    padding-left:10px;
+}
+.base-border-gray{
+    border-left:5px solid #999;
+    padding-left:10px;
+}
+/* 底部图片 */
+.bottom-img{
+    width:100%;
+    margin-top:1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-luotuo{
+    width:178px;
+    height:340px;
+}
+.bottom-zt{
+    margin-left:2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-imga{
+    width:30%;
+    position: relative;
+}
+.bottom-imga>img{
+    width:100%;
+    height:100%;
+}
+
+.bottom-bg{
+    display: none;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0,0.5);
+    color: white;
+    line-height: 2.5rem;
+}
+.bottom-bg>p:first-child{
+    margin-top:1rem; 
+}
+.bottom-bg>p{
+    margin-left:1rem;
+}
+.bottom-bg>p:last-child>a{
+    text-decoration: none;
+    color:white;
+    border:1px solid white;
+    margin-left:2.5rem; 
+    padding:0.5rem 2rem;
+}
+.bottom-imga:hover .bottom-bg{
+    display: block;
+}
