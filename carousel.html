@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #carousel{
+      margin: 0 auto;
+      width:400px;
+      height:250px;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+    #carousel>img{
+      width:100%;
+      height:100%;
+      transition: all .3s linear;
+    }
+    #list{
+      list-style: none;
+      position: absolute;
+      bottom:10px;
+      left:110px;
+    }
+    #list>li{
+      float: left;
+      display: inline-block;
+      width: 20px;
+      height:20px;
+      background:green;
+      margin-left:5px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div id='carousel'>
+    <img src="../img/body/aa_a.jpg" alt="">
+    <img src="../img/body/2.jpg" alt="">
+    <img src="../img/body/mnyi.jpg" alt="">
+    <img src="../img/body/mnsi.jpg" alt="">
+    <ul id='list'>
+      <li data-num="0"></li>
+      <li data-num="1"></li>
+      <li data-num="2"></li>
+      <li data-num="3"></li>
+    </ul>
+  </div>
+  <script>
+    var car = document.getElementById('carousel');
+    var pic = car.querySelectorAll('img');
+    var lis = car.querySelectorAll('ul>li');
+    var c = 0;
+    var timer=function(){
+        c++;
+        if(c==4){c=0};
+        for(var i=0;i<pic.length;i++){
+          lis[i].style.background = 'green';
+          pic[i].style.width = 0;
+        }
+        lis[c].style.background = 'yellow';
+        pic[c].style.width = '100%';
+    }
+    var time=setInterval(timer,2500);
+    for(var i=0;i<pic.length;i++){
+      lis[i].onmouseover=function(){
+        clearInterval(time);
+        time=null;
+        var a = this.getAttribute('data-num');
+        for(var i=0;i<pic.length;i++){
+          lis[i].style.background = 'green';
+          pic[i].style.width = 0; 
+        }
+        this.style.background = 'yellow';
+        pic[a].style.width = '100%';
+      }
+      lis[i].onmouseout=function(){
+        time=setInterval(timer,2500);
+      }
+      // setInterval(timer,2500)
+    }
+  </script>
+</body>
+</html>
