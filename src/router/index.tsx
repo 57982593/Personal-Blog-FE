@@ -1,7 +1,7 @@
 import React from "react";
-import Home from "./home/home";
-import About from "./other/about";
-import Dashboard from "./other/Dashboard";
+import Home from "../home/home";
+import About from "../other/about";
+import Dashboard from "../other/Dashboard";
 import {
     BrowserRouter as Router,
     Switch,
