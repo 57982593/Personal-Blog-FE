@@ -12,14 +12,11 @@ export default function App() {
     return (
         <Router>
             <Switch>
-                <Route exact path="/">
-                    <Home/>
-                </Route>
-                <Route path="/about">
-                    <About/>
-                </Route>
-                <Route path="/dashboard">
-                    <Dashboard/>
+                <Route path="/" component={Home}>
+                    {/*<Route path="/about">*/}
+                    {/*    <About/>*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/dashboard" component={Dashboard}/>*/}
                 </Route>
             </Switch>
         </Router>
