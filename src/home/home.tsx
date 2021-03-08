@@ -1,9 +1,9 @@
-import React, {useState} from "react";
-import {Menu, Layout} from "antd";
+import React, {useState} from 'react';
+import {Menu, Layout} from 'antd';
 import {MailOutlined} from '@ant-design/icons';
-import about from "../other/about";
+import about from '../other/about';
 import {Switch, Route, useHistory} from 'react-router-dom';
-import "../css/app.css";
+import '../css/app.css';
 
 const {SubMenu} = Menu;
 const {Sider, Content} = Layout;
