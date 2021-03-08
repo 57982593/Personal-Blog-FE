@@ -1,10 +1,12 @@
 import React, {useState} from "react";
-import {Menu} from "antd";
+import {Menu, Layout} from "antd";
 import {MailOutlined} from '@ant-design/icons';
-// import about from "../other/about";
-// import {useRouteMatch, Switch, Route, Link} from 'react-router-dom';
+import about from "../other/about";
+import {Switch, Route, useHistory} from 'react-router-dom';
+import "../css/app.css";
 
 const {SubMenu} = Menu;
+const {Sider, Content} = Layout;
 
 export const Home = () => {
   const [list] = useState([{
@@ -29,35 +31,36 @@ export const Home = () => {
       {title: '二零二零年十二月', id: '2020-12'}
     ]
   }])
-
-  // const {path} = useRouteMatch();
-
+  const history = useHistory()
   function menuEvent() {
+    history.push("/about")
     console.log('点击了')
   }
 
   return (
-      <div>
-        {/*<nav>*/}
-        {/*  <Link to={`${path}/about`}>*/}
-        {/*    about*/}
-        {/*  </Link>*/}
-        {/*</nav>*/}
-        {/*<Switch>*/}
-        {/*  <Route path={`${path}/about`} component={about}></Route>*/}
-        {/*</Switch>*/}
-        <Menu
-            onClick={menuEvent}
-            className={'height-vh'}
-            style={{width: 256}}
-            defaultSelectedKeys={['1']}
-            defaultOpenKeys={['start']}
-            mode="inline"
-        >
-          {list.map(value => <SubMenu key={value.id} icon={<MailOutlined/>} title={value.title}>
-            {value.child.map(v => <Menu.Item key={v.id}>{v.title}</Menu.Item>)}
-          </SubMenu>)}
-        </Menu>
+      <div className="height-100">
+        <Layout className="height-100">
+          <Sider width={256}>
+            <Menu
+                onClick={menuEvent}
+                style={{width: 256,height: '100%'}}
+                defaultSelectedKeys={['1']}
+                defaultOpenKeys={['start']}
+                mode="inline"
+            >
+              {list.map(value => <SubMenu key={value.id} icon={<MailOutlined/>} title={value.title}>
+                {value.child.map(v => <Menu.Item key={v.id}>{v.title}</Menu.Item>)}
+              </SubMenu>)}
+            </Menu>
+          </Sider>
+          <Layout>
+            <Content>
+              <Switch>
+                <Route path="/about" component={about}></Route>
+              </Switch>
+            </Content>
+          </Layout>
+        </Layout>
       </div>
   );
 }
