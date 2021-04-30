@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {Menu, Layout} from 'antd';
 import {MailOutlined} from '@ant-design/icons';
 import about from '../other/about';
+import Dashboard from "../other/Dashboard";
+import ExampleD3 from "../other/exampleD3";
 import {Switch, Route, useHistory} from 'react-router-dom';
 import '../css/app.css';
 
@@ -12,9 +14,9 @@ export const Home = () => {
   const [list] = useState([{
     title: '老王与憨憨', id: 'start',
     child: [
-      {title: '二零一九年八月', id: '2019-8'},
-      {title: '二零一九年九月', id: '2019-9'},
-      {title: '二零一九年十月', id: '2019-10'},
+      {title: '关于', id: 'about'},
+      {title: '禁用', id: 'Dashboard'},
+      {title: 'd3示例', id: 'exampleD3'},
       {title: '二零一九年十一月', id: '2019-11'},
       {title: '二零一九年十二月', id: '2019-12'},
       {title: '二零二零年一月', id: '2020-1'},
@@ -32,9 +34,8 @@ export const Home = () => {
     ]
   }])
   const history = useHistory()
-  function menuEvent() {
-    history.push("/about")
-    console.log('点击了')
+  function menuEvent(e: any) {
+    history.push(`/${e.key}`)
   }
 
   return (
@@ -57,6 +58,8 @@ export const Home = () => {
             <Content>
               <Switch>
                 <Route path="/about" component={about}></Route>
+                <Route path="/Dashboard" component={Dashboard}></Route>
+                <Route path="/exampleD3" component={ExampleD3}></Route>
               </Switch>
             </Content>
           </Layout>
