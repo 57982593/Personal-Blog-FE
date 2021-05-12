@@ -1,0 +1,36 @@
+ngingx安装命令：./configure --prefix=/opt/nginx/nginx-1.16.1--with-http_gzip_static_module
+
+grpcui启动命令：路径\grpcui.exe -plaintext 81.71.9.72:8002
+
+%USERPROFILE%\go
+%USERPROFILE%\go\bin
+%USERPROFILE%\.dotnet\tools
+
+mysql初始密码：   wl,mtiqNk0jw
+
+git命令：git status 》git stash 》git branch 分支名》git pull origin huangshun》检查代码》git checkout dev 》git branch -D test》git stash pop stash@{0}
+
+git 统计代码行数命令： git log  --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }' -
+
+githup token:3e8b3709f4dc757009493c0445abd140d2509bf8
+
+刷新dns缓存解析：ipconfig /flushdns
+
+docker-compose up -d
+
+protoc.exe -I=./pkg/admin/proto ./pkg/admin/proto/admin.proto --go_out=plugins=grpc:./pkg/admin/proto
+
+#编译proto文件生成ts文件
+protoc
+--plugin=protoc-gen-ts=D:/react-web/node_modules/.bin/protoc-gen-ts.cmd
+--ts_out=./
+-I=./
+./root.proto
+
+grpc文件编译命令：
+protoc -I=./
+./admin.proto
+--js_out=import_style=commonjs:./
+--plugin=protoc-gen-grpc=./protoc-gen-grpc-web.exe
+--grpc-web_out=import_style=commonjs,mode=grpcwebtext:./
+

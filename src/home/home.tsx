@@ -1,3 +1,4 @@
+import '../assets/css/app.css';
 import React, {useState} from 'react';
 import {Menu, Layout} from 'antd';
 import {MailOutlined} from '@ant-design/icons';
@@ -5,7 +6,7 @@ import about from '../other/about';
 import Dashboard from "../other/Dashboard";
 import ExampleD3 from "../other/exampleD3";
 import {Switch, Route, useHistory} from 'react-router-dom';
-import '../css/app.css';
+import {useRequest} from "../assets/hooks/request";
 
 const {SubMenu} = Menu;
 const {Sider, Content} = Layout;
@@ -33,6 +34,8 @@ export const Home = () => {
       {title: '二零二零年十二月', id: '2020-12'}
     ]
   }])
+  const {rpcRequest, grpcWeb} = useRequest();
+  console.log(grpcWeb, rpcRequest);
   const history = useHistory()
   function menuEvent(e: any) {
     history.push(`/${e.key}`)
