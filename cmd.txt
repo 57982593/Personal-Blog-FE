@@ -21,11 +21,7 @@ docker-compose up -d
 protoc.exe -I=./pkg/admin/proto ./pkg/admin/proto/admin.proto --go_out=plugins=grpc:./pkg/admin/proto
 
 #编译proto文件生成ts文件
-protoc
---plugin=protoc-gen-ts=D:/react-web/node_modules/.bin/protoc-gen-ts.cmd
---ts_out=./
--I=./
-./root.proto
+protoc --plugin=protoc-gen-ts=D:/react-web/node_modules/.bin/protoc-gen-ts.cmd --ts_out=./ -I=./ ./root.proto
 
 grpc文件编译命令：
 protoc -I=./

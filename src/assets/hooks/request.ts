@@ -1,4 +1,4 @@
-import grpcWeb from '../proto/root_grpc_web_pb.js';
+import grpcWeb from '../proto/root_grpc_web_pb';
 const { RootClient }: any = grpcWeb;
 const client = new RootClient('http://127.0.0.1:50051');
 export function useRequest() {

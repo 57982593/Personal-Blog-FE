@@ -6,8 +6,9 @@
  *     field starts with 'MSG_' and isn't a translatable message.
  * @public
  */
+/* eslint-disable */
+// @ts-nocheck
 // GENERATED CODE -- DO NOT EDIT!
-
 var jspb = require('google-protobuf');
 var goog = jspb;
 var global = Function('return this')();
