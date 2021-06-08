@@ -1,0 +1,9 @@
+.view-num__container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-title__center{
+  text-align: center;
+}

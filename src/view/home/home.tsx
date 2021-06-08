@@ -5,6 +5,7 @@ import {MailOutlined} from '@ant-design/icons';
 import about from '../other/about';
 import Dashboard from "../other/Dashboard";
 import ExampleD3 from "../other/exampleD3";
+import viewNum from '../redux-example/viewNum';
 import {Switch, Route, useHistory} from 'react-router-dom';
 
 const {SubMenu} = Menu;
@@ -17,7 +18,7 @@ export const Home = () => {
       {title: '关于', id: 'about'},
       {title: '禁用', id: 'Dashboard'},
       {title: 'd3示例', id: 'exampleD3'},
-      {title: '二零一九年十一月', id: '2019-11'},
+      {title: 'redux示例', id: 'viewNum'},
       {title: '二零一九年十二月', id: '2019-12'},
       {title: '二零二零年一月', id: '2020-1'},
       {title: '二零二零年二月', id: '2020-2'},
@@ -60,6 +61,7 @@ export const Home = () => {
                 <Route path="/about" component={about}></Route>
                 <Route path="/Dashboard" component={Dashboard}></Route>
                 <Route path="/exampleD3" component={ExampleD3}></Route>
+                <Route path="/viewNum" component={viewNum}></Route>
               </Switch>
             </Content>
           </Layout>

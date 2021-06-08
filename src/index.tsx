@@ -1,20 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Provider } from 'react-redux';
 import App from './router/index';
 import reportWebVitals from './reportWebVitals';
-import { createStore } from 'redux';
-import reducer from './redux/reducer';
-import { increase } from './redux/action';
-
-const store = createStore(reducer);
-store.dispatch(increase(11));
 
 ReactDOM.render(
-  <Provider store={store}>
+  <React.StrictMode>
     <App />
-  </Provider>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
