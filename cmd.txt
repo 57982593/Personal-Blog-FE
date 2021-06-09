@@ -27,3 +27,6 @@ protoc -I=./ ./admin.proto --js_out=import_style=commonjs:./ --plugin=protoc-gen
 
 #node执行webpack命令
 Webpack 其实是一个 Node.js 应用程序，它全部通过 JavaScript 开发完成。 在命令行中执行 webpack 命令其实等价于执行 node ./node_modules/webpack/bin/webpack.js
+
+#xshell上传文件命令
+rz -y
