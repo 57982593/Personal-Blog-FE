@@ -1,5 +1,5 @@
 import '../../assets/css/app.css';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Menu, Layout} from 'antd';
 import {MailOutlined} from '@ant-design/icons';
 import about from '../other/about';
@@ -7,11 +7,12 @@ import Dashboard from "../other/Dashboard";
 import ExampleD3 from "../other/exampleD3";
 import viewNum from '../redux-example/viewNum';
 import {Switch, Route, useHistory} from 'react-router-dom';
-
+import { useHomeRequest } from './request';
 const {SubMenu} = Menu;
 const {Sider, Content} = Layout;
 
 export const Home = () => {
+  const { getUserList } = useHomeRequest();
   const [list] = useState([{
     title: '老王与憨憨', id: 'start',
     child: [
@@ -38,6 +39,9 @@ export const Home = () => {
   function menuEvent(e: any) {
     history.push(`/${e.key}`)
   }
+  useEffect(() => {
+    getUserList();
+  });
 
   return (
       <div className="height-100">
