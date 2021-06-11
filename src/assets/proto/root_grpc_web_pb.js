@@ -230,5 +230,85 @@ proto.root.RootPromiseClient.prototype.getUserList =
 };
 
 
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.root.HelloRequest,
+ *   !proto.root.HelloReply>}
+ */
+const methodDescriptor_Root_SayHello = new grpc.web.MethodDescriptor(
+  '/root.Root/SayHello',
+  grpc.web.MethodType.UNARY,
+  proto.root.HelloRequest,
+  proto.root.HelloReply,
+  /**
+   * @param {!proto.root.HelloRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.root.HelloReply.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.root.HelloRequest,
+ *   !proto.root.HelloReply>}
+ */
+const methodInfo_Root_SayHello = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.root.HelloReply,
+  /**
+   * @param {!proto.root.HelloRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.root.HelloReply.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.root.HelloRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.root.HelloReply)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.root.HelloReply>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.root.RootClient.prototype.sayHello =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/root.Root/SayHello',
+      request,
+      metadata || {},
+      methodDescriptor_Root_SayHello,
+      callback);
+};
+
+
+/**
+ * @param {!proto.root.HelloRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.root.HelloReply>}
+ *     Promise that resolves to the response
+ */
+proto.root.RootPromiseClient.prototype.sayHello =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/root.Root/SayHello',
+      request,
+      metadata || {},
+      methodDescriptor_Root_SayHello);
+};
+
+
 module.exports = proto.root;
 

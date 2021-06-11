@@ -12,7 +12,7 @@ const {SubMenu} = Menu;
 const {Sider, Content} = Layout;
 
 export const Home = () => {
-  const { getUserList } = useHomeRequest();
+  const { sayHello } = useHomeRequest();
   const [list] = useState([{
     title: '老王与憨憨', id: 'start',
     child: [
@@ -40,7 +40,7 @@ export const Home = () => {
     history.push(`/${e.key}`)
   }
   useEffect(() => {
-    getUserList();
+    sayHello();
   });
 
   return (
