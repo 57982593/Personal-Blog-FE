@@ -1,17 +1,13 @@
-import React from "react";
-import {Home} from "../view/home/home";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import React from "react"
+import {BrowserRouter, Switch, Route} from "react-router-dom"
+import {Home} from "../view/home"
 
 export default function App() {
   return (
-      <Router>
+      <BrowserRouter>
         <Switch>
-          <Route path="/" component={Home}></Route>
+          <Route path="/" component={Home}/>
         </Switch>
-      </Router>
+      </BrowserRouter>
   );
 }

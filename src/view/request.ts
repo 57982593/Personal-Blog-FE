@@ -1,4 +1,4 @@
-import {useRequest} from '../../assets/hooks/request';
+import {useRequest} from '../assets/hooks/request';
 import axios from "axios";
 
 export function useHomeRequest() {
@@ -7,7 +7,7 @@ export function useHomeRequest() {
     const params = new grpcWeb.getUserListRequest();
     params.setOffset(1);
     params.setLimit(10);
-    rpcRequest(params, 'getUserList')
+    return rpcRequest(params, 'getUserList')
   }
   function getUser(id: number) {
     const params = new grpcWeb.getUserRequest();
@@ -17,7 +17,7 @@ export function useHomeRequest() {
   function sayHello() {
     const params = new grpcWeb.HelloRequest();
     params.setName('test');
-    rpcRequest(params, 'sayHello');
+    return rpcRequest(params, 'sayHello');
   }
   function test() {
     axios.get('http://127.0.0.1:8089/user/test').then((res: any) => {
