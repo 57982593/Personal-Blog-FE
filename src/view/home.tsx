@@ -8,8 +8,8 @@ import {MenuInfo} from 'rc-menu/lib/interface';
 import {useHistory, Switch, Route} from "react-router-dom";
 import {createUseStyles} from 'react-jss';
 import {useBaseStyle} from '../assets/hooks/style';
-import {ViewNumContainer} from "./redux-example"
-import {webgl} from "./webgl"
+import {ViewNumContainer} from "./redux-example";
+import {Webgl} from "./webgl";
 
 const {Header, Sider, Content, Footer} = Layout;
 const useIndexStyle = createUseStyles({
@@ -59,7 +59,7 @@ const Home = () => {
           <Layout>
             <Content>
               <Switch>
-                <Route path={"/webgl"} component={webgl}/>
+                <Route path={"/webgl"} component={Webgl}/>
                 <Route path={"/redux"} component={ViewNumContainer}/>
               </Switch>
             </Content>

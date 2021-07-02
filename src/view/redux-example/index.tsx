@@ -35,13 +35,13 @@ const ViewNumContainer = () => {
     const unsubscribe = store.subscribe(() => {
       //当数据改变时需要修改组件状态来重新渲染组件
       setNum({})
-      return () => {
-        // TODO 销毁时会调用，但是经测试没有触发，暂时未找到原因
-        console.log('我被销毁了')
-        //销毁监听
-        unsubscribe()
-      };
     });
+    return () => {
+      // TODO 销毁时会调用，但是经测试没有触发，暂时未找到原因
+      console.log('我被销毁了')
+      //销毁监听
+      unsubscribe()
+    };
   });
   return (
       <div className={reduxStyle.rNumContainer}>
