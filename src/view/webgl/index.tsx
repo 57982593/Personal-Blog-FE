@@ -2,7 +2,7 @@ import React, {useEffect, createRef} from "react"
 
 const Webgl = () => {
   const canvasRef = createRef<HTMLCanvasElement>();
-
+  const { mat4 }: any = window;
   function main() {
     const canvas = canvasRef.current as HTMLCanvasElement;
     const gl = canvas.getContext('webgl');
@@ -103,7 +103,7 @@ const Webgl = () => {
 //
 // Draw the scene.
 //
-  function drawScene(gl: WebGLRenderingContext, programInfo: { program: any; attribLocations: any; uniformLocations: any; }, buffers: { position: any; }) {
+  function drawScene(gl: WebGLRenderingContext, programInfo: any, buffers: { position: any; }) {
     gl.clearColor(0.0, 0.0, 0.0, 1.0);  // Clear to black, fully opaque
     gl.clearDepth(1.0);                 // Clear everything
     gl.enable(gl.DEPTH_TEST);           // Enable depth testing
@@ -121,8 +121,9 @@ const Webgl = () => {
     // and 100 units away from the camera.
 
     const fieldOfView = 45 * Math.PI / 180;   // in radians
+    let aspect: any;
     if ("clientWidth" in gl.canvas) {
-      const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
+      aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
     }
     const zNear = 0.1;
     const zFar = 100.0;
