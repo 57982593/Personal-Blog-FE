@@ -6,7 +6,7 @@
 /.pnp
 .pnp.js
 .idea
-
+.eslintcache
 # testing
 /coverage
 
@@ -14,7 +14,6 @@
 /build
 
 # misc
-.eslintcache
 .DS_Store
 .env.local
 .env.development.local

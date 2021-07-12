@@ -10,8 +10,7 @@ import {createUseStyles} from 'react-jss';
 import {useBaseStyle} from '../assets/hooks/style';
 import {ViewNumContainer} from "./redux-example";
 import {Webgl} from "./webgl";
-import {Algorithm} from "./algorithm";
-import {GrpcWeb} from "./grpc-web-example";
+import {UserOperating} from "./user";
 
 const {Header, Sider, Content, Footer} = Layout;
 const useIndexStyle = createUseStyles({
@@ -33,14 +32,9 @@ const Home = () => {
       icon: AppstoreOutlined,
     },
     {
-      title: 'algorithm',
-      key: '/algorithm',
+      title: 'User',
+      key: '/User',
       icon: DesktopOutlined,
-    },
-    {
-      title: 'GrpcWeb',
-      key: '/GrpcWeb',
-      icon: AppstoreOutlined,
     },
   ])
   const baseStyle = useBaseStyle();
@@ -73,8 +67,7 @@ const Home = () => {
               <Switch>
                 <Route path={"/webgl"} component={Webgl}/>
                 <Route path={"/redux"} component={ViewNumContainer}/>
-                <Route path={"/algorithm"} component={Algorithm}/>
-                <Route path={"/GrpcWeb"} component={GrpcWeb}/>
+                <Route path={"/User"} component={UserOperating}/>
               </Switch>
             </Content>
             <Footer>Footer</Footer>

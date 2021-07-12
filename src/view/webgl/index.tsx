@@ -4,7 +4,7 @@ const Webgl = () => {
   const canvasRef = createRef<HTMLCanvasElement>();
   const { mat4 }: any = window;
   function main() {
-    const canvas = canvasRef.current as HTMLCanvasElement;
+    const canvas: any = canvasRef.current;
     const gl = canvas.getContext('webgl');
 
     // If we don't have a GL context, give up now

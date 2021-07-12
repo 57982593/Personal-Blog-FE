@@ -19,6 +19,9 @@ ipconfig /flushdns
 #docker执行配置文件命令
 docker-compose up -d
 
+#go语言编译命令
+protoc -I=./ ./root.proto --go_out=plugins=grpc:./
+
 #编译proto文件生成d.ts文件
 protoc --plugin=protoc-gen-ts=C:/Users/v_zuwwang/AppData/Roaming/npm/protoc-gen-ts.cmd --ts_out=./ -I=./ ./root.proto
 
