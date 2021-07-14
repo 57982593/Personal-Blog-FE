@@ -14,8 +14,14 @@ export function useHomeRequest() {
     params.setId(id);
     return rpcRequest(params, 'getUser');
   }
+  function deleteUser(id: number) {
+    const params = new grpcWeb.deleteUserRequest();
+    params.setUserId(id);
+    return rpcRequest(params, 'deleteUser');
+  }
   return {
     getUserList,
     getUser,
+    deleteUser,
   };
 }

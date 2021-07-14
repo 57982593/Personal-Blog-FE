@@ -138,3 +138,43 @@ export namespace getUserListReply {
         total: number,
     }
 }
+
+export class deleteUserRequest extends jspb.Message { 
+    getUserId(): number;
+    setUserId(value: number): deleteUserRequest;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): deleteUserRequest.AsObject;
+    static toObject(includeInstance: boolean, msg: deleteUserRequest): deleteUserRequest.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: deleteUserRequest, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): deleteUserRequest;
+    static deserializeBinaryFromReader(message: deleteUserRequest, reader: jspb.BinaryReader): deleteUserRequest;
+}
+
+export namespace deleteUserRequest {
+    export type AsObject = {
+        userId: number,
+    }
+}
+
+export class deleteUserRespond extends jspb.Message { 
+    getMsg(): string;
+    setMsg(value: string): deleteUserRespond;
+
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): deleteUserRespond.AsObject;
+    static toObject(includeInstance: boolean, msg: deleteUserRespond): deleteUserRespond.AsObject;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: deleteUserRespond, writer: jspb.BinaryWriter): void;
+    static deserializeBinary(bytes: Uint8Array): deleteUserRespond;
+    static deserializeBinaryFromReader(message: deleteUserRespond, reader: jspb.BinaryReader): deleteUserRespond;
+}
+
+export namespace deleteUserRespond {
+    export type AsObject = {
+        msg: string,
+    }
+}

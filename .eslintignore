@@ -1,0 +1,6 @@
+/dist/
+/*.js
+/tests/
+/public/
+babel.config.js
+/scripts

@@ -230,5 +230,85 @@ proto.root.RootPromiseClient.prototype.getUserList =
 };
 
 
+/**
+ * @const
+ * @type {!grpc.web.MethodDescriptor<
+ *   !proto.root.deleteUserRequest,
+ *   !proto.root.deleteUserRespond>}
+ */
+const methodDescriptor_Root_deleteUser = new grpc.web.MethodDescriptor(
+  '/root.Root/deleteUser',
+  grpc.web.MethodType.UNARY,
+  proto.root.deleteUserRequest,
+  proto.root.deleteUserRespond,
+  /**
+   * @param {!proto.root.deleteUserRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.root.deleteUserRespond.deserializeBinary
+);
+
+
+/**
+ * @const
+ * @type {!grpc.web.AbstractClientBase.MethodInfo<
+ *   !proto.root.deleteUserRequest,
+ *   !proto.root.deleteUserRespond>}
+ */
+const methodInfo_Root_deleteUser = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.root.deleteUserRespond,
+  /**
+   * @param {!proto.root.deleteUserRequest} request
+   * @return {!Uint8Array}
+   */
+  function(request) {
+    return request.serializeBinary();
+  },
+  proto.root.deleteUserRespond.deserializeBinary
+);
+
+
+/**
+ * @param {!proto.root.deleteUserRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @param {function(?grpc.web.Error, ?proto.root.deleteUserRespond)}
+ *     callback The callback function(error, response)
+ * @return {!grpc.web.ClientReadableStream<!proto.root.deleteUserRespond>|undefined}
+ *     The XHR Node Readable Stream
+ */
+proto.root.RootClient.prototype.deleteUser =
+    function(request, metadata, callback) {
+  return this.client_.rpcCall(this.hostname_ +
+      '/root.Root/deleteUser',
+      request,
+      metadata || {},
+      methodDescriptor_Root_deleteUser,
+      callback);
+};
+
+
+/**
+ * @param {!proto.root.deleteUserRequest} request The
+ *     request proto
+ * @param {?Object<string, string>} metadata User defined
+ *     call metadata
+ * @return {!Promise<!proto.root.deleteUserRespond>}
+ *     Promise that resolves to the response
+ */
+proto.root.RootPromiseClient.prototype.deleteUser =
+    function(request, metadata) {
+  return this.client_.unaryCall(this.hostname_ +
+      '/root.Root/deleteUser',
+      request,
+      metadata || {},
+      methodDescriptor_Root_deleteUser);
+};
+
+
 module.exports = proto.root;
 

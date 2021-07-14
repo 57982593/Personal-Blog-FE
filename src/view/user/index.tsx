@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useHomeRequest} from "./request";
-import { Table, Button } from 'antd';
+import { Table, Button, message, Popconfirm } from 'antd';
 
 function UserOperating() {
   const columns = [
@@ -28,11 +28,19 @@ function UserOperating() {
       title: 'Operating',
       key: 'Id',
       render: (item: any) => (
-        <Button type="ghost" onClick={() => {deleteClick(item)}}>删除</Button>
+          <Popconfirm
+              title="是否删除该用户？"
+              onConfirm={() => {deleteClick(item)}}
+              onCancel={cancel}
+              okText="Yes"
+              cancelText="No"
+          >
+            <Button type="ghost">删除</Button>
+          </Popconfirm>
       ),
     },
   ];
-  const {getUserList} = useHomeRequest();
+  const {getUserList, deleteUser} = useHomeRequest();
   const [userList, setUserList] = useState([]);
   const [count, setCount] = useState(0);
   const [page, setPage] = useState(1);
@@ -41,12 +49,18 @@ function UserOperating() {
     total: count,
     onChange: (page: number, pageSize?: number) => pageChange(page, pageSize),
   };
+  function cancel() {
+    message.error('已取消');
+  }
   function pageChange (page: number, pageSize?: number){
     setPage(page);
     setPageSize(pageSize as number);
   }
   function deleteClick (item: any) {
-    console.log(item);
+    const userId = parseInt(item.Id, 10);
+    deleteUser(userId).then((res: any) => {
+      message.success('删除成功');
+    });
   }
   useEffect(() => {
     function getData () {
@@ -57,7 +71,7 @@ function UserOperating() {
       });
     }
     getData();
-  }, [getUserList, page, pageSize]);
+  }, [page, pageSize]);
   return (
       <div>
         <Table rowKey="Id" pagination={paginationProps} columns={columns} dataSource={userList} />
