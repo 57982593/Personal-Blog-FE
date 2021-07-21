@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import {Button, Space} from 'antd'
-import store from '../../redux/store'
-import {add, back} from '../../redux/actions'
+import store from '../../../redux/store'
+import {add, back} from '../../../redux/actions'
 import {createUseStyles} from "react-jss"
 
 const useReduxStyle = createUseStyles({

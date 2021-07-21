@@ -9,6 +9,11 @@ const useBaseStyle = createUseStyles({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  layoutFlex: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%',
+  },
 });
 
 export {

@@ -8,10 +8,10 @@ import {MenuInfo} from 'rc-menu/lib/interface';
 import {useHistory, Switch, Route} from "react-router-dom";
 import {createUseStyles} from 'react-jss';
 import {useBaseStyle} from '../assets/hooks/style';
-import {ViewNumContainer} from "./redux-example";
+import {ViewNumContainer} from "./example/redux";
 import {Webgl} from "./webgl";
-import {UserOperating} from "./demo";
-import {UploadExample} from "./demo/upload";
+import {UserOperating} from "./example/table";
+import {UploadExample} from "./example/upload";
 
 const {Header, Sider, Content, Footer} = Layout;
 const useIndexStyle = createUseStyles({
