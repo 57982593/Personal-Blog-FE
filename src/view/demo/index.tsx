@@ -30,8 +30,8 @@ function UserOperating() {
       render: (item: any) => (
           <Popconfirm
               title="是否删除该用户？"
-              onConfirm={() => {deleteClick(item)}}
-              onCancel={cancel}
+              onConfirm={() => deleteClick(item)}
+              onCancel={() => cancel}
               okText="Yes"
               cancelText="No"
           >
@@ -58,7 +58,7 @@ function UserOperating() {
   }
   function deleteClick (item: any) {
     const userId = parseInt(item.Id, 10);
-    deleteUser(userId).then((res: any) => {
+    deleteUser(userId).then(() => {
       message.success('删除成功');
     });
   }
@@ -71,6 +71,7 @@ function UserOperating() {
       });
     }
     getData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, pageSize]);
   return (
       <div>

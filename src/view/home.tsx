@@ -10,7 +10,8 @@ import {createUseStyles} from 'react-jss';
 import {useBaseStyle} from '../assets/hooks/style';
 import {ViewNumContainer} from "./redux-example";
 import {Webgl} from "./webgl";
-import {UserOperating} from "./user";
+import {UserOperating} from "./demo";
+import {UploadExample} from "./demo/upload";
 
 const {Header, Sider, Content, Footer} = Layout;
 const useIndexStyle = createUseStyles({
@@ -36,18 +37,23 @@ const Home = () => {
       key: '/User',
       icon: DesktopOutlined,
     },
+    {
+      title: 'UploadExample',
+      key: '/UploadExample',
+      icon: AppstoreOutlined,
+    },
   ])
-  const baseStyle = useBaseStyle();
+  const { layoutHeight100 } = useBaseStyle();
   const indexStyle = useIndexStyle();
   const history = useHistory();
   function menuSelectClick({key}: MenuInfo) {
     history.push(`${key}`);
   }
   return (
-      <Layout className={baseStyle.height100}>
+      <Layout className={layoutHeight100}>
         <Header className={indexStyle.cusHeadStyle}>Header</Header>
         <Layout>
-          <Sider className={baseStyle.height100}>
+          <Sider className={layoutHeight100}>
             <Menu
                 defaultSelectedKeys={['1']}
                 defaultOpenKeys={['sub1']}
@@ -68,6 +74,7 @@ const Home = () => {
                 <Route path={"/webgl"} component={Webgl}/>
                 <Route path={"/redux"} component={ViewNumContainer}/>
                 <Route path={"/User"} component={UserOperating}/>
+                <Route path={"/UploadExample"} component={UploadExample}/>
               </Switch>
             </Content>
             <Footer>Footer</Footer>
