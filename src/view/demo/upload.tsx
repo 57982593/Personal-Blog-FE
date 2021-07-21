@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import {Upload, Modal, Button, message} from "antd";
+import {useBaseStyle} from "../../assets/hooks/style";
 import {UploadOutlined} from "@ant-design/icons";
 import {UploadRequestOption} from 'rc-upload/lib/interface';
 import {UploadChangeParam} from "antd/es/upload";
-import {useBaseStyle} from "../../assets/hooks/style";
 import {UploadFile} from "antd/es/upload/interface";
 
 const UploadExample = () => {
