@@ -1,15 +1,17 @@
 import React, {useState} from "react";
-import {Upload, Modal, Button, message} from "antd";
+import {Upload, Modal, Button} from "antd";
 import {useBaseStyle} from "../../../assets/hooks/style";
 import {UploadOutlined} from "@ant-design/icons";
 import {UploadRequestOption} from 'rc-upload/lib/interface';
 import {UploadChangeParam} from "antd/es/upload";
 import {UploadFile} from "antd/es/upload/interface";
+import {useUploadRequest} from "./request";
 
 const UploadExample = () => {
   const [isModalVisible, setModalVisible] = useState<boolean>(false);
   const [fileList, setFileList] = useState<UploadFile[]>([]);
-  const {layoutVerticalCenter,layoutHeight100,layoutFlex} = useBaseStyle();
+  const {layoutVerticalCenter,layoutHeight100} = useBaseStyle();
+  const {RpcUploadFile} = useUploadRequest();
   const props = {
     name: 'file',
     multiple: true,
@@ -42,6 +44,7 @@ const UploadExample = () => {
       return fileChunkList;
     })
     console.log(fileListChunk);
+    RpcUploadFile();
     setModalVisible(false);
   }
   function handleCancel () {

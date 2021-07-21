@@ -21,13 +21,15 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "redux": "^4.1.0",
+    "shelljs": "^0.8.4",
     "typescript": "^4.3.5"
   },
   "scripts": {
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "gcProto": "node shell/gcProto.js"
   },
   "eslintConfig": {
     "extends": [

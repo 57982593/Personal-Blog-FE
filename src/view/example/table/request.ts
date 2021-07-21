@@ -2,26 +2,26 @@ import {useRequest} from '../../../assets/hooks/request';
 
 export function useHomeRequest() {
   const { rpcRequest, grpcWeb }: any = useRequest();
-  function getUserList (offset: number, limit: number) {
+  function RpcGetUserList (offset: number, limit: number) {
     const offset2 = (offset - 1) * 10;
-    const params = new grpcWeb.getUserListRequest();
+    const params = new grpcWeb.GetUserListRequest();
     params.setOffset(offset2);
     params.setLimit(limit);
     return rpcRequest(params, 'getUserList')
   }
-  function getUser(id: number) {
-    const params = new grpcWeb.getUserRequest();
+  function RpcGetUser(id: number) {
+    const params = new grpcWeb.GetUserRequest();
     params.setId(id);
     return rpcRequest(params, 'getUser');
   }
-  function deleteUser(id: number) {
-    const params = new grpcWeb.deleteUserRequest();
+  function RpcDeleteUser(id: number) {
+    const params = new grpcWeb.DeleteUserRequest();
     params.setUserId(id);
     return rpcRequest(params, 'deleteUser');
   }
   return {
-    getUserList,
-    getUser,
-    deleteUser,
+    RpcGetUserList,
+    RpcGetUser,
+    RpcDeleteUser,
   };
 }

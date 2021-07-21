@@ -40,7 +40,7 @@ function UserOperating() {
       ),
     },
   ];
-  const {getUserList, deleteUser} = useHomeRequest();
+  const {RpcGetUserList, RpcDeleteUser} = useHomeRequest();
   const [userList, setUserList] = useState([]);
   const [count, setCount] = useState(0);
   const [page, setPage] = useState(1);
@@ -58,13 +58,13 @@ function UserOperating() {
   }
   function deleteClick (item: any) {
     const userId = parseInt(item.Id, 10);
-    deleteUser(userId).then(() => {
+    RpcDeleteUser(userId).then(() => {
       message.success('删除成功');
     });
   }
   useEffect(() => {
     function getData () {
-      getUserList(page, pageSize).then(({array}: any) => {
+      RpcGetUserList(page, pageSize).then(({array}: any) => {
         const data = JSON.parse(array[0]);
         setUserList(data);
         setCount(array[1]);

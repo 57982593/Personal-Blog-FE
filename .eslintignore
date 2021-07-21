@@ -4,3 +4,4 @@
 /public/
 babel.config.js
 /scripts
+src/assets/proto/root_pb.js
