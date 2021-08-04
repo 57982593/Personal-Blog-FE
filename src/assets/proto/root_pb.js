@@ -917,7 +917,7 @@ proto.root.StreamRequest.prototype.getPt = function() {
 
 
 /**
- * @param {?proto.root.StreamPoint|undefined} value
+ * @param {{name: string; value: number}} value
  * @return {!proto.root.StreamRequest} returns this
 */
 proto.root.StreamRequest.prototype.setPt = function(value) {

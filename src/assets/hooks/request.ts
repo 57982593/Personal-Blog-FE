@@ -5,7 +5,7 @@ const {RootClient}: any = grpcWeb;
 const client = new RootClient(process.env.REACT_APP_REQUEST_URL);
 
 export function useRequest() {
-  async function rpcRequest(params: any, key: string) {
+  async function rpcRequest<T>(params: T, key: string) {
     return new Promise((resolve, reject) => {
       client[key](params, null, (err: any, res: any) => {
         if (err) {

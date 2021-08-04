@@ -12,6 +12,7 @@ import {ViewNumContainer} from "./example/redux";
 import {Webgl} from "./webgl";
 import {UserOperating} from "./example/table";
 import {UploadExample} from "./example/upload";
+import { Three } from "./example/three";
 
 const {Header, Sider, Content, Footer} = Layout;
 const useIndexStyle = createUseStyles({
@@ -41,6 +42,11 @@ const Home = () => {
       title: 'UploadExample',
       key: '/UploadExample',
       icon: AppstoreOutlined,
+    },
+    {
+      title: 'Three',
+      key: '/Three',
+      icon: DesktopOutlined,
     },
   ])
   const { layoutHeight100 } = useBaseStyle();
@@ -75,6 +81,7 @@ const Home = () => {
                 <Route path={"/redux"} component={ViewNumContainer}/>
                 <Route path={"/User"} component={UserOperating}/>
                 <Route path={"/UploadExample"} component={UploadExample}/>
+                <Route path={"/Three"} component={Three}/>
               </Switch>
             </Content>
             <Footer>Footer</Footer>

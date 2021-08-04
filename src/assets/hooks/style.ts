@@ -4,6 +4,9 @@ const useBaseStyle = createUseStyles({
   layoutHeight100: {
     height: '100%',
   },
+  layoutWidth100: {
+    width: '100%',
+  },
   layoutVerticalCenter: {
     display: 'flex',
     justifyContent: 'center',
