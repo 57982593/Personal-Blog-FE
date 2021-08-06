@@ -12,9 +12,11 @@ import {ViewNumContainer} from "./example/redux";
 import {Webgl} from "./webgl";
 import {UserOperating} from "./example/table";
 import {UploadExample} from "./example/upload";
-import { Three } from "./example/three";
+import {Three} from "./example/three";
+import {Circ} from "./example/three/circ";
 
 const {Header, Sider, Content, Footer} = Layout;
+const {SubMenu} = Menu;
 const useIndexStyle = createUseStyles({
   cusHeadStyle: {
     color: 'white',
@@ -44,9 +46,19 @@ const Home = () => {
       icon: AppstoreOutlined,
     },
     {
-      title: 'Three',
+      title: 'ThreeExample',
       key: '/Three',
       icon: DesktopOutlined,
+      children: [
+        {
+          title: '圆',
+          key: '/Circ',
+        },
+        {
+          title: 'Three',
+          key: '/Three',
+        }
+      ],
     },
   ])
   const { layoutHeight100 } = useBaseStyle();
@@ -54,6 +66,23 @@ const Home = () => {
   const history = useHistory();
   function menuSelectClick({key}: MenuInfo) {
     history.push(`${key}`);
+  }
+  function getMenuItem() {
+    return menuList.map((v) => {
+      if(v.children) {
+        return <SubMenu key={v.key} icon={<v.icon/>} title={v.title}>
+          { v.children.map((c: any) => (
+              <Menu.Item key={c.key}>
+                {c.title}
+              </Menu.Item>
+          ))}
+        </SubMenu>
+      } else {
+        return <Menu.Item key={v.key} icon={<v.icon/>}>
+          {v.title}
+        </Menu.Item>
+      }
+    })
   }
   return (
       <Layout className={layoutHeight100}>
@@ -67,11 +96,7 @@ const Home = () => {
                 theme="dark"
                 onClick={menuSelectClick}
             >
-              {menuList.map((v) => (
-                  <Menu.Item key={v.key} icon={<v.icon/>}>
-                    {v.title}
-                  </Menu.Item>
-              ))}
+              {getMenuItem()}
             </Menu>
           </Sider>
           <Layout>
@@ -82,6 +107,7 @@ const Home = () => {
                 <Route path={"/User"} component={UserOperating}/>
                 <Route path={"/UploadExample"} component={UploadExample}/>
                 <Route path={"/Three"} component={Three}/>
+                <Route path={"/Circ"} component={Circ}/>
               </Switch>
             </Content>
             <Footer>Footer</Footer>
