@@ -24,13 +24,16 @@ const Three = () => {
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
     renderer.setSize(width, height);
+    // 几何图形
     const geometry = new THREE.CircleGeometry();
+    // 材质
     const material = new THREE.MeshBasicMaterial({color: 'red'});
+    // 将几何图形与材质结合
     const cube = new THREE.Mesh(geometry, material);
     const line = new THREE.Line(lineGeometry, lineMaterial);
+    // 添加到场景中
     scene.add(cube);
     scene.add(line);
-    console.log('scene:', scene);
 
     camera.position.z = 5;
 
@@ -50,6 +53,7 @@ const Three = () => {
 
   useEffect(() => {
     threeRender();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
       <>

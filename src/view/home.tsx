@@ -12,8 +12,8 @@ import {ViewNumContainer} from "./example/redux";
 import {Webgl} from "./webgl";
 import {UserOperating} from "./example/table";
 import {UploadExample} from "./example/upload";
-import {Three} from "./example/three";
-import {Circ} from "./example/three/circ";
+import {Three} from "./example/three/example1";
+import {Sphere} from "./example/three/sphere";
 
 const {Header, Sider, Content, Footer} = Layout;
 const {SubMenu} = Menu;
@@ -47,12 +47,12 @@ const Home = () => {
     },
     {
       title: 'ThreeExample',
-      key: '/Three',
+      key: '/ThreeExample',
       icon: DesktopOutlined,
       children: [
         {
-          title: '圆',
-          key: '/Circ',
+          title: '球体',
+          key: '/Sphere',
         },
         {
           title: 'Three',
@@ -107,7 +107,7 @@ const Home = () => {
                 <Route path={"/User"} component={UserOperating}/>
                 <Route path={"/UploadExample"} component={UploadExample}/>
                 <Route path={"/Three"} component={Three}/>
-                <Route path={"/Circ"} component={Circ}/>
+                <Route path={"/Sphere"} component={Sphere}/>
               </Switch>
             </Content>
             <Footer>Footer</Footer>

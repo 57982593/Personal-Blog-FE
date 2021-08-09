@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useHomeRequest} from "./request";
 import { Table, Button, message, Popconfirm } from 'antd';
+import { RpcResponseType } from "../../../assets/hooks/request";
 
 function UserOperating() {
   const columns = [
@@ -64,10 +65,13 @@ function UserOperating() {
   }
   useEffect(() => {
     function getData () {
-      RpcGetUserList(page, pageSize).then(({array}: any) => {
-        const data = JSON.parse(array[0]);
-        setUserList(data);
-        setCount(array[1]);
+      RpcGetUserList(page, pageSize).then((res: RpcResponseType) => {
+        if (res) {
+          const { array } = res;
+          const data = JSON.parse(array[0]);
+          setUserList(data);
+          setCount(array[1]);
+        }
       });
     }
     getData();

@@ -1,13 +1,20 @@
 import grpcWeb from '../proto/root_grpc_web_pb';
-import {message} from "antd";
-
 const {RootClient}: any = grpcWeb;
 const client = new RootClient(process.env.REACT_APP_REQUEST_URL);
 
-export function useRequest() {
+interface RpcResponseType {
+  array: any[],
+  arrayIndexOffset_: number,
+  convertedPrimitiveFields_: any,
+  messageId_: number | string | undefined,
+  pivot_: number,
+  wrappers_: any,
+}
+
+function useRequest() {
   async function rpcRequest<T>(params: T, key: string) {
     return new Promise((resolve, reject) => {
-      client[key](params, null, (err: any, res: any) => {
+      client[key](params, null, (err: any, res: RpcResponseType) => {
         if (err) {
           reject(err);
         }
@@ -16,7 +23,7 @@ export function useRequest() {
         }
       });
     }).catch((err:Error) => {
-      message.error(err);
+      console.log('【error】',err);
     });
   }
 
@@ -25,3 +32,9 @@ export function useRequest() {
     rpcRequest,
   };
 }
+
+export {
+  useRequest
+};
+export type { RpcResponseType };
+
