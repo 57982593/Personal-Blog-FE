@@ -30,7 +30,6 @@ const UploadExample = () => {
     setModalVisible(true);
   }
   function handleOk () {
-    console.log(fileList);
     const fileListChunk = fileList.map((item: UploadFile) => {
       const fileChunkList = [];
       let cur = 0;
