@@ -27,6 +27,7 @@ const UploadExample = () => {
   };
   const SIZE = 4 * 1024 * 1024;
   function showModel () {
+    console.log(123);
     setModalVisible(true);
   }
   window.addEventListener('keydown', (e:any) => {
