@@ -29,6 +29,9 @@ const UploadExample = () => {
   function showModel () {
     setModalVisible(true);
   }
+  window.addEventListener('keydown', (e:any) => {
+    console.log(e.key);
+  })
   function handleOk () {
     const fileListChunk = fileList.map((item: UploadFile) => {
       const fileChunkList = [];
