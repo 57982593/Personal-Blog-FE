@@ -7,6 +7,7 @@
 .pnp.js
 .idea
 .eslintcache
+package-lock.json
 
 # testing
 /coverage
