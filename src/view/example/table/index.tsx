@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useHomeRequest} from "./request";
 import { Table, Button, message, Popconfirm } from 'antd';
-import { RpcResponseType } from "../../../assets/hooks/request";
+import { RpcResponseType } from "../../../assets/hooks/requestConfig";
 
 function UserOperating() {
   const columns = [

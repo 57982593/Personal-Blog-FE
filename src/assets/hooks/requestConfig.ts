@@ -1,6 +1,7 @@
 import grpcWeb from '../proto/root_grpc_web_pb';
+import axios from "axios";
 const {RootClient}: any = grpcWeb;
-const client = new RootClient(process.env.REACT_APP_REQUEST_URL);
+const client = new RootClient(process.env.REACT_APP_GRPC_URL);
 
 interface RpcResponseType {
   array: any[],
@@ -33,8 +34,11 @@ function useRequest() {
   };
 }
 
+axios.defaults.baseURL = process.env.REACT_APP_AXIOS_URL;
+
 export {
-  useRequest
+  useRequest,
+  axios,
 };
 export type { RpcResponseType };
 

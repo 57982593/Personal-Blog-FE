@@ -1,4 +1,4 @@
-import {useRequest} from '../../../assets/hooks/request';
+import {useRequest} from '../../../assets/hooks/requestConfig';
 
 export function useHomeRequest() {
   const { rpcRequest, grpcWeb }: any = useRequest();
