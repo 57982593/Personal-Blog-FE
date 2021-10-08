@@ -73,240 +73,80 @@ proto.root.RootPromiseClient =
 /**
  * @const
  * @type {!grpc.web.MethodDescriptor<
- *   !proto.root.GetUserRequest,
- *   !proto.root.GetUserReply>}
+ *   !proto.root.CreateUserReq,
+ *   !proto.root.CreateUserRes>}
  */
-const methodDescriptor_Root_getUser = new grpc.web.MethodDescriptor(
-  '/root.Root/getUser',
+const methodDescriptor_Root_createUser = new grpc.web.MethodDescriptor(
+  '/root.Root/createUser',
   grpc.web.MethodType.UNARY,
-  proto.root.GetUserRequest,
-  proto.root.GetUserReply,
+  proto.root.CreateUserReq,
+  proto.root.CreateUserRes,
   /**
-   * @param {!proto.root.GetUserRequest} request
+   * @param {!proto.root.CreateUserReq} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.root.GetUserReply.deserializeBinary
+  proto.root.CreateUserRes.deserializeBinary
 );
 
 
 /**
  * @const
  * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.root.GetUserRequest,
- *   !proto.root.GetUserReply>}
+ *   !proto.root.CreateUserReq,
+ *   !proto.root.CreateUserRes>}
  */
-const methodInfo_Root_getUser = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.root.GetUserReply,
+const methodInfo_Root_createUser = new grpc.web.AbstractClientBase.MethodInfo(
+  proto.root.CreateUserRes,
   /**
-   * @param {!proto.root.GetUserRequest} request
+   * @param {!proto.root.CreateUserReq} request
    * @return {!Uint8Array}
    */
   function(request) {
     return request.serializeBinary();
   },
-  proto.root.GetUserReply.deserializeBinary
+  proto.root.CreateUserRes.deserializeBinary
 );
 
 
 /**
- * @param {!proto.root.GetUserRequest} request The
+ * @param {!proto.root.CreateUserReq} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @param {function(?grpc.web.Error, ?proto.root.GetUserReply)}
+ * @param {function(?grpc.web.Error, ?proto.root.CreateUserRes)}
  *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.root.GetUserReply>|undefined}
+ * @return {!grpc.web.ClientReadableStream<!proto.root.CreateUserRes>|undefined}
  *     The XHR Node Readable Stream
  */
-proto.root.RootClient.prototype.getUser =
+proto.root.RootClient.prototype.createUser =
     function(request, metadata, callback) {
   return this.client_.rpcCall(this.hostname_ +
-      '/root.Root/getUser',
+      '/root.Root/createUser',
       request,
       metadata || {},
-      methodDescriptor_Root_getUser,
+      methodDescriptor_Root_createUser,
       callback);
 };
 
 
 /**
- * @param {!proto.root.GetUserRequest} request The
+ * @param {!proto.root.CreateUserReq} request The
  *     request proto
  * @param {?Object<string, string>} metadata User defined
  *     call metadata
- * @return {!Promise<!proto.root.GetUserReply>}
+ * @return {!Promise<!proto.root.CreateUserRes>}
  *     Promise that resolves to the response
  */
-proto.root.RootPromiseClient.prototype.getUser =
+proto.root.RootPromiseClient.prototype.createUser =
     function(request, metadata) {
   return this.client_.unaryCall(this.hostname_ +
-      '/root.Root/getUser',
+      '/root.Root/createUser',
       request,
       metadata || {},
-      methodDescriptor_Root_getUser);
-};
-
-
-/**
- * @const
- * @type {!grpc.web.MethodDescriptor<
- *   !proto.root.GetUserListRequest,
- *   !proto.root.GetUserListReply>}
- */
-const methodDescriptor_Root_getUserList = new grpc.web.MethodDescriptor(
-  '/root.Root/getUserList',
-  grpc.web.MethodType.UNARY,
-  proto.root.GetUserListRequest,
-  proto.root.GetUserListReply,
-  /**
-   * @param {!proto.root.GetUserListRequest} request
-   * @return {!Uint8Array}
-   */
-  function(request) {
-    return request.serializeBinary();
-  },
-  proto.root.GetUserListReply.deserializeBinary
-);
-
-
-/**
- * @const
- * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.root.GetUserListRequest,
- *   !proto.root.GetUserListReply>}
- */
-const methodInfo_Root_getUserList = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.root.GetUserListReply,
-  /**
-   * @param {!proto.root.GetUserListRequest} request
-   * @return {!Uint8Array}
-   */
-  function(request) {
-    return request.serializeBinary();
-  },
-  proto.root.GetUserListReply.deserializeBinary
-);
-
-
-/**
- * @param {!proto.root.GetUserListRequest} request The
- *     request proto
- * @param {?Object<string, string>} metadata User defined
- *     call metadata
- * @param {function(?grpc.web.Error, ?proto.root.GetUserListReply)}
- *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.root.GetUserListReply>|undefined}
- *     The XHR Node Readable Stream
- */
-proto.root.RootClient.prototype.getUserList =
-    function(request, metadata, callback) {
-  return this.client_.rpcCall(this.hostname_ +
-      '/root.Root/getUserList',
-      request,
-      metadata || {},
-      methodDescriptor_Root_getUserList,
-      callback);
-};
-
-
-/**
- * @param {!proto.root.GetUserListRequest} request The
- *     request proto
- * @param {?Object<string, string>} metadata User defined
- *     call metadata
- * @return {!Promise<!proto.root.GetUserListReply>}
- *     Promise that resolves to the response
- */
-proto.root.RootPromiseClient.prototype.getUserList =
-    function(request, metadata) {
-  return this.client_.unaryCall(this.hostname_ +
-      '/root.Root/getUserList',
-      request,
-      metadata || {},
-      methodDescriptor_Root_getUserList);
-};
-
-
-/**
- * @const
- * @type {!grpc.web.MethodDescriptor<
- *   !proto.root.DeleteUserRequest,
- *   !proto.root.DeleteUserRespond>}
- */
-const methodDescriptor_Root_deleteUser = new grpc.web.MethodDescriptor(
-  '/root.Root/deleteUser',
-  grpc.web.MethodType.UNARY,
-  proto.root.DeleteUserRequest,
-  proto.root.DeleteUserRespond,
-  /**
-   * @param {!proto.root.DeleteUserRequest} request
-   * @return {!Uint8Array}
-   */
-  function(request) {
-    return request.serializeBinary();
-  },
-  proto.root.DeleteUserRespond.deserializeBinary
-);
-
-
-/**
- * @const
- * @type {!grpc.web.AbstractClientBase.MethodInfo<
- *   !proto.root.DeleteUserRequest,
- *   !proto.root.DeleteUserRespond>}
- */
-const methodInfo_Root_deleteUser = new grpc.web.AbstractClientBase.MethodInfo(
-  proto.root.DeleteUserRespond,
-  /**
-   * @param {!proto.root.DeleteUserRequest} request
-   * @return {!Uint8Array}
-   */
-  function(request) {
-    return request.serializeBinary();
-  },
-  proto.root.DeleteUserRespond.deserializeBinary
-);
-
-
-/**
- * @param {!proto.root.DeleteUserRequest} request The
- *     request proto
- * @param {?Object<string, string>} metadata User defined
- *     call metadata
- * @param {function(?grpc.web.Error, ?proto.root.DeleteUserRespond)}
- *     callback The callback function(error, response)
- * @return {!grpc.web.ClientReadableStream<!proto.root.DeleteUserRespond>|undefined}
- *     The XHR Node Readable Stream
- */
-proto.root.RootClient.prototype.deleteUser =
-    function(request, metadata, callback) {
-  return this.client_.rpcCall(this.hostname_ +
-      '/root.Root/deleteUser',
-      request,
-      metadata || {},
-      methodDescriptor_Root_deleteUser,
-      callback);
-};
-
-
-/**
- * @param {!proto.root.DeleteUserRequest} request The
- *     request proto
- * @param {?Object<string, string>} metadata User defined
- *     call metadata
- * @return {!Promise<!proto.root.DeleteUserRespond>}
- *     Promise that resolves to the response
- */
-proto.root.RootPromiseClient.prototype.deleteUser =
-    function(request, metadata) {
-  return this.client_.unaryCall(this.hostname_ +
-      '/root.Root/deleteUser',
-      request,
-      metadata || {},
-      methodDescriptor_Root_deleteUser);
+      methodDescriptor_Root_createUser);
 };
 
 
