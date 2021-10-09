@@ -5,10 +5,11 @@ import useLoginReq from "./request";
 
 function Register() {
   const { layoutVerticalCenter, layoutHeight100 } = useBaseStyle();
-  const { register } = useLoginReq();
+  const { rpcRegister } = useLoginReq();
   async function onFinish(values: any) {
     console.log('Success:', values);
-    const res = await register(values.username, values.password);
+    // const res = await register(values.username, values.password);
+    const res = await rpcRegister(values.username, values.password);
     console.log(res);
   }
 

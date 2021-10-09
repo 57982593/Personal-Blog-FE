@@ -1,7 +1,7 @@
-import {useRequest} from '../../../assets/hooks/requestConfig';
+import {useRpcRequest} from '../../../assets/hooks/requestConfig';
 
 export function useHomeRequest() {
-  const { rpcRequest, grpcWeb }: any = useRequest();
+  const { rpcRequest, grpcWeb }: any = useRpcRequest();
   function RpcGetUserList (offset: number, limit: number) {
     const offset2 = (offset - 1) * 10;
     const params = new grpcWeb.GetUserListRequest();

@@ -12,7 +12,7 @@ interface RpcResponseType {
   wrappers_: any,
 }
 
-function useRequest() {
+function useRpcRequest() {
   async function rpcRequest<T>(params: T, key: string) {
     return new Promise((resolve, reject) => {
       client[key](params, null, (err: any, res: RpcResponseType) => {
@@ -37,7 +37,7 @@ function useRequest() {
 axios.defaults.baseURL = process.env.REACT_APP_AXIOS_URL;
 
 export {
-  useRequest,
+  useRpcRequest,
   axios,
 };
 export type { RpcResponseType };
