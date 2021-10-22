@@ -1,6 +1,9 @@
 import React, {useEffect, createRef} from "react"
+import { useParams } from "react-router-dom";
 
 const Webgl = () => {
+  const params = useParams();
+  console.log(params);
   const canvasRef = createRef<HTMLCanvasElement>();
   const { mat4 }: any = window;
   function main() {

@@ -1,16 +1,16 @@
-import React, {useState} from 'react';
+import React, {ReactComponentElement, useState} from 'react';
 import {Layout, Menu} from 'antd';
 import {
   AppstoreOutlined,
   DesktopOutlined,
 } from '@ant-design/icons';
 import {MenuInfo} from 'rc-menu/lib/interface';
-import {useHistory, Switch, Route} from "react-router-dom";
+import {Switch, Route, useRouteMatch, Link, useHistory} from "react-router-dom";
 import {createUseStyles} from 'react-jss';
 import {useBaseStyle} from '../assets/hooks/style';
 import {ViewNumContainer} from "./example/redux";
 import {Webgl} from "./webgl";
-import {UserOperating} from "./example/table";
+// import {UserOperating} from "./example/table";
 import {UploadExample} from "./example/upload";
 import {Three} from "./example/three/example1";
 import {Sphere} from "./example/three/sphere";
@@ -23,27 +23,40 @@ const useIndexStyle = createUseStyles({
     textAlign: 'center',
   }
 });
+interface MenuItemType {
+  title: string,
+  key: string,
+  icon?: any,
+  children?: MenuItemType[],
+  component?: ReactComponentElement<any>,
+}
 const Home = () => {
+  const match = useRouteMatch();
+  const history = useHistory();
   const [menuList] = useState([
     {
       title: 'webgl',
-      key: '/webgl',
+      key: '/webgl/:params',
       icon: DesktopOutlined,
+      component: Webgl,
     },
     {
       title: 'redux',
       key: '/redux',
       icon: AppstoreOutlined,
+      component: ViewNumContainer,
     },
-    {
-      title: 'User',
-      key: '/User',
-      icon: DesktopOutlined,
-    },
+    // TODO 接口原因暂时关闭
+    // {
+    //   title: 'User',
+    //   key: '/User',
+    //   icon: DesktopOutlined,
+    // },
     {
       title: 'UploadExample',
       key: '/UploadExample',
       icon: AppstoreOutlined,
+      component: UploadExample,
     },
     {
       title: 'ThreeExample',
@@ -53,19 +66,22 @@ const Home = () => {
         {
           title: '球体',
           key: '/Sphere',
+          component: Sphere,
         },
         {
           title: 'Three',
           key: '/Three',
+          component: Three,
         }
       ],
     },
   ])
   const { layoutHeight100 } = useBaseStyle();
   const indexStyle = useIndexStyle();
-  const history = useHistory();
   function menuSelectClick({key}: MenuInfo) {
-    history.push(`${key}`);
+    // console.log(key);
+    // TODO 路由方式带参数跳转
+    // history.push(`/home/webgl/${JSON.stringify([1,2,3])}`)
   }
   function getMenuItem() {
     return menuList.map((v) => {
@@ -73,16 +89,23 @@ const Home = () => {
         return <SubMenu key={v.key} icon={<v.icon/>} title={v.title}>
           { v.children.map((c: any) => (
               <Menu.Item key={c.key}>
-                {c.title}
+                <Link to={`${match.url}${c.key}`}>{c.title}</Link>
               </Menu.Item>
           ))}
         </SubMenu>
       } else {
         return <Menu.Item key={v.key} icon={<v.icon/>}>
-          {v.title}
+          { resLinkComponent(v as any) }
         </Menu.Item>
       }
     })
+  }
+  function resLinkComponent(v: MenuItemType) {
+    if (v.title === 'webgl') {
+      return <Link to={`${match.url}/${v.title}/${JSON.stringify({a: 1, b: [0,1,2,3]})}`}>{v.title}</Link>;
+    } else {
+      return <Link to={`${match.url}${v.key}`}>{v.title}</Link>;
+    }
   }
   return (
       <Layout className={layoutHeight100}>
@@ -102,12 +125,13 @@ const Home = () => {
           <Layout>
             <Content>
               <Switch>
-                <Route path={"/webgl"} component={Webgl}/>
-                <Route path={"/redux"} component={ViewNumContainer}/>
-                <Route path={"/User"} component={UserOperating}/>
-                <Route path={"/UploadExample"} component={UploadExample}/>
-                <Route path={"/Three"} component={Three}/>
-                <Route path={"/Sphere"} component={Sphere}/>
+                {menuList.map((item: any) => {
+                  if (item.children) {
+                    return item.children.map((child: any) => (<Route path={`${match.url}${child.key}`} key={child.key} component={child.component}/>))
+                  } else {
+                    return <Route path={`${match.url}${item.key}`} component={item.component}  key={item.key}/>
+                  }
+                })}
               </Switch>
             </Content>
             <Footer>Footer</Footer>
