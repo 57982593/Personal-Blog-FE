@@ -5,13 +5,16 @@ import {UploadOutlined} from "@ant-design/icons";
 import {UploadRequestOption} from 'rc-upload/lib/interface';
 import {UploadChangeParam} from "antd/es/upload";
 import {UploadFile} from "antd/es/upload/interface";
-import {useUploadRequest} from "./request";
 
+function Test(props: any) {
+  return(
+      <h1>{props.name}</h1>
+  )
+}
 const UploadExample = () => {
   const [isModalVisible, setModalVisible] = useState<boolean>(false);
   const [fileList, setFileList] = useState<UploadFile[]>([]);
   const {layoutVerticalCenter,layoutHeight100} = useBaseStyle();
-  const {RpcUploadFile} = useUploadRequest();
   const props = {
     name: 'file',
     multiple: true,
@@ -30,9 +33,6 @@ const UploadExample = () => {
     console.log(123);
     setModalVisible(true);
   }
-  window.addEventListener('keydown', (e:any) => {
-    console.log(e.key);
-  })
   function handleOk () {
     const fileListChunk = fileList.map((item: UploadFile) => {
       const fileChunkList = [];
@@ -47,7 +47,6 @@ const UploadExample = () => {
       return fileChunkList;
     })
     console.log(fileListChunk);
-    RpcUploadFile();
     setModalVisible(false);
   }
   function handleCancel () {
@@ -55,11 +54,19 @@ const UploadExample = () => {
   }
   return (
       <div className={`${layoutVerticalCenter} ${layoutHeight100}`}>
-        <Button type="primary" icon={<UploadOutlined />} onClick={() => showModel()}>Upload Button</Button>
-        <Modal title="Upload"
-               visible={isModalVisible}
-               onOk={() => handleOk()}
-               onCancel={() => handleCancel()}>
+        <Test name={'123456'}/>
+        <Test name={'456789'}/>
+        <Button
+            type="primary"
+            icon={<UploadOutlined />}
+            onClick={() => showModel()}>
+            Upload Button
+        </Button>
+        <Modal
+            title="Upload"
+            visible={isModalVisible}
+            onOk={() => handleOk()}
+            onCancel={() => handleCancel()}>
           <Upload {...props}>
               <Button type={"dashed"}>
                 Upload File

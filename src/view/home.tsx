@@ -5,15 +5,15 @@ import {
   DesktopOutlined,
 } from '@ant-design/icons';
 import {MenuInfo} from 'rc-menu/lib/interface';
-import {Switch, Route, useRouteMatch, Link, useHistory} from "react-router-dom";
+import {Switch, Route, useRouteMatch, Link} from "react-router-dom";
 import {createUseStyles} from 'react-jss';
 import {useBaseStyle} from '../assets/hooks/style';
 import {ViewNumContainer} from "./example/redux";
 import {Webgl} from "./webgl";
-// import {UserOperating} from "./example/table";
 import {UploadExample} from "./example/upload";
 import {Three} from "./example/three/example1";
 import {Sphere} from "./example/three/sphere";
+import {classExample} from "./example/classComponent";
 
 const {Header, Sider, Content, Footer} = Layout;
 const {SubMenu} = Menu;
@@ -32,7 +32,6 @@ interface MenuItemType {
 }
 const Home = () => {
   const match = useRouteMatch();
-  const history = useHistory();
   const [menuList] = useState([
     {
       title: 'webgl',
@@ -57,6 +56,12 @@ const Home = () => {
       key: '/UploadExample',
       icon: AppstoreOutlined,
       component: UploadExample,
+    },
+    {
+      title: 'classComponentExample',
+      key: '/classComponentExample',
+      icon: AppstoreOutlined,
+      component: classExample,
     },
     {
       title: 'ThreeExample',
