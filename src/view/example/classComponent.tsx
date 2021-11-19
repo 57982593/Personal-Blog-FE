@@ -18,9 +18,16 @@ export class classExample extends React.Component<any, any>{
     this.state = { counter: 0, id: 'id' };
     console.log('constructor, this.state->', this.state)
   }
+  static getDerivedStateFromProps(){
+
+  }
+  shouldComponentUpdate( nextProps: Readonly<any>, nextState: Readonly<any>, nextContext: any ): boolean {
+    console.log('shouldComponentUpdate ->', this);
+    return true;
+  }
   componentDidMount() {
     const dom = document.querySelector('#test') as any;
-    console.log('componentDidMount, dom->', dom);
+    console.log('componentDidMount, dom->', dom, this);
   }
   componentDidUpdate(prevProps: Readonly<any>, prevState: Readonly<any>, snapshot?: any) {
     console.log('componentDidUpdate',prevProps, prevState, snapshot)
@@ -50,7 +57,9 @@ export class classExample extends React.Component<any, any>{
           <Test
               name={this.state.counter}
               reduce={<Button onClick={this.reduce}>-</Button>}
-              add={<Button onClick={this.add}>+</Button>}/>
+              add={<Button onClick={this.add}>+</Button>}>
+            测试一下
+          </Test>
         </div>
     );
   }

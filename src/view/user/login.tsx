@@ -2,10 +2,12 @@ import React from 'react';
 import {Form, Input, Button} from 'antd';
 import { useBaseStyle } from "../../assets/hooks/style";
 import useLoginReq from "./request";
+import { useLocation, useHistory } from "react-router-dom";
 
 function Login() {
   const { layoutVerticalCenter, layoutHeight100 } = useBaseStyle();
   const { login } = useLoginReq();
+  console.log(useLocation(), useHistory());
   async function onFinish(values: any) {
     console.log('Success:', values);
     const res = await login(values.username, values.password);
