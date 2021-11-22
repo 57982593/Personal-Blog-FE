@@ -37,19 +37,16 @@ const ViewNumContainer = () => {
     }
     return new Promise(resolve => setTimeout(() => resolve(data), 1000));
   }
-  function allFn() {
+  async function allRes() {
     const arr: any = [];
-    async function test() {
-      const res: any = await resData();
-      arr.push(res);
-      while (res.length === 6) {
-        await test();
-      }
-    }
-    test();
+    let res: any;
+    do{
+     res =  await resData();
+     arr.push(res);
+    } while (!(res.length < 6 || a > 4))
     console.log(arr);
   }
-  allFn();
+  allRes();
 
   const arr = [
     {
@@ -103,7 +100,7 @@ const ViewNumContainer = () => {
       await p;
       console.log(6);
     }
-    // fn();
+    fn();
 
     /*监听state改边,subscribe会返回一个函数用来销毁监听*/
     const unsubscribe = store.subscribe(() => {
