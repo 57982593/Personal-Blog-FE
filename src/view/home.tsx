@@ -1,108 +1,77 @@
-import React, { ReactComponentElement, useState } from 'react';
+import React, { ReactComponentElement } from 'react';
 import { Layout, Menu } from 'antd';
-import {
-  AppstoreOutlined,
-  DesktopOutlined,
-} from '@ant-design/icons';
-import { MenuInfo } from 'rc-menu/lib/interface';
 import { Switch, Route, useRouteMatch, Link } from 'react-router-dom';
-import { createUseStyles } from 'react-jss';
 import { useBaseStyle } from '../assets/hooks/style';
 import { ViewNumContainer } from './example/redux';
-import { Webgl } from './webgl';
 import { UploadExample } from './example/upload';
 import { Three } from './example/three/example1';
 import { Sphere } from './example/three/sphere';
 import { classExample } from './example/classComponent';
 import { UseContextExample } from './example/useContext';
+import { ByteBeating } from '../components/interview/byteBeating';
 
-const { Header, Sider, Content, Footer } = Layout;
+const { Header, Sider, Content } = Layout;
 const { SubMenu } = Menu;
-const useIndexStyle = createUseStyles( {
-  cusHeadStyle: {
-    color: 'white',
-    textAlign: 'center',
-  }
-} );
 
 interface MenuItemType {
   title: string,
   key: string,
-  icon?: any,
   children?: MenuItemType[],
   component?: ReactComponentElement<any>,
 }
 
+const menuList = [
+  {
+    title: '面试题',
+    key: '/interview',
+    component: ByteBeating,
+  },
+  {
+    title: 'redux',
+    key: '/redux',
+    component: ViewNumContainer,
+  },
+  {
+    title: 'UploadExample',
+    key: '/UploadExample',
+    component: UploadExample,
+  },
+  {
+    title: 'UseContextExample',
+    key: '/UseContextExample',
+    component: UseContextExample,
+  },
+  {
+    title: 'classComponentExample',
+    key: '/classComponentExample',
+    component: classExample,
+  },
+  {
+    title: 'ThreeExample',
+    key: '/ThreeExample',
+    children: [
+      {
+        title: '球体',
+        key: '/Sphere',
+        component: Sphere,
+      },
+      {
+        title: 'Three',
+        key: '/Three',
+        component: Three,
+      }
+    ],
+  },
+];
+
 const Home = () => {
   const match = useRouteMatch();
-  const [ menuList ] = useState( [
-    {
-      title: 'webgl',
-      key: '/webgl/:params',
-      icon: DesktopOutlined,
-      component: Webgl,
-    },
-    {
-      title: 'redux',
-      key: '/redux',
-      icon: AppstoreOutlined,
-      component: ViewNumContainer,
-    },
-    // TODO 接口原因暂时关闭
-    // {
-    //   title: 'User',
-    //   key: '/User',
-    //   icon: DesktopOutlined,
-    // },
-    {
-      title: 'UploadExample',
-      key: '/UploadExample',
-      icon: AppstoreOutlined,
-      component: UploadExample,
-    },
-    {
-      title: 'UseContextExample',
-      key: '/UseContextExample',
-      icon: AppstoreOutlined,
-      component: UseContextExample,
-    },
-    {
-      title: 'classComponentExample',
-      key: '/classComponentExample',
-      icon: AppstoreOutlined,
-      component: classExample,
-    },
-    {
-      title: 'ThreeExample',
-      key: '/ThreeExample',
-      icon: DesktopOutlined,
-      children: [
-        {
-          title: '球体',
-          key: '/Sphere',
-          component: Sphere,
-        },
-        {
-          title: 'Three',
-          key: '/Three',
-          component: Three,
-        }
-      ],
-    },
-  ] );
-  const { layoutHeight100 } = useBaseStyle();
-  const indexStyle = useIndexStyle();
-
-  function menuSelectClick( { key }: MenuInfo ) {
-    // console.log(key);
-    // TODO 路由方式带参数跳转
-    // history.push(`/home/webgl/${JSON.stringify([1,2,3])}`)
-  }
+  const base = useBaseStyle();
 
   function getMenuItem() {
     return menuList.map( ( v ) => {
       if ( v.children ) {
-        return <SubMenu key={ v.key } icon={ <v.icon/> } title={ v.title }>
+        return <SubMenu key={ v.key } title={ v.title }>
           { v.children.map( ( c: any ) => (
               <Menu.Item key={ c.key }>
                 <Link to={ `${ match.url }${ c.key }` }>{ c.title }</Link>
@@ -110,7 +79,7 @@ const Home = () => {
           ) ) }
         </SubMenu>;
       } else {
-        return <Menu.Item key={ v.key } icon={ <v.icon/> }>
+        return <Menu.Item key={ v.key }>
           { resLinkComponent( v as any ) }
         </Menu.Item>;
       }
@@ -127,22 +96,20 @@ const Home = () => {
   }
 
   return (
-      <Layout className={ layoutHeight100 }>
-        <Header className={ indexStyle.cusHeadStyle }>Header</Header>
+      <Layout className={ base.layoutHeight100 }>
+        <Header className={ base.homeHeader }>有时候得认命，有时候得信命，但是大多数的时候都得与命运抗衡到底！</Header>
         <Layout>
-          <Sider className={ layoutHeight100 }>
+          <Sider className={ `${ base.layoutHeight100 } ${ base.homeSider }` }>
             <Menu
                 defaultSelectedKeys={ [ '1' ] }
                 defaultOpenKeys={ [ 'sub1' ] }
                 mode="inline"
-                theme="dark"
-                onClick={ menuSelectClick }
             >
               { getMenuItem() }
             </Menu>
           </Sider>
           <Layout>
-            <Content>
+            <Content className={base.homeContent}>
               <Switch>
                 { menuList.map( ( item: any ) => {
                   if ( item.children ) {
@@ -150,12 +117,12 @@ const Home = () => {
                         <Route path={ `${ match.url }${ child.key }` } key={ child.key }
                                component={ child.component }/>) );
                   } else {
-                    return <Route path={ `${ match.url }${ item.key }` } component={ item.component } key={ item.key }/>;
+                    return <Route path={ `${ match.url }${ item.key }` } component={ item.component }
+                                  key={ item.key }/>;
                   }
                 } ) }
               </Switch>
             </Content>
-            <Footer>Footer</Footer>
           </Layout>
         </Layout>
       </Layout>

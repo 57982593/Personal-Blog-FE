@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<button onclick="aaa()">ok</button>
-<script>
-    function aaa() {
-        console.log(this)
-    }
-    async function fn() {
+import React from 'react';
+import { JsCodeTemplate } from '../jsCodeTemplate';
+
+function ByteBeating() {
+  const questions = {
+    qts1: `async function fn() {
         setTimeout(() => {
             console.log(4);
         }, 0);
@@ -27,9 +20,8 @@
         await p;
         console.log(6);
     }
-    fn();
-
-    let a = 0;
+    fn();// 1 2 0 3 6 4`,
+    qts2: `let a = 0;
     function resData(){
         a++;
         let data = [1,2,4,5,7,8];
@@ -48,10 +40,9 @@
         return arr;
     }
     allRes().then((res) => {
-        // console.log(res); //[1, 2, 4, 5, 7, 8, 1, 2, 4, 5, 7, 8, 0]
-    });
-
-    const arr = [
+        console.log(res); //[1, 2, 4, 5, 7, 8, 1, 2, 4, 5, 7, 8, 0]
+    });`,
+    qts3: `const arr = [
         {
             id: 0,
             value: 'value-0',
@@ -103,6 +94,7 @@
         },
     ];
     let obj = {};
+    //首先根据 parent 进行分组
     arr.forEach((item) => {
         let parentId = item.parent == undefined ? '-1': item.parent;
         obj[parentId] = obj[parentId] || [];
@@ -110,6 +102,7 @@
     })
     delete obj['-1'];
     let root = arr[0], rArr = obj[root.id];
+    // 递归
     function findSon(root, rArr){
         if(rArr){
             root.children = root.children || [];
@@ -120,10 +113,8 @@
         }
         return root
     }
-    findSon(root, rArr);
-    // console.log(root)
-
-    function forEachFn (cb) {
+    findSon(root, rArr);`,
+    qts4: `function forEachFn (cb) {
       if (Object.prototype.toString.call(this) === '[object Array]') {
         for(let i=0;i<this.length;i++) {
           cb(this[i], i);
@@ -135,7 +126,26 @@
     Array.prototype.forEachFn = forEachFn;
     arr.forEachFn((item, index) => {
       console.log(item, index);
-    })
-</script>
-</body>
-</html>
+    })`,
+  };
+  return (
+      <div>
+        <p>第一题：下例程序输出的顺序是什么？</p>
+        <JsCodeTemplate jsText={questions.qts1}/>
+        <p>这一题原理主要就是就是考的事件循环机制。new Promise里的代码为同步任务，.then/await为微任务，setTimeout为宏任务。await 会阻塞后面的代码，这点需要注意。</p>
+        <p>第二题：有100条数据，每次请求20条，当请求的返回不足20条或者请求数据的总数等于100条时，结束请求并打印全部的请求数据。</p>
+        <JsCodeTemplate jsText={questions.qts2}/>
+        <p>这道题使用了do-while，该循环的特性就是最少都会循环一次。</p>
+        <p>第三题：将下例数组中的数组结构变换成树型结构</p>
+        <JsCodeTemplate jsText={questions.qts3}/>
+        <p>利用了桶与递归，方法有很多种，这是其中一种。</p>
+        <p>第四题：实现一个forEach.</p>
+        <JsCodeTemplate jsText={questions.qts4}/>
+        <p>这里需要熟练this指向原型链等问题。</p>
+      </div>
+  );
+}
+
+export {
+  ByteBeating,
+};

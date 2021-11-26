@@ -1,4 +1,4 @@
-import { INCREASE, SUBTRACTION } from '../actions';
+import { INCREASE, SUBTRACTION } from './action';
 
 const initState = {
   num: 0,

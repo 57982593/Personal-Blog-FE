@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import {Button, Space} from 'antd'
-import store from '../../../redux/store'
-import {add, back} from '../../../redux/actions'
+import store from './store'
+import {add, back} from './action'
 import {createUseStyles} from "react-jss"
 
 const useReduxStyle = createUseStyles({
@@ -47,38 +47,6 @@ const ViewNumContainer = () => {
     console.log(arr);
   }
   allRes();
-
-  const arr = [
-    {
-      id: 0,
-      value: 'value-0',
-    },
-    {
-      id: 1,
-      value: 'value-1',
-      parent: 0,
-    },
-    {
-      id: 2,
-      value: 'value-2',
-      parent: 1,
-    },
-    {
-      id: 3,
-      value: 'value-3',
-      parent: 0,
-    },
-    {
-      id: 4,
-      value: 'value-4',
-      parent: 1,
-    },
-    {
-      id: 5,
-      value: 'value-5',
-      parent: 3,
-    },
-  ];
 
   /*useEffect的返回值用来在组件销毁时做些什么...*/
   useEffect(() => {
