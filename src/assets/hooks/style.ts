@@ -22,11 +22,11 @@ const useBaseStyle = createUseStyles( {
   },
   homeSider: {
     background: '#ffffff',
-    '& .ant-menu': {
-      height: '100%',
-      position: 'fixed',
-      width: '200px',
-    },
+    // '& .ant-menu': {
+    //   height: '100%',
+    //   position: 'fixed',
+    //   width: '200px',
+    // },
   },
   homeHeader: {
     background: '#ffffff',

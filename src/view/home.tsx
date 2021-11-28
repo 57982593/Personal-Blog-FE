@@ -9,6 +9,7 @@ import { Sphere } from './example/three/sphere';
 import { classExample } from './example/classComponent';
 import { UseContextExample } from './example/useContext';
 import { ByteBeating } from '../components/interview/byteBeating';
+import { BasicType } from '../components/learn/basicType';
 
 const { Header, Sider, Content } = Layout;
 const { SubMenu } = Menu;
@@ -25,6 +26,17 @@ const menuList = [
     title: '面试题',
     key: '/interview',
     component: ByteBeating,
+  },
+  {
+    title: '学习',
+    key: 'learn',
+    children: [
+      {
+        title: 'tyscript',
+        key: '/basicType',
+        component: BasicType,
+      },
+    ],
   },
   {
     title: 'redux',
