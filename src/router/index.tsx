@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import { Home } from '../view/home';
-import { NotFound } from '../view/NotFound';
+import { Home } from '../components/home';
+import { NotFound } from '../components/basicComponts/NotFound';
 
 function App() {
   return (

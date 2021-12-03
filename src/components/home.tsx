@@ -1,25 +1,19 @@
-import React, { ReactComponentElement } from 'react';
+import React from 'react';
 import { Layout, Menu } from 'antd';
 import { Switch, Route, useRouteMatch, Link } from 'react-router-dom';
-import { useBaseStyle } from '../assets/hooks/style';
-import { ViewNumContainer } from './example/redux';
-import { UploadExample } from './example/upload';
-import { Three } from './example/three/example1';
-import { Sphere } from './example/three/sphere';
-import { classExample } from './example/classComponent';
-import { UseContextExample } from './example/useContext';
-import { ByteBeating } from '../components/interview/byteBeating';
-import { BasicType } from '../components/learn/basicType';
+import { useBaseStyle } from '../styles/base';
+import { ViewNumContainer } from './redux';
+import { UploadExample } from './upload';
+import { Three } from './3d/example1';
+import { Sphere } from './3d/sphere';
+import { classExample } from './learn/classComponent';
+import { UseContextExample } from './learn/useContext';
+import { ByteBeating } from './interview/byteBeating';
+import { BasicType } from './learn/basicType';
+import { MenuItemType } from '../types';
 
 const { Header, Sider, Content } = Layout;
 const { SubMenu } = Menu;
-
-interface MenuItemType {
-  title: string,
-  key: string,
-  children?: MenuItemType[],
-  component?: ReactComponentElement<any>,
-}
 
 const menuList = [
   {
@@ -36,32 +30,26 @@ const menuList = [
         key: '/basicType',
         component: BasicType,
       },
-    ],
-  },
-  {
-    title: 'redux',
-    key: '/redux',
-    component: ViewNumContainer,
-  },
-  {
-    title: 'UploadExample',
-    key: '/UploadExample',
-    component: UploadExample,
-  },
-  {
-    title: 'UseContextExample',
-    key: '/UseContextExample',
-    component: UseContextExample,
-  },
-  {
-    title: 'classComponentExample',
-    key: '/classComponentExample',
-    component: classExample,
-  },
-  {
-    title: 'ThreeExample',
-    key: '/ThreeExample',
-    children: [
+      {
+        title: 'redux',
+        key: '/redux',
+        component: ViewNumContainer,
+      },
+      {
+        title: '上传/切片上传',
+        key: '/UploadExample',
+        component: UploadExample,
+      },
+      {
+        title: 'react-useContext',
+        key: '/UseContextExample',
+        component: UseContextExample,
+      },
+      {
+        title: 'react-类组件',
+        key: '/classComponentExample',
+        component: classExample,
+      },
       {
         title: '球体',
         key: '/Sphere',
@@ -109,7 +97,6 @@ const Home = () => {
 
   return (
       <Layout className={ base.layoutHeight100 }>
-        <Header className={ base.homeHeader }>有时候得认命，有时候得信命，但是大多数的时候都得与命运抗衡到底！</Header>
         <Layout>
           <Sider className={ `${ base.layoutHeight100 } ${ base.homeSider }` }>
             <Menu
@@ -121,7 +108,8 @@ const Home = () => {
             </Menu>
           </Sider>
           <Layout>
-            <Content className={base.homeContent}>
+            <Header className={ base.homeHeader }>有时候得认命，有时候得信命，但是大多数的时候都得与命运抗衡到底！</Header>
+            <Content className={ base.homeContent }>
               <Switch>
                 { menuList.map( ( item: any ) => {
                   if ( item.children ) {

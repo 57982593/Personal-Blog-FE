@@ -1,5 +1,5 @@
 import React from 'react';
-import { JsCodeTemplate } from '../jsCodeTemplate';
+import { JsCodeTemplate } from '../basicComponts/jsCodeTemplate';
 
 function ByteBeating() {
   const questions = {

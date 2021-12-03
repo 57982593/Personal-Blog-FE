@@ -22,18 +22,22 @@ const useBaseStyle = createUseStyles( {
   },
   homeSider: {
     background: '#ffffff',
-    // '& .ant-menu': {
-    //   height: '100%',
-    //   position: 'fixed',
-    //   width: '200px',
-    // },
+    '& .ant-menu': {
+      height: '100%',
+      width: '200px',
+    },
   },
   homeHeader: {
     background: '#ffffff',
     textAlign: 'center',
     fontWeight: 600,
   },
+  homeContentLayout: {
+  },
   homeContent: {
+    padding: '20px',
+    height: 'calc(100% - 64px)',
+    overflow: 'auto',
     background: '#FFFFFF',
     '& div[class*=language-javascript]': {
       position: 'relative',

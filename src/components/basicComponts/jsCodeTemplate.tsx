@@ -1,7 +1,7 @@
 import 'highlight.js/styles/a11y-dark.css';
 import React from 'react';
 import highlight from 'highlight.js';
-import { useBaseStyle } from '../assets/hooks/style';
+import { useBaseStyle } from '../../styles/base';
 
 interface JsCodeTemplatePropsType {
   jsText: string,

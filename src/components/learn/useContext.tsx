@@ -3,7 +3,8 @@ import { Button } from 'antd';
 
 const TestContext = React.createContext( {
   childrenC: 'Hi, childrenC!',
-  testHandle: (text: string) => {}
+  testHandle: ( text: string ) => {
+  }
 } );
 
 function ChildrenA() {
@@ -26,28 +27,30 @@ function ChildrenB() {
 
 function ChildrenC() {
   const context = useContext( TestContext );
-  const [text, setText] = useState('初始化');
-  useEffect(() => {
-    requestAnimationFrame(() => {
-      console.log('我被调用了！');
-    })
-    console.log('我就试试');
-  }, [])
-  useEffect(() => {
-    console.log('你别试了');
-    setText((prevState) => {
-      console.log('prevState->',prevState);
-      return 'it changed'
-    });
-  }, [context.childrenC])
+  const [ text, setText ] = useState( '初始化' );
+  useEffect( () => {
+    requestAnimationFrame( () => {
+      console.log( '我被调用了！' );
+    } );
+    console.log( '我就试试' );
+  }, [] );
+  useEffect( () => {
+    console.log( '你别试了' );
+    setText( ( prevState ) => {
+      console.log( 'prevState->', prevState );
+      return 'it changed';
+    } );
+  }, [ context.childrenC ] );
   return (
       <div>
-        <div>ChildrenC: {text}</div>
-        {/*两种用法：第一用直接使用context,第二种使用Consumer 标签*/}
-        <Button onClick={() => {context.testHandle('我去你大爷！')}}>{context.childrenC}</Button>
-        {/*<TestContext.Consumer>*/}
-        {/*  { ({ childrenC, testHandle }) => (<Button onClick={() => {testHandle('我去你大爷！')}}>{childrenC}</Button>)}*/}
-        {/*</TestContext.Consumer>*/}
+        <div>ChildrenC: { text }</div>
+        {/*两种用法：第一用直接使用context,第二种使用Consumer 标签*/ }
+        <Button onClick={ () => {
+          context.testHandle( '我去你大爷！' );
+        } }>{ context.childrenC }</Button>
+        {/*<TestContext.Consumer>*/ }
+        {/*  { ({ childrenC, testHandle }) => (<Button onClick={() => {testHandle('我去你大爷！')}}>{childrenC}</Button>)}*/ }
+        {/*</TestContext.Consumer>*/ }
       </div>
   );
 }
@@ -58,9 +61,10 @@ function UseContextExample() {
     testHandle,
   } );
 
-  function testHandle(text: string) {
-    setA(() => ({childrenC: text, testHandle}))
+  function testHandle( text: string ) {
+    setA( () => ({ childrenC: text, testHandle }) );
   }
+
   return (
       <div>
         {/*当使用TestContext.Provider时，消费组件会接收到该组件传递的值，如果不设置会接受默认值。*/ }

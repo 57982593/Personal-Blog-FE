@@ -1,4 +1,5 @@
-const CracoLessPlugin = require('craco-less');
+const CracoLessPlugin = require('craco-less')
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 module.exports = {
   plugins: [
@@ -14,4 +15,14 @@ module.exports = {
       },
     },
   ],
-};
+  webpack: {
+    module: {
+      rules: [
+        { sideEffects: false },
+      ],
+    },
+    plugins: [
+      // new BundleAnalyzerPlugin(),
+    ],
+  },
+}
