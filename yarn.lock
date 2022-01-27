@@ -12111,10 +12111,10 @@ theming@^3.3.0:
     react-display-name "^0.2.4"
     tiny-warning "^1.0.2"
 
-three@^0.131.2:
-  version "0.131.2"
-  resolved "https://registry.npmjs.org/three/-/three-0.131.2.tgz"
-  integrity sha512-1Wmd0xYihEVpU9HjQ3POqnTlx6VZHmmbmtNgAWY/EVwOvkdXpSE6yFVwIvTkEubCd5LzK14pCHwb36SXoAxi3A==
+three@^0.137.0:
+  version "0.137.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.137.0.tgz#0ebd6ba66637a332c31f234bcdd35aeec071a6e3"
+  integrity sha512-rzSDhia6cU35UCy6y+zEEws6vSgytfHqFMSaBvUcySgzwvDO6vETyswtSNi/+aVqJw8WLMwyT1mlQQ1T/dxxOA==
 
 throat@^5.0.0:
   version "5.0.0"
