@@ -19,7 +19,6 @@ function B( props: any ) {
 }
 
 function WithComponent( WrappedComponent: any, data: any ) {
-  console.log( 'WithComponent', WrappedComponent, data );
   return (<WrappedComponent value={ 'test' }/>);
 }
 
