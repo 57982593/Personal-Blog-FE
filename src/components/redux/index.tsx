@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import { Button, Space } from 'antd';
 import store from './store';
 import { add, back } from './action';
 import { createUseStyles } from 'react-jss';
 import { WithComponent, A } from '../learn/hoc';
-import * as reactRedux from 'react-redux';
 
 const useReduxStyle = createUseStyles( {
   rNumContainer: {
@@ -20,8 +19,13 @@ const useReduxStyle = createUseStyles( {
 
 const ViewNumContainer = () => {
   const reduxStyle = useReduxStyle();
-  const [ , setNum ] = useState( {} );
-  console.log( reactRedux.Provider );
+  const [ num, setNum ] = useState( {} );
+  useMemo(() => {
+    console.log('useMemo', store.getState());
+  }, [num]);
+  useCallback(() => {
+    console.log('useCallback',store.getState())
+  }, [store.getState()])
 
   function addClick() {
     //调用action 更新数据
@@ -36,12 +40,10 @@ const ViewNumContainer = () => {
   useEffect( () => {
     /*监听state改边,subscribe会返回一个函数用来销毁监听*/
     const unsubscribe = store.subscribe( () => {
-      console.log( 111, store.getState() );
       //当数据改变时需要修改组件状态来重新渲染组件
       setNum( {} );
     } );
     return () => {
-      // TODO 销毁时会调用，但是经测试没有触发，暂时未找到原因
       console.log( '我被销毁了' );
       //销毁监听
       unsubscribe();

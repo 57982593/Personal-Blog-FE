@@ -1,4 +1,3 @@
-import React from 'react';
 import { Layout, Menu } from 'antd';
 import { Switch, Route, useRouteMatch, Link } from 'react-router-dom';
 import { useBaseStyle } from '../styles/base';

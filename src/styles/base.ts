@@ -21,10 +21,9 @@ const useBaseStyle = createUseStyles( {
     width: '100%',
   },
   homeSider: {
-    background: '#ffffff',
     '& .ant-menu': {
       height: '100%',
-      width: '200px',
+      width: '200px !important'
     },
   },
   homeHeader: {
@@ -36,21 +35,9 @@ const useBaseStyle = createUseStyles( {
   },
   homeContent: {
     padding: '20px',
-    height: 'calc(100% - 64px)',
+    height: '100%',
     overflow: 'auto',
     background: '#FFFFFF',
-    '& div[class*=language-javascript]': {
-      position: 'relative',
-    },
-    '& code[class~=language-javascript]:before': {
-      position: 'absolute',
-      zIndex: 3,
-      top: '.8em',
-      right: '1em',
-      fontSize: '.75rem',
-      color: 'hsla(0,0%,100%,.4)',
-      content: '"js"',
-    },
   },
 } );
 
