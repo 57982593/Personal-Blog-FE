@@ -4,8 +4,9 @@ import { Menu, MenuProps } from 'antd';
 import { MailOutlined } from '@ant-design/icons';
 import { useBaseStyle } from './styles/base';
 import { Route, Switch, useHistory } from 'react-router-dom';
-import Gannt from './pages/gannt';
+import Canvas from './pages/canvas';
 import RecursiveComponent from './pages/recursiveComponent';
+import VirtualList from './pages/virtualList';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -70,8 +71,11 @@ function getRouterInfo() {
             <Route path='/recursive-component' data-set={{name: '递归组件'}}>
                 <RecursiveComponent/>
             </Route>
-            <Route path='/gannt' data-set={{name: '甘特图'}}>
-                <Gannt/>
+            <Route path='/canvas' data-set={{name: 'canvas'}}>
+                <Canvas/>
+            </Route>
+            <Route path='/virtualList' data-set={{name: '虚拟列表'}}>
+              <VirtualList/>
             </Route>
         </Switch>
 );

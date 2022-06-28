@@ -8,7 +8,6 @@
 .idea
 .eslintcache
 package-lock.json
-/src/react-app-env.d.ts
 
 # testing
 /coverage
