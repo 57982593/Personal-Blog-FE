@@ -1,9 +1,329 @@
 [
   {
-    "id": 1265,
-    "title": "可见范围：私密 6.27",
-    "category": "test",
-    "createdAt": "2022-06-27T07:13:23.861Z",
+    "id": 1310,
+    "title": "wzset",
+    "category": "set",
+    "createdAt": "2022-07-01T04:36:09.308Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": null,
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 119,
+      "name": "wangzhen",
+      "cnName": "wangzhen"
+    },
+    "creator": {
+      "id": 119,
+      "name": "wangzhen",
+      "cnName": "wangzhen"
+    },
+    "updater": {
+      "id": 119,
+      "name": "wangzhen",
+      "cnName": "wangzhen"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": null,
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-07-01T04:37:52.098Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",77,",
+    "users": ",119,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": [
+      {
+        "id": 1311,
+        "title": "wztask",
+        "category": "task",
+        "createdAt": "2022-07-01T04:36:24.865Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "creator": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "updater": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "executors": [
+          {
+            "id": 476,
+            "title": "wzddd",
+            "user": {
+              "id": 119,
+              "name": "wangzhen",
+              "cnName": "wangzhen"
+            },
+            "cost": 8,
+            "startTime": "2022-07-01T00:00:00.000Z",
+            "endTime": "2022-07-09T00:00:00.000Z",
+            "storyEXDailies": [
+              {
+                "id": 515,
+                "date": "2022-06-28T00:00:00.000Z",
+                "workHours": 8,
+                "actualHours": 8,
+                "overTimeHours": 0,
+                "approveState": null
+              }
+            ]
+          }
+        ],
+        "priority": null,
+        "visibilityRange": null,
+        "state": "editing",
+        "cost": 8,
+        "startDate": "2022-07-01T00:00:00.000Z",
+        "endDate": "2022-07-01T00:00:00.000Z",
+        "updatedAt": "2022-07-01T04:37:52.098Z",
+        "parentSetId": 1310,
+        "rootSetId": 1310,
+        "commercials": ",77,",
+        "users": ",119,",
+        "visibilityTags": "",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": [
+          {
+            "id": 1312,
+            "title": "wzsubtask",
+            "category": "subtask",
+            "createdAt": "2022-07-01T04:37:37.148Z",
+            "originId": null,
+            "originLink": null,
+            "business": {
+              "id": 90675,
+              "name": "天涯明月刀-端游-韩国版"
+            },
+            "type": null,
+            "PO": {
+              "id": 119,
+              "name": "wangzhen",
+              "cnName": "wangzhen"
+            },
+            "PM": null,
+            "POGroup": [],
+            "PMGroup": [],
+            "processor": {
+              "id": 119,
+              "name": "wangzhen",
+              "cnName": "wangzhen"
+            },
+            "creator": {
+              "id": 119,
+              "name": "wangzhen",
+              "cnName": "wangzhen"
+            },
+            "updater": {
+              "id": 119,
+              "name": "wangzhen",
+              "cnName": "wangzhen"
+            },
+            "executors": [
+              {
+                "id": 477,
+                "title": "wzsddf",
+                "user": {
+                  "id": 119,
+                  "name": "wangzhen",
+                  "cnName": "wangzhen"
+                },
+                "cost": 8,
+                "startTime": "2022-07-01T00:00:00.000Z",
+                "endTime": "2022-07-01T00:00:00.000Z",
+                "storyEXDailies": [
+                  {
+                    "id": 514,
+                    "date": "2022-06-27T00:00:00.000Z",
+                    "workHours": 8,
+                    "actualHours": 8,
+                    "overTimeHours": 0,
+                    "approveState": null
+                  }
+                ]
+              }
+            ],
+            "priority": null,
+            "visibilityRange": null,
+            "state": "preDevelop",
+            "cost": 8,
+            "startDate": "2022-07-01T00:00:00.000Z",
+            "endDate": "2022-07-01T00:00:00.000Z",
+            "updatedAt": "2022-07-01T04:37:52.167Z",
+            "parentSetId": 1311,
+            "rootSetId": 1310,
+            "commercials": ",77,",
+            "users": ",119,",
+            "visibilityTags": "",
+            "workGroup": null,
+            "costType": null,
+            "projectName": "交付清单刷新 - 01（业务）",
+            "projectId": "P20220524001",
+            "noAuth": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1309,
+    "title": "[copied] 测试2022",
+    "category": "task",
+    "createdAt": "2022-06-30T06:16:33.311Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "PM": null,
+    "POGroup": [
+      {
+        "id": 390,
+        "name": "gc_chenxiang",
+        "cnName": "gc_chenxiang"
+      }
+    ],
+    "PMGroup": [],
+    "processor": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "creator": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "updater": null,
+    "executors": [],
+    "priority": "P2",
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": 0,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-30T06:17:44.775Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",119,",
+    "users": ",390,",
+    "visibilityTags": "",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "交付清单刷新 - 01（业务）",
+    "projectId": "P20220524001",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1308,
+    "title": "测试2022",
+    "category": "task",
+    "createdAt": "2022-06-30T06:12:27.157Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "creator": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "updater": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "preCommunicate",
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-30T06:16:27.180Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",119,",
+    "users": ",390,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1307,
+    "title": "biaoti",
+    "category": "task",
+    "createdAt": "2022-06-30T03:35:06.534Z",
     "originId": null,
     "originLink": null,
     "business": {
@@ -12,15 +332,1951 @@
     },
     "type": null,
     "PO": {
+      "id": 84,
+      "name": "yangliangliang0509",
+      "cnName": "yangliangliang0509"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 84,
+      "name": "yangliangliang0509",
+      "cnName": "yangliangliang0509"
+    },
+    "creator": {
+      "id": 84,
+      "name": "yangliangliang0509",
+      "cnName": "yangliangliang0509"
+    },
+    "updater": {
+      "id": 84,
+      "name": "yangliangliang0509",
+      "cnName": "yangliangliang0509"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-30T03:41:09.858Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",77,",
+    "users": ",84,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1306,
+    "title": "一个业务，多个项目",
+    "category": "task",
+    "createdAt": "2022-06-30T03:18:18.058Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "creator": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "updater": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "executors": [
+      {
+        "id": 475,
+        "title": "是",
+        "user": {
+          "id": 376,
+          "name": "gd_xionglei",
+          "cnName": "熊磊"
+        },
+        "cost": 16,
+        "startTime": "2022-06-30T00:00:00.000Z",
+        "endTime": "2022-07-01T00:00:00.000Z",
+        "storyEXDailies": []
+      }
+    ],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": 16,
+    "startDate": "2022-06-30T00:00:00.000Z",
+    "endDate": "2022-07-01T00:00:00.000Z",
+    "updatedAt": "2022-06-30T03:35:03.057Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",2,",
+    "users": ",376,",
+    "visibilityTags": "",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "交付清单刷新 - 01（业务）",
+    "projectId": "P20220524001",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1155,
+    "title": "ceshi00001",
+    "category": "task",
+    "createdAt": "2022-05-11T06:16:37.038Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 99999999,
+      "name": "测试"
+    },
+    "type": {
+      "id": 52,
+      "name": "4.25测试数据"
+    },
+    "PO": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 5,
+      "name": "lynne",
+      "cnName": "刘璇"
+    },
+    "creator": {
+      "id": 84,
+      "name": "yangliangliang0509",
+      "cnName": "yangliangliang0509"
+    },
+    "updater": {
+      "id": 84,
+      "name": "yangliangliang0509",
+      "cnName": "yangliangliang0509"
+    },
+    "executors": [
+      {
+        "id": 362,
+        "title": "yang001",
+        "user": {
+          "id": 84,
+          "name": "yangliangliang0509",
+          "cnName": "yangliangliang0509"
+        },
+        "cost": 88,
+        "startTime": "2022-05-09T00:00:00.000Z",
+        "endTime": "2022-05-19T00:00:00.000Z",
+        "storyEXDailies": [
+          {
+            "id": 383,
+            "date": "2022-05-09T00:00:00.000Z",
+            "workHours": 3.5,
+            "actualHours": 3.5,
+            "overTimeHours": 0,
+            "approveState": null
+          },
+          {
+            "id": 408,
+            "date": "2022-05-23T00:00:00.000Z",
+            "workHours": 3,
+            "actualHours": 3,
+            "overTimeHours": 4,
+            "approveState": "withdrawed"
+          },
+          {
+            "id": 424,
+            "date": "2022-05-30T00:00:00.000Z",
+            "workHours": 7.5,
+            "actualHours": 7.5,
+            "overTimeHours": 8,
+            "approveState": "withdrawed"
+          },
+          {
+            "id": 455,
+            "date": "2022-06-13T00:00:00.000Z",
+            "workHours": 0,
+            "actualHours": 7,
+            "overTimeHours": 7,
+            "approveState": "approved"
+          },
+          {
+            "id": 456,
+            "date": "2022-06-14T00:00:00.000Z",
+            "workHours": 0,
+            "actualHours": 4.5,
+            "overTimeHours": 4.5,
+            "approveState": "approved"
+          },
+          {
+            "id": 457,
+            "date": "2022-06-15T00:00:00.000Z",
+            "workHours": 0,
+            "actualHours": 0,
+            "overTimeHours": 5.5,
+            "approveState": "rejected"
+          },
+          {
+            "id": 478,
+            "date": "2022-06-20T00:00:00.000Z",
+            "workHours": 2.5,
+            "actualHours": 2.5,
+            "overTimeHours": 12.5,
+            "approveState": "rejected"
+          }
+        ]
+      },
+      {
+        "id": 436,
+        "title": "yang001",
+        "user": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "cost": 88,
+        "startTime": "2022-05-09T00:00:00.000Z",
+        "endTime": "2022-05-19T00:00:00.000Z",
+        "storyEXDailies": [
+          {
+            "id": 459,
+            "date": "2022-06-20T00:00:00.000Z",
+            "workHours": 0,
+            "actualHours": 0,
+            "overTimeHours": 3,
+            "approveState": "withdrawed"
+          }
+        ]
+      }
+    ],
+    "priority": null,
+    "visibilityRange": "tag",
+    "state": "preCommunicate",
+    "cost": 176,
+    "startDate": "2022-05-09T00:00:00.000Z",
+    "endDate": "2022-05-19T00:00:00.000Z",
+    "updatedAt": "2022-06-30T03:19:07.567Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",77,2,",
+    "users": ",84,5,376,",
+    "visibilityTags": ",1,",
+    "workGroup": null,
+    "costType": "business",
+    "projectName": "",
+    "projectId": "P20220124001",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1305,
+    "title": "测试2",
+    "category": "task",
+    "createdAt": "2022-06-30T02:56:49.663Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "creator": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "updater": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "executors": [
+      {
+        "id": 474,
+        "title": "cs ",
+        "user": {
+          "id": 376,
+          "name": "gd_xionglei",
+          "cnName": "熊磊"
+        },
+        "cost": 8,
+        "startTime": "2022-06-29T00:00:00.000Z",
+        "endTime": "2022-06-29T00:00:00.000Z",
+        "storyEXDailies": []
+      }
+    ],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": 8,
+    "startDate": "2022-06-29T00:00:00.000Z",
+    "endDate": "2022-06-29T00:00:00.000Z",
+    "updatedAt": "2022-06-30T03:10:23.517Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",2,",
+    "users": ",376,",
+    "visibilityTags": "",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "交付清单刷新 - 01（业务）",
+    "projectId": "P20220524001",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1304,
+    "title": "测试1",
+    "category": "task",
+    "createdAt": "2022-06-30T02:56:37.102Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "creator": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "updater": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-30T02:56:37.142Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",2,",
+    "users": ",376,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1303,
+    "title": "测试122",
+    "category": "task",
+    "createdAt": "2022-06-30T02:21:08.186Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 93843,
+      "name": "天涯明月刀-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "creator": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "updater": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "executors": [
+      {
+        "id": 473,
+        "title": "胡",
+        "user": {
+          "id": 390,
+          "name": "gc_chenxiang",
+          "cnName": "gc_chenxiang"
+        },
+        "cost": 8,
+        "startTime": "2022-06-30T00:00:00.000Z",
+        "endTime": "2022-06-30T00:00:00.000Z",
+        "storyEXDailies": []
+      }
+    ],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": 8,
+    "startDate": "2022-06-30T00:00:00.000Z",
+    "endDate": "2022-06-30T00:00:00.000Z",
+    "updatedAt": "2022-06-30T02:29:22.447Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",119,",
+    "users": ",390,",
+    "visibilityTags": "",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "天涯明月刀-手游APP-韩国版发行",
+    "projectId": "P20220311003",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1302,
+    "title": "test01",
+    "category": "task",
+    "createdAt": "2022-06-30T01:44:51.030Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "creator": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "updater": {
+      "id": 390,
+      "name": "gc_chenxiang",
+      "cnName": "gc_chenxiang"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-30T01:44:51.068Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",119,",
+    "users": ",390,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1301,
+    "title": "111",
+    "category": "task",
+    "createdAt": "2022-06-29T12:01:36.739Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 96809,
+      "name": "QQ飞车手游国际版"
+    },
+    "type": null,
+    "PO": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "creator": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "updater": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-29T12:03:38.836Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",119,",
+    "users": ",391,",
+    "visibilityTags": "",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "",
+    "projectId": "",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1300,
+    "title": "中台测试",
+    "category": "task",
+    "createdAt": "2022-06-29T11:56:57.164Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 93729,
+      "name": "IEGG 客服平台"
+    },
+    "type": null,
+    "PO": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "creator": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "updater": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-29T11:56:57.202Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",119,",
+    "users": ",391,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1299,
+    "title": "天刀",
+    "category": "task",
+    "createdAt": "2022-06-29T11:54:31.057Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 93843,
+      "name": "天涯明月刀-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "creator": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "updater": {
+      "id": 391,
+      "name": "pengzheng",
+      "cnName": "郑鹏"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-29T11:54:31.097Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",119,",
+    "users": ",391,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1298,
+    "title": "测试",
+    "category": "task",
+    "createdAt": "2022-06-29T11:49:00.827Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 93843,
+      "name": "天涯明月刀-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "creator": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "updater": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-29T11:49:00.869Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",2,",
+    "users": ",376,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1297,
+    "title": "123",
+    "category": "task",
+    "createdAt": "2022-06-29T11:33:03.996Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 93843,
+      "name": "天涯明月刀-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "creator": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "updater": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-29T11:33:04.043Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",2,",
+    "users": ",376,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1296,
+    "title": "测试",
+    "category": "task",
+    "createdAt": "2022-06-29T09:15:19.538Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 93385,
+      "name": "部门公共-其他(IEG)-IEGG"
+    },
+    "type": {
+      "id": 54,
+      "name": "LX测试"
+    },
+    "PO": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "creator": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "updater": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": 0,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-29T10:46:24.615Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",2,",
+    "users": ",376,",
+    "visibilityTags": "",
+    "workGroup": null,
+    "costType": "business",
+    "projectName": "",
+    "projectId": "",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1295,
+    "title": "测试",
+    "category": "task",
+    "createdAt": "2022-06-29T08:57:06.427Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "creator": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "updater": {
+      "id": 376,
+      "name": "gd_xionglei",
+      "cnName": "熊磊"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "editing",
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-29T08:58:31.010Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",2,",
+    "users": ",376,",
+    "visibilityTags": "",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "交付清单刷新 - 01（业务）",
+    "projectId": "P20220524001",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1272,
+    "title": "6.28测试",
+    "category": "task",
+    "createdAt": "2022-06-28T07:26:16.927Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": {
       "id": 94,
       "name": "v_lishihui",
       "cnName": "李世会"
     },
-    "PM": {
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
       "id": 94,
       "name": "v_lishihui",
       "cnName": "李世会"
     },
+    "creator": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "updater": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "executors": [
+      {
+        "id": 471,
+        "title": "111",
+        "user": {
+          "id": 373,
+          "name": "1112sfv",
+          "cnName": "111sd "
+        },
+        "cost": 8,
+        "startTime": "2022-06-28T00:00:00.000Z",
+        "endTime": "2022-06-28T00:00:00.000Z",
+        "storyEXDailies": []
+      }
+    ],
+    "priority": null,
+    "visibilityRange": "tag",
+    "state": "editing",
+    "cost": 8,
+    "startDate": "2022-06-28T00:00:00.000Z",
+    "endDate": "2022-06-28T00:00:00.000Z",
+    "updatedAt": "2022-06-28T11:41:35.436Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",77,",
+    "users": ",94,373,",
+    "visibilityTags": ",1,",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "交付清单刷新 - 01（业务）",
+    "projectId": "P20220524001",
+    "noAuth": false,
+    "children": [
+      {
+        "id": 1284,
+        "title": "顶顶顶",
+        "category": "subtask",
+        "createdAt": "2022-06-28T08:37:38.693Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "creator": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "updater": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "preDevelop",
+        "cost": 0,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T11:41:25.985Z",
+        "parentSetId": 1272,
+        "rootSetId": 1272,
+        "commercials": ",77,",
+        "users": ",119,94,373,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1289,
+        "title": "1234",
+        "category": "subtask",
+        "createdAt": "2022-06-28T08:58:29.645Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": {
+          "id": 51,
+          "name": "4.25测试数据"
+        },
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [
+          {
+            "id": 94,
+            "name": "v_lishihui",
+            "cnName": "李世会"
+          }
+        ],
+        "PMGroup": [],
+        "processor": {
+          "id": 386,
+          "name": "gc_jing",
+          "cnName": "gc_jing"
+        },
+        "creator": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "updater": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "preDevelop",
+        "cost": 0,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T10:37:16.253Z",
+        "parentSetId": 1272,
+        "rootSetId": 1272,
+        "commercials": ",77,",
+        "users": ",94,386,373,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1274,
+        "title": "11",
+        "category": "subtask",
+        "createdAt": "2022-06-28T07:28:38.213Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "creator": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "updater": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "executors": [
+          {
+            "id": 472,
+            "title": "11",
+            "user": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "cost": 16,
+            "startTime": "2022-06-29T00:00:00.000Z",
+            "endTime": "2022-06-29T00:00:00.000Z",
+            "storyEXDailies": []
+          }
+        ],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "preDevelop",
+        "cost": 16,
+        "startDate": "2022-06-29T00:00:00.000Z",
+        "endDate": "2022-06-29T00:00:00.000Z",
+        "updatedAt": "2022-06-28T09:58:13.961Z",
+        "parentSetId": 1272,
+        "rootSetId": 1272,
+        "commercials": ",77,",
+        "users": ",94,373,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1288,
+        "title": "123",
+        "category": "subtask",
+        "createdAt": "2022-06-28T08:58:02.454Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "creator": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "updater": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "closed",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T09:39:59.721Z",
+        "parentSetId": 1272,
+        "rootSetId": 1272,
+        "commercials": ",77,",
+        "users": ",94,373,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1281,
+        "title": "22",
+        "category": "subtask",
+        "createdAt": "2022-06-28T08:16:07.599Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 99,
+          "name": "Jealee",
+          "cnName": "Jealee"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 99,
+          "name": "Jealee",
+          "cnName": "Jealee"
+        },
+        "creator": {
+          "id": 99,
+          "name": "Jealee",
+          "cnName": "Jealee"
+        },
+        "updater": {
+          "id": 99,
+          "name": "Jealee",
+          "cnName": "Jealee"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "preDevelop",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T09:39:59.720Z",
+        "parentSetId": 1272,
+        "rootSetId": 1272,
+        "commercials": ",77,",
+        "users": ",99,94,373,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1282,
+        "title": "6.28杀杀杀",
+        "category": "subtask",
+        "createdAt": "2022-06-28T08:27:33.175Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "creator": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "updater": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "preDevelop",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T09:39:59.720Z",
+        "parentSetId": 1272,
+        "rootSetId": 1272,
+        "commercials": ",77,",
+        "users": ",119,94,373,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1283,
+        "title": "的地方",
+        "category": "subtask",
+        "createdAt": "2022-06-28T08:31:23.109Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "creator": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "updater": {
+          "id": 119,
+          "name": "wangzhen",
+          "cnName": "wangzhen"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "preDevelop",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T09:39:59.720Z",
+        "parentSetId": 1272,
+        "rootSetId": 1272,
+        "commercials": ",77,",
+        "users": ",119,94,373,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1285,
+        "title": "dddd",
+        "category": "subtask",
+        "createdAt": "2022-06-28T08:48:10.748Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 99,
+          "name": "Jealee",
+          "cnName": "Jealee"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 99,
+          "name": "Jealee",
+          "cnName": "Jealee"
+        },
+        "creator": {
+          "id": 99,
+          "name": "Jealee",
+          "cnName": "Jealee"
+        },
+        "updater": {
+          "id": 99,
+          "name": "Jealee",
+          "cnName": "Jealee"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "preDevelop",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T09:39:59.720Z",
+        "parentSetId": 1272,
+        "rootSetId": 1272,
+        "commercials": ",77,",
+        "users": ",99,94,373,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1273,
+        "title": "6.28子任务",
+        "category": "subtask",
+        "createdAt": "2022-06-28T07:27:18.930Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "creator": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "updater": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "preDevelop",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T09:39:59.720Z",
+        "parentSetId": 1272,
+        "rootSetId": 1272,
+        "commercials": ",77,",
+        "users": ",94,373,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": null,
+        "projectId": null,
+        "noAuth": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 1015,
+    "title": "测试",
+    "category": "set",
+    "createdAt": "2022-04-21T06:53:01.062Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90802,
+      "name": "PUBGM越南版"
+    },
+    "type": null,
+    "PO": null,
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 279,
+      "name": "v_leixiong",
+      "cnName": "熊磊"
+    },
+    "creator": {
+      "id": 279,
+      "name": "v_leixiong",
+      "cnName": "熊磊"
+    },
+    "updater": {
+      "id": 279,
+      "name": "v_leixiong",
+      "cnName": "熊磊"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": null,
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-28T10:37:50.606Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",4,2,77,",
+    "users": ",279,5,94,358,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": [
+      {
+        "id": 1067,
+        "title": "TASK 测试111",
+        "category": "task",
+        "createdAt": "2022-04-26T03:35:41.714Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 91209,
+          "name": "NISHIKI海外手游"
+        },
+        "type": null,
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "creator": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "updater": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": null,
+        "state": "editing",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T11:44:45.332Z",
+        "parentSetId": 1015,
+        "rootSetId": 1015,
+        "commercials": ",,",
+        "users": ",94,",
+        "visibilityTags": null,
+        "workGroup": null,
+        "costType": null,
+        "projectName": null,
+        "projectId": null,
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1215,
+        "title": "5.33",
+        "category": "task",
+        "createdAt": "2022-05-31T08:02:57.381Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90830,
+          "name": "王者荣耀海外版"
+        },
+        "type": {
+          "id": 48,
+          "name": "管理端"
+        },
+        "PO": {
+          "id": 358,
+          "name": "gc_linie",
+          "cnName": "gc_linie"
+        },
+        "PM": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "POGroup": [
+          {
+            "id": 94,
+            "name": "v_lishihui",
+            "cnName": "李世会"
+          },
+          {
+            "id": 358,
+            "name": "gc_linie",
+            "cnName": "gc_linie"
+          }
+        ],
+        "PMGroup": [
+          {
+            "id": 94,
+            "name": "v_lishihui",
+            "cnName": "李世会"
+          },
+          {
+            "id": 358,
+            "name": "gc_linie",
+            "cnName": "gc_linie"
+          }
+        ],
+        "processor": {
+          "id": 358,
+          "name": "gc_linie",
+          "cnName": "gc_linie"
+        },
+        "creator": {
+          "id": 358,
+          "name": "gc_linie",
+          "cnName": "gc_linie"
+        },
+        "updater": {
+          "id": 358,
+          "name": "gc_linie",
+          "cnName": "gc_linie"
+        },
+        "executors": [
+          {
+            "id": 433,
+            "title": "22",
+            "user": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "cost": 64,
+            "startTime": "2022-06-02T00:00:00.000Z",
+            "endTime": "2022-06-09T00:00:00.000Z",
+            "storyEXDailies": [
+              {
+                "id": 449,
+                "date": "2022-06-13T00:00:00.000Z",
+                "workHours": 0,
+                "actualHours": 0,
+                "overTimeHours": 0,
+                "approveState": null
+              },
+              {
+                "id": 454,
+                "date": "2022-06-14T00:00:00.000Z",
+                "workHours": 3,
+                "actualHours": 3,
+                "overTimeHours": 0,
+                "approveState": null
+              },
+              {
+                "id": 462,
+                "date": "2022-06-20T00:00:00.000Z",
+                "workHours": 0,
+                "actualHours": 0,
+                "overTimeHours": 0,
+                "approveState": null
+              },
+              {
+                "id": 473,
+                "date": "2022-06-21T00:00:00.000Z",
+                "workHours": 0,
+                "actualHours": 0,
+                "overTimeHours": 0,
+                "approveState": null
+              }
+            ]
+          }
+        ],
+        "priority": "P0",
+        "visibilityRange": "tag",
+        "state": "editing",
+        "cost": 64,
+        "startDate": "2022-06-02T00:00:00.000Z",
+        "endDate": "2022-06-09T00:00:00.000Z",
+        "updatedAt": "2022-06-28T11:43:19.216Z",
+        "parentSetId": 1015,
+        "rootSetId": 1015,
+        "commercials": ",77,",
+        "users": ",358,94,5,",
+        "visibilityTags": null,
+        "workGroup": null,
+        "costType": "platform",
+        "projectName": "",
+        "projectId": "",
+        "noAuth": false,
+        "children": [
+          {
+            "id": 1217,
+            "title": "abc",
+            "category": "subtask",
+            "createdAt": "2022-05-31T09:43:14.828Z",
+            "originId": null,
+            "originLink": null,
+            "business": {
+              "id": 90830,
+              "name": "王者荣耀海外版"
+            },
+            "type": null,
+            "PO": {
+              "id": 379,
+              "name": "cn_liulongqing",
+              "cnName": "cn_liulongqing"
+            },
+            "PM": null,
+            "POGroup": [],
+            "PMGroup": [],
+            "processor": {
+              "id": 379,
+              "name": "cn_liulongqing",
+              "cnName": "cn_liulongqing"
+            },
+            "creator": {
+              "id": 379,
+              "name": "cn_liulongqing",
+              "cnName": "cn_liulongqing"
+            },
+            "updater": {
+              "id": 379,
+              "name": "cn_liulongqing",
+              "cnName": "cn_liulongqing"
+            },
+            "executors": [],
+            "priority": null,
+            "visibilityRange": "tag",
+            "state": "preDevelop",
+            "cost": 0,
+            "startDate": null,
+            "endDate": null,
+            "updatedAt": "2022-06-28T09:58:40.119Z",
+            "parentSetId": 1215,
+            "rootSetId": 1015,
+            "commercials": ",117,",
+            "users": ",379,358,94,5,",
+            "visibilityTags": null,
+            "workGroup": null,
+            "costType": "platform",
+            "projectName": "",
+            "projectId": "",
+            "noAuth": false
+          }
+        ]
+      },
+      {
+        "id": 1064,
+        "title": "TASK 测试1",
+        "category": "task",
+        "createdAt": "2022-04-26T03:32:31.332Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 91208,
+          "name": "NISHIKI海外NS版本"
+        },
+        "type": null,
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "creator": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "updater": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": null,
+        "state": "closed",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T02:24:37.448Z",
+        "parentSetId": 1015,
+        "rootSetId": 1015,
+        "commercials": ",77,",
+        "users": ",94,",
+        "visibilityTags": null,
+        "workGroup": null,
+        "costType": null,
+        "projectName": null,
+        "projectId": null,
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1016,
+        "title": "测试验证",
+        "category": "task",
+        "createdAt": "2022-04-21T06:56:02.382Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 91208,
+          "name": "NISHIKI海外NS版本"
+        },
+        "type": {
+          "id": 19,
+          "name": "测试"
+        },
+        "PO": {
+          "id": 279,
+          "name": "v_leixiong",
+          "cnName": "熊磊"
+        },
+        "PM": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "POGroup": [
+          {
+            "id": 5,
+            "name": "lynne",
+            "cnName": "刘璇"
+          }
+        ],
+        "PMGroup": [
+          {
+            "id": 5,
+            "name": "lynne",
+            "cnName": "刘璇"
+          }
+        ],
+        "processor": {
+          "id": 279,
+          "name": "v_leixiong",
+          "cnName": "熊磊"
+        },
+        "creator": {
+          "id": 279,
+          "name": "v_leixiong",
+          "cnName": "熊磊"
+        },
+        "updater": {
+          "id": 279,
+          "name": "v_leixiong",
+          "cnName": "熊磊"
+        },
+        "executors": [
+          {
+            "id": 296,
+            "title": "测试人员",
+            "user": {
+              "id": 279,
+              "name": "v_leixiong",
+              "cnName": "熊磊"
+            },
+            "cost": 16,
+            "startTime": "2022-04-22T00:00:00.000Z",
+            "endTime": "2022-04-23T00:00:00.000Z",
+            "storyEXDailies": [
+              {
+                "id": 328,
+                "date": "2022-04-21T00:00:00.000Z",
+                "workHours": 2,
+                "actualHours": 2,
+                "overTimeHours": 4,
+                "approveState": "withdrawed"
+              }
+            ]
+          }
+        ],
+        "priority": null,
+        "visibilityRange": null,
+        "state": "preCommunicate",
+        "cost": 16,
+        "startDate": "2022-04-22T00:00:00.000Z",
+        "endDate": "2022-04-23T00:00:00.000Z",
+        "updatedAt": "2022-04-24T07:42:08.387Z",
+        "parentSetId": 1015,
+        "rootSetId": 1015,
+        "commercials": ",4,2,",
+        "users": ",279,5,",
+        "visibilityTags": null,
+        "workGroup": null,
+        "costType": null,
+        "projectName": "POHO测试",
+        "projectId": "P20220124001",
+        "noAuth": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 1280,
+    "title": "6.28set",
+    "category": "set",
+    "createdAt": "2022-06-28T07:38:38.087Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 91208,
+      "name": "NISHIKI海外NS版本"
+    },
+    "type": null,
+    "PO": null,
+    "PM": null,
     "POGroup": [],
     "PMGroup": [],
     "processor": {
@@ -40,23 +2296,937 @@
     },
     "executors": [],
     "priority": null,
-    "visibilityRange": "private",
-    "state": "preDevelop",
-    "cost": 0,
-    "startDate": "2022-06-27T00:00:00.000Z",
-    "endDate": "2022-06-27T00:00:00.000Z",
-    "updatedAt": "2022-06-27T09:03:42.228Z",
+    "visibilityRange": "tag",
+    "state": null,
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-28T09:54:33.058Z",
     "parentSetId": null,
     "rootSetId": null,
-    "commercials": ",80,",
-    "users": ",94,",
+    "commercials": ",77,",
+    "users": ",94,386,",
+    "visibilityTags": ",1,",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "",
+    "projectId": "",
+    "noAuth": false,
+    "children": [
+      {
+        "id": 1275,
+        "title": "aa",
+        "category": "task",
+        "createdAt": "2022-06-28T07:29:43.430Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 91208,
+          "name": "NISHIKI海外NS版本"
+        },
+        "type": null,
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 386,
+          "name": "gc_jing",
+          "cnName": "gc_jing"
+        },
+        "creator": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "updater": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "editing",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T09:55:44.772Z",
+        "parentSetId": 1280,
+        "rootSetId": 1280,
+        "commercials": ",77,",
+        "users": ",94,386,",
+        "visibilityTags": ",6,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "",
+        "projectId": "",
+        "noAuth": false,
+        "children": [
+          {
+            "id": 1292,
+            "title": "11",
+            "category": "subtask",
+            "createdAt": "2022-06-28T09:49:23.384Z",
+            "originId": null,
+            "originLink": null,
+            "business": {
+              "id": 91208,
+              "name": "NISHIKI海外NS版本"
+            },
+            "type": null,
+            "PO": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "PM": null,
+            "POGroup": [],
+            "PMGroup": [],
+            "processor": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "creator": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "updater": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "executors": [],
+            "priority": null,
+            "visibilityRange": "tag",
+            "state": "preDevelop",
+            "cost": null,
+            "startDate": null,
+            "endDate": null,
+            "updatedAt": "2022-06-28T10:00:36.344Z",
+            "parentSetId": 1275,
+            "rootSetId": 1280,
+            "commercials": ",77,",
+            "users": ",94,386,",
+            "visibilityTags": ",6,",
+            "workGroup": null,
+            "costType": null,
+            "projectName": "",
+            "projectId": "",
+            "noAuth": false
+          },
+          {
+            "id": 1279,
+            "title": "a1",
+            "category": "subtask",
+            "createdAt": "2022-06-28T07:34:12.515Z",
+            "originId": null,
+            "originLink": null,
+            "business": {
+              "id": 91208,
+              "name": "NISHIKI海外NS版本"
+            },
+            "type": null,
+            "PO": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "PM": null,
+            "POGroup": [],
+            "PMGroup": [],
+            "processor": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "creator": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "updater": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "executors": [],
+            "priority": null,
+            "visibilityRange": "tag",
+            "state": "development",
+            "cost": null,
+            "startDate": null,
+            "endDate": null,
+            "updatedAt": "2022-06-28T09:54:33.078Z",
+            "parentSetId": 1275,
+            "rootSetId": 1280,
+            "commercials": ",77,",
+            "users": ",94,386,",
+            "visibilityTags": ",6,",
+            "workGroup": null,
+            "costType": null,
+            "projectName": "",
+            "projectId": "",
+            "noAuth": false
+          }
+        ]
+      },
+      {
+        "id": 1290,
+        "title": "bb",
+        "category": "task",
+        "createdAt": "2022-06-28T09:29:40.598Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 91208,
+          "name": "NISHIKI海外NS版本"
+        },
+        "type": null,
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "creator": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "updater": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": null,
+        "state": "editing",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T09:52:56.845Z",
+        "parentSetId": 1280,
+        "rootSetId": 1280,
+        "commercials": ",77,",
+        "users": ",94,",
+        "visibilityTags": "",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "",
+        "projectId": "",
+        "noAuth": false,
+        "children": [
+          {
+            "id": 1291,
+            "title": "111",
+            "category": "subtask",
+            "createdAt": "2022-06-28T09:30:27.048Z",
+            "originId": null,
+            "originLink": null,
+            "business": {
+              "id": 91208,
+              "name": "NISHIKI海外NS版本"
+            },
+            "type": null,
+            "PO": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "PM": null,
+            "POGroup": [],
+            "PMGroup": [],
+            "processor": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "creator": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "updater": {
+              "id": 94,
+              "name": "v_lishihui",
+              "cnName": "李世会"
+            },
+            "executors": [],
+            "priority": null,
+            "visibilityRange": null,
+            "state": "preDevelop",
+            "cost": null,
+            "startDate": null,
+            "endDate": null,
+            "updatedAt": "2022-06-28T09:52:56.861Z",
+            "parentSetId": 1290,
+            "rootSetId": 1280,
+            "commercials": ",77,",
+            "users": ",94,",
+            "visibilityTags": "",
+            "workGroup": null,
+            "costType": null,
+            "projectName": "",
+            "projectId": "",
+            "noAuth": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1245,
+    "title": "LX的set",
+    "category": "set",
+    "createdAt": "2022-06-24T02:25:39.955Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": null,
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 5,
+      "name": "lynne",
+      "cnName": "刘璇"
+    },
+    "creator": {
+      "id": 5,
+      "name": "lynne",
+      "cnName": "刘璇"
+    },
+    "updater": {
+      "id": 5,
+      "name": "lynne",
+      "cnName": "刘璇"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": null,
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-28T08:50:50.354Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",2,77,",
+    "users": ",5,119,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": [
+      {
+        "id": 1248,
+        "title": "有subtask权限但无父级task权限",
+        "category": "task",
+        "createdAt": "2022-06-24T02:35:01.854Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "PM": null,
+        "POGroup": [
+          {
+            "id": 119,
+            "name": "wangzhen",
+            "cnName": "wangzhen"
+          }
+        ],
+        "PMGroup": [],
+        "processor": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "creator": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "updater": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "editing",
+        "cost": 0,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T08:50:50.354Z",
+        "parentSetId": 1245,
+        "rootSetId": 1245,
+        "commercials": ",2,77,",
+        "users": ",5,119,",
+        "visibilityTags": ",2,1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "",
+        "projectId": "",
+        "noAuth": false,
+        "children": [
+          {
+            "id": 1287,
+            "title": "再测试能不能继承父级信息",
+            "category": "subtask",
+            "createdAt": "2022-06-28T08:50:18.420Z",
+            "originId": null,
+            "originLink": null,
+            "business": {
+              "id": 90675,
+              "name": "天涯明月刀-端游-韩国版"
+            },
+            "type": null,
+            "PO": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "PM": null,
+            "POGroup": [],
+            "PMGroup": [],
+            "processor": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "creator": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "updater": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "executors": [],
+            "priority": null,
+            "visibilityRange": "tag",
+            "state": "preDevelop",
+            "cost": null,
+            "startDate": null,
+            "endDate": null,
+            "updatedAt": "2022-06-28T08:50:50.386Z",
+            "parentSetId": 1248,
+            "rootSetId": 1245,
+            "commercials": ",2,",
+            "users": ",5,119,",
+            "visibilityTags": ",2,1,",
+            "workGroup": null,
+            "costType": null,
+            "projectName": "",
+            "projectId": "",
+            "noAuth": false
+          },
+          {
+            "id": 1286,
+            "title": "测试能不能继承父级信息",
+            "category": "subtask",
+            "createdAt": "2022-06-28T08:49:18.316Z",
+            "originId": null,
+            "originLink": null,
+            "business": {
+              "id": 90675,
+              "name": "天涯明月刀-端游-韩国版"
+            },
+            "type": null,
+            "PO": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "PM": null,
+            "POGroup": [],
+            "PMGroup": [],
+            "processor": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "creator": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "updater": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "executors": [],
+            "priority": null,
+            "visibilityRange": "tag",
+            "state": "preDevelop",
+            "cost": null,
+            "startDate": null,
+            "endDate": null,
+            "updatedAt": "2022-06-28T08:50:50.381Z",
+            "parentSetId": 1248,
+            "rootSetId": 1245,
+            "commercials": ",2,",
+            "users": ",5,119,",
+            "visibilityTags": ",2,1,",
+            "workGroup": null,
+            "costType": null,
+            "projectName": "",
+            "projectId": "",
+            "noAuth": false
+          },
+          {
+            "id": 1252,
+            "title": "LX",
+            "category": "subtask",
+            "createdAt": "2022-06-24T03:24:30.075Z",
+            "originId": null,
+            "originLink": null,
+            "business": {
+              "id": 90675,
+              "name": "天涯明月刀-端游-韩国版"
+            },
+            "type": null,
+            "PO": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "PM": {
+              "id": 119,
+              "name": "wangzhen",
+              "cnName": "wangzhen"
+            },
+            "POGroup": [],
+            "PMGroup": [],
+            "processor": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "creator": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "updater": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "executors": [],
+            "priority": null,
+            "visibilityRange": "tag",
+            "state": "preDevelop",
+            "cost": 0,
+            "startDate": null,
+            "endDate": null,
+            "updatedAt": "2022-06-28T08:50:50.375Z",
+            "parentSetId": 1248,
+            "rootSetId": 1245,
+            "commercials": ",2,",
+            "users": ",5,119,",
+            "visibilityTags": ",2,1,",
+            "workGroup": null,
+            "costType": null,
+            "projectName": "",
+            "projectId": "",
+            "noAuth": false
+          },
+          {
+            "id": 1249,
+            "title": "有该subtask权限",
+            "category": "subtask",
+            "createdAt": "2022-06-24T02:36:47.604Z",
+            "originId": null,
+            "originLink": null,
+            "business": {
+              "id": 90675,
+              "name": "天涯明月刀-端游-韩国版"
+            },
+            "type": null,
+            "PO": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "PM": null,
+            "POGroup": [
+              {
+                "id": 119,
+                "name": "wangzhen",
+                "cnName": "wangzhen"
+              }
+            ],
+            "PMGroup": [],
+            "processor": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "creator": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "updater": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "executors": [],
+            "priority": null,
+            "visibilityRange": "tag",
+            "state": "preDevelop",
+            "cost": 0,
+            "startDate": null,
+            "endDate": null,
+            "updatedAt": "2022-06-28T08:50:50.370Z",
+            "parentSetId": 1248,
+            "rootSetId": 1245,
+            "commercials": ",2,",
+            "users": ",5,119,",
+            "visibilityTags": ",2,1,",
+            "workGroup": null,
+            "costType": null,
+            "projectName": "",
+            "projectId": "",
+            "noAuth": false
+          }
+        ]
+      },
+      {
+        "id": 1244,
+        "title": "可见范围：标签可见",
+        "category": "task",
+        "createdAt": "2022-06-24T02:25:18.752Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "creator": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "updater": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "editing",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-24T02:47:55.035Z",
+        "parentSetId": 1245,
+        "rootSetId": 1245,
+        "commercials": ",2,",
+        "users": ",5,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "",
+        "projectId": "",
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1246,
+        "title": "可见范围：私密",
+        "category": "task",
+        "createdAt": "2022-06-24T02:29:18.827Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "creator": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "updater": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "private",
+        "state": "editing",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-24T02:35:29.568Z",
+        "parentSetId": 1245,
+        "rootSetId": 1245,
+        "commercials": ",2,",
+        "users": ",5,",
+        "visibilityTags": "",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "",
+        "projectId": "",
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1247,
+        "title": "可见范围：全部可见",
+        "category": "task",
+        "createdAt": "2022-06-24T02:29:32.094Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "creator": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "updater": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": null,
+        "state": "editing",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-24T02:35:19.849Z",
+        "parentSetId": 1245,
+        "rootSetId": 1245,
+        "commercials": ",2,",
+        "users": ",5,",
+        "visibilityTags": "",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "",
+        "projectId": "",
+        "noAuth": false,
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": 1264,
+    "title": "可见范围：全部可见 6.27",
+    "category": "test",
+    "createdAt": "2022-06-27T07:13:01.122Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "creator": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "updater": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "executors": [
+      {
+        "id": 468,
+        "title": "11",
+        "user": {
+          "id": 386,
+          "name": "gc_jing",
+          "cnName": "gc_jing"
+        },
+        "cost": 16,
+        "startTime": "2022-06-28T00:00:00.000Z",
+        "endTime": "2022-06-29T00:00:00.000Z",
+        "storyEXDailies": [
+          {
+            "id": 512,
+            "date": "2022-06-28T00:00:00.000Z",
+            "workHours": 2,
+            "actualHours": 2,
+            "overTimeHours": 0,
+            "approveState": null
+          }
+        ]
+      }
+    ],
+    "priority": null,
+    "visibilityRange": "normal",
+    "state": "editing",
+    "cost": 16,
+    "startDate": "2022-06-28T00:00:00.000Z",
+    "endDate": "2022-06-29T00:00:00.000Z",
+    "updatedAt": "2022-06-28T06:34:37.189Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",77,",
+    "users": ",94,386,",
     "visibilityTags": "",
     "workGroup": null,
     "costType": null,
-    "projectName": "PGAME-游戏其他-业务4发行",
-    "projectId": "P20220311026",
+    "projectName": "交付清单刷新 - 01（业务）",
+    "projectId": "P20220524001",
     "noAuth": false,
-    "children": []
+    "children": [
+      {
+        "id": 1267,
+        "title": "子任务 6.27",
+        "category": "subtask",
+        "createdAt": "2022-06-27T07:25:24.024Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "creator": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "updater": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": "normal",
+        "state": "preDevelop",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T06:34:37.196Z",
+        "parentSetId": 1264,
+        "rootSetId": 1264,
+        "commercials": ",77,",
+        "users": ",94,386,",
+        "visibilityTags": "",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": []
+      }
+    ]
   },
   {
     "id": 1266,
@@ -122,26 +3292,714 @@
         "startTime": "2022-06-27T00:00:00.000Z",
         "endTime": "2022-06-27T00:00:00.000Z",
         "storyEXDailies": []
+      },
+      {
+        "id": 467,
+        "title": "11",
+        "user": {
+          "id": 386,
+          "name": "gc_jing",
+          "cnName": "gc_jing"
+        },
+        "cost": 16,
+        "startTime": "2022-06-29T00:00:00.000Z",
+        "endTime": "2022-06-30T00:00:00.000Z",
+        "storyEXDailies": [
+          {
+            "id": 511,
+            "date": "2022-06-28T00:00:00.000Z",
+            "workHours": 1,
+            "actualHours": 2.5,
+            "overTimeHours": 1.5,
+            "approveState": "approved"
+          }
+        ]
       }
     ],
     "priority": null,
     "visibilityRange": "tag",
     "state": "scheduled",
-    "cost": 8,
+    "cost": 24,
     "startDate": "2022-06-27T00:00:00.000Z",
-    "endDate": "2022-06-27T00:00:00.000Z",
-    "updatedAt": "2022-06-27T08:51:12.656Z",
+    "endDate": "2022-06-30T00:00:00.000Z",
+    "updatedAt": "2022-06-28T06:33:55.310Z",
     "parentSetId": null,
     "rootSetId": null,
     "commercials": ",77,",
-    "users": ",94,",
-    "visibilityTags": ",6,",
+    "users": ",94,386,",
+    "visibilityTags": ",6,9,",
     "workGroup": null,
     "costType": null,
     "projectName": "PGAME-游戏其他-业务4发行",
     "projectId": "P20220311026",
     "noAuth": false,
     "children": []
+  },
+  {
+    "id": 1224,
+    "title": "LX的set",
+    "category": "set",
+    "createdAt": "2022-06-20T07:45:24.775Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": null,
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 5,
+      "name": "lynne",
+      "cnName": "刘璇"
+    },
+    "creator": {
+      "id": 5,
+      "name": "lynne",
+      "cnName": "刘璇"
+    },
+    "updater": {
+      "id": 5,
+      "name": "lynne",
+      "cnName": "刘璇"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": "tag",
+    "state": null,
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-28T06:18:04.734Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",2,77,",
+    "users": ",5,94,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": "",
+    "projectId": "",
+    "noAuth": false,
+    "children": [
+      {
+        "id": 1271,
+        "title": "11",
+        "category": "task",
+        "createdAt": "2022-06-28T06:18:04.733Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "creator": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "updater": {
+          "id": 94,
+          "name": "v_lishihui",
+          "cnName": "李世会"
+        },
+        "executors": [],
+        "priority": null,
+        "visibilityRange": null,
+        "state": "editing",
+        "cost": null,
+        "startDate": null,
+        "endDate": null,
+        "updatedAt": "2022-06-28T06:18:04.748Z",
+        "parentSetId": 1224,
+        "rootSetId": 1224,
+        "commercials": ",77,",
+        "users": ",94,",
+        "visibilityTags": null,
+        "workGroup": null,
+        "costType": null,
+        "projectName": null,
+        "projectId": null,
+        "noAuth": false,
+        "children": []
+      },
+      {
+        "id": 1222,
+        "title": "测试人力报表",
+        "category": "task",
+        "createdAt": "2022-06-20T04:12:01.263Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "creator": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "updater": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "executors": [
+          {
+            "id": 440,
+            "title": "2",
+            "user": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "cost": 8,
+            "startTime": "2022-06-20T00:00:00.000Z",
+            "endTime": "2022-06-20T00:00:00.000Z",
+            "storyEXDailies": [
+              {
+                "id": 461,
+                "date": "2022-06-20T00:00:00.000Z",
+                "workHours": 0,
+                "actualHours": 5,
+                "overTimeHours": 5,
+                "approveState": "approved"
+              },
+              {
+                "id": 467,
+                "date": "2022-06-15T00:00:00.000Z",
+                "workHours": 0,
+                "actualHours": 0,
+                "overTimeHours": 3.5,
+                "approveState": "withdrawed"
+              },
+              {
+                "id": 472,
+                "date": "2022-06-21T00:00:00.000Z",
+                "workHours": 0,
+                "actualHours": 0,
+                "overTimeHours": 0,
+                "approveState": null
+              }
+            ]
+          }
+        ],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "editing",
+        "cost": 8,
+        "startDate": "2022-06-20T00:00:00.000Z",
+        "endDate": "2022-06-20T00:00:00.000Z",
+        "updatedAt": "2022-06-20T07:46:14.811Z",
+        "parentSetId": 1224,
+        "rootSetId": 1224,
+        "commercials": ",2,",
+        "users": ",5,",
+        "visibilityTags": null,
+        "workGroup": null,
+        "costType": null,
+        "projectName": "交付清单刷新 - 01（业务）",
+        "projectId": "P20220524001",
+        "noAuth": false,
+        "children": [
+          {
+            "id": 1223,
+            "title": "2",
+            "category": "subtask",
+            "createdAt": "2022-06-20T07:41:24.687Z",
+            "originId": null,
+            "originLink": null,
+            "business": {
+              "id": 90675,
+              "name": "天涯明月刀-端游-韩国版"
+            },
+            "type": null,
+            "PO": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "PM": null,
+            "POGroup": [],
+            "PMGroup": [],
+            "processor": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "creator": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "updater": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "executors": [],
+            "priority": null,
+            "visibilityRange": "tag",
+            "state": "preDevelop",
+            "cost": null,
+            "startDate": null,
+            "endDate": null,
+            "updatedAt": "2022-06-20T07:46:14.811Z",
+            "parentSetId": 1222,
+            "rootSetId": 1224,
+            "commercials": ",2,",
+            "users": ",5,",
+            "visibilityTags": null,
+            "workGroup": null,
+            "costType": null,
+            "projectName": "交付清单刷新 - 01（业务）",
+            "projectId": "P20220524001",
+            "noAuth": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1265,
+    "title": "可见范围：私密 6.27",
+    "category": "test",
+    "createdAt": "2022-06-27T07:13:23.861Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 91208,
+      "name": "NISHIKI海外NS版本"
+    },
+    "type": null,
+    "PO": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "PM": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "POGroup": [
+      {
+        "id": 94,
+        "name": "v_lishihui",
+        "cnName": "李世会"
+      }
+    ],
+    "PMGroup": [
+      {
+        "id": 94,
+        "name": "v_lishihui",
+        "cnName": "李世会"
+      }
+    ],
+    "processor": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "creator": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "updater": {
+      "id": 94,
+      "name": "v_lishihui",
+      "cnName": "李世会"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": "private",
+    "state": "checkFinished",
+    "cost": 0,
+    "startDate": "2022-06-27T00:00:00.000Z",
+    "endDate": "2022-06-27T00:00:00.000Z",
+    "updatedAt": "2022-06-28T04:59:51.510Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",77,",
+    "users": ",94,",
+    "visibilityTags": "",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "PGAME-游戏其他-业务4发行",
+    "projectId": "P20220311026",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1270,
+    "title": "6.28 11",
+    "category": "task",
+    "createdAt": "2022-06-28T04:10:17.273Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": {
+      "id": 386,
+      "name": "gc_jing",
+      "cnName": "gc_jing"
+    },
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 386,
+      "name": "gc_jing",
+      "cnName": "gc_jing"
+    },
+    "creator": {
+      "id": 386,
+      "name": "gc_jing",
+      "cnName": "gc_jing"
+    },
+    "updater": {
+      "id": 386,
+      "name": "gc_jing",
+      "cnName": "gc_jing"
+    },
+    "executors": [
+      {
+        "id": 470,
+        "title": "12",
+        "user": {
+          "id": 386,
+          "name": "gc_jing",
+          "cnName": "gc_jing"
+        },
+        "cost": 8,
+        "startTime": "2022-06-28T00:00:00.000Z",
+        "endTime": "2022-06-28T00:00:00.000Z",
+        "storyEXDailies": [
+          {
+            "id": 513,
+            "date": "2022-06-28T00:00:00.000Z",
+            "workHours": 0.5,
+            "actualHours": 0.5,
+            "overTimeHours": 0,
+            "approveState": null
+          }
+        ]
+      }
+    ],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "closed",
+    "cost": 8,
+    "startDate": "2022-06-28T00:00:00.000Z",
+    "endDate": "2022-06-28T00:00:00.000Z",
+    "updatedAt": "2022-06-28T04:10:59.381Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",77,",
+    "users": ",386,",
+    "visibilityTags": "",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "交付清单刷新 - 01（业务）",
+    "projectId": "P20220524001",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1269,
+    "title": "6.28",
+    "category": "task",
+    "createdAt": "2022-06-28T03:22:38.942Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 91209,
+      "name": "NISHIKI海外手游"
+    },
+    "type": null,
+    "PO": {
+      "id": 358,
+      "name": "gc_linie",
+      "cnName": "gc_linie"
+    },
+    "PM": null,
+    "POGroup": [
+      {
+        "id": 386,
+        "name": "gc_jing",
+        "cnName": "gc_jing"
+      }
+    ],
+    "PMGroup": [],
+    "processor": {
+      "id": 358,
+      "name": "gc_linie",
+      "cnName": "gc_linie"
+    },
+    "creator": {
+      "id": 358,
+      "name": "gc_linie",
+      "cnName": "gc_linie"
+    },
+    "updater": {
+      "id": 358,
+      "name": "gc_linie",
+      "cnName": "gc_linie"
+    },
+    "executors": [
+      {
+        "id": 469,
+        "title": "11",
+        "user": {
+          "id": 386,
+          "name": "gc_jing",
+          "cnName": "gc_jing"
+        },
+        "cost": 8,
+        "startTime": "2022-06-28T00:00:00.000Z",
+        "endTime": "2022-06-28T00:00:00.000Z",
+        "storyEXDailies": []
+      }
+    ],
+    "priority": null,
+    "visibilityRange": null,
+    "state": "closed",
+    "cost": 8,
+    "startDate": "2022-06-28T00:00:00.000Z",
+    "endDate": "2022-06-28T00:00:00.000Z",
+    "updatedAt": "2022-06-28T04:09:46.279Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",77,",
+    "users": ",358,386,",
+    "visibilityTags": "",
+    "workGroup": null,
+    "costType": null,
+    "projectName": "PGAME-游戏其他-业务2发行",
+    "projectId": "P20220311025",
+    "noAuth": false,
+    "children": []
+  },
+  {
+    "id": 1220,
+    "title": "天刀的父级set",
+    "category": "set",
+    "createdAt": "2022-06-20T02:45:29.757Z",
+    "originId": null,
+    "originLink": null,
+    "business": {
+      "id": 90675,
+      "name": "天涯明月刀-端游-韩国版"
+    },
+    "type": null,
+    "PO": null,
+    "PM": null,
+    "POGroup": [],
+    "PMGroup": [],
+    "processor": {
+      "id": 5,
+      "name": "lynne",
+      "cnName": "刘璇"
+    },
+    "creator": {
+      "id": 5,
+      "name": "lynne",
+      "cnName": "刘璇"
+    },
+    "updater": {
+      "id": 5,
+      "name": "lynne",
+      "cnName": "刘璇"
+    },
+    "executors": [],
+    "priority": null,
+    "visibilityRange": null,
+    "state": null,
+    "cost": null,
+    "startDate": null,
+    "endDate": null,
+    "updatedAt": "2022-06-28T02:44:29.893Z",
+    "parentSetId": null,
+    "rootSetId": null,
+    "commercials": ",2,",
+    "users": ",5,139,374,119,",
+    "visibilityTags": null,
+    "workGroup": null,
+    "costType": null,
+    "projectName": null,
+    "projectId": null,
+    "noAuth": false,
+    "children": [
+      {
+        "id": 1221,
+        "title": "天刀的子需求",
+        "category": "task",
+        "createdAt": "2022-06-20T02:46:02.802Z",
+        "originId": null,
+        "originLink": null,
+        "business": {
+          "id": 90675,
+          "name": "天涯明月刀-端游-韩国版"
+        },
+        "type": null,
+        "PO": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "PM": null,
+        "POGroup": [],
+        "PMGroup": [],
+        "processor": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "creator": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "updater": {
+          "id": 5,
+          "name": "lynne",
+          "cnName": "刘璇"
+        },
+        "executors": [
+          {
+            "id": 437,
+            "title": "2",
+            "user": {
+              "id": 139,
+              "name": "yangll050901",
+              "cnName": "杨亮亮"
+            },
+            "cost": 8,
+            "startTime": "2022-06-20T00:00:00.000Z",
+            "endTime": "2022-06-20T00:00:00.000Z",
+            "storyEXDailies": []
+          },
+          {
+            "id": 438,
+            "title": "3",
+            "user": {
+              "id": 374,
+              "name": "428ceshi",
+              "cnName": "4.28测试数据"
+            },
+            "cost": 8,
+            "startTime": "2022-06-20T00:00:00.000Z",
+            "endTime": "2022-06-20T00:00:00.000Z",
+            "storyEXDailies": []
+          },
+          {
+            "id": 439,
+            "title": "2",
+            "user": {
+              "id": 5,
+              "name": "lynne",
+              "cnName": "刘璇"
+            },
+            "cost": 8,
+            "startTime": "2022-06-20T00:00:00.000Z",
+            "endTime": "2022-06-20T00:00:00.000Z",
+            "storyEXDailies": [
+              {
+                "id": 460,
+                "date": "2022-06-20T00:00:00.000Z",
+                "workHours": 0,
+                "actualHours": 0,
+                "overTimeHours": 3.5,
+                "approveState": "withdrawed"
+              },
+              {
+                "id": 510,
+                "date": "2022-06-27T00:00:00.000Z",
+                "workHours": 3.5,
+                "actualHours": 3.5,
+                "overTimeHours": 0,
+                "approveState": null
+              }
+            ]
+          },
+          {
+            "id": 442,
+            "title": "王震测试",
+            "user": {
+              "id": 119,
+              "name": "wangzhen",
+              "cnName": "wangzhen"
+            },
+            "cost": 8,
+            "startTime": "2022-06-20T00:00:00.000Z",
+            "endTime": "2022-06-20T00:00:00.000Z",
+            "storyEXDailies": [
+              {
+                "id": 479,
+                "date": "2022-06-20T00:00:00.000Z",
+                "workHours": 8,
+                "actualHours": 8,
+                "overTimeHours": 0,
+                "approveState": null
+              }
+            ]
+          }
+        ],
+        "priority": null,
+        "visibilityRange": "tag",
+        "state": "editing",
+        "cost": 32,
+        "startDate": "2022-06-20T00:00:00.000Z",
+        "endDate": "2022-06-20T00:00:00.000Z",
+        "updatedAt": "2022-06-28T02:44:29.893Z",
+        "parentSetId": 1220,
+        "rootSetId": 1220,
+        "commercials": ",2,",
+        "users": ",5,139,374,119,",
+        "visibilityTags": ",1,",
+        "workGroup": null,
+        "costType": null,
+        "projectName": "",
+        "projectId": "",
+        "noAuth": false,
+        "children": []
+      }
+    ]
   },
   {
     "id": 1268,
@@ -414,268 +4272,6 @@
     ]
   },
   {
-    "id": 1264,
-    "title": "可见范围：全部可见 6.27",
-    "category": "test",
-    "createdAt": "2022-06-27T07:13:01.122Z",
-    "originId": null,
-    "originLink": null,
-    "business": {
-      "id": 91208,
-      "name": "NISHIKI海外NS版本"
-    },
-    "type": null,
-    "PO": {
-      "id": 94,
-      "name": "v_lishihui",
-      "cnName": "李世会"
-    },
-    "PM": null,
-    "POGroup": [],
-    "PMGroup": [],
-    "processor": {
-      "id": 94,
-      "name": "v_lishihui",
-      "cnName": "李世会"
-    },
-    "creator": {
-      "id": 94,
-      "name": "v_lishihui",
-      "cnName": "李世会"
-    },
-    "updater": {
-      "id": 94,
-      "name": "v_lishihui",
-      "cnName": "李世会"
-    },
-    "executors": [],
-    "priority": null,
-    "visibilityRange": "normal",
-    "state": "editing",
-    "cost": null,
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2022-06-27T07:25:24.025Z",
-    "parentSetId": null,
-    "rootSetId": null,
-    "commercials": ",77,",
-    "users": ",94,",
-    "visibilityTags": "",
-    "workGroup": null,
-    "costType": null,
-    "projectName": "",
-    "projectId": "",
-    "noAuth": false,
-    "children": [
-      {
-        "id": 1267,
-        "title": "子任务 6.27",
-        "category": "subtask",
-        "createdAt": "2022-06-27T07:25:24.024Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 91208,
-          "name": "NISHIKI海外NS版本"
-        },
-        "type": null,
-        "PO": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "PM": null,
-        "POGroup": [],
-        "PMGroup": [],
-        "processor": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "creator": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "updater": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "executors": [],
-        "priority": null,
-        "visibilityRange": "normal",
-        "state": "preDevelop",
-        "cost": null,
-        "startDate": null,
-        "endDate": null,
-        "updatedAt": "2022-06-27T07:25:24.059Z",
-        "parentSetId": 1264,
-        "rootSetId": 1264,
-        "commercials": ",77,",
-        "users": ",94,",
-        "visibilityTags": "",
-        "workGroup": null,
-        "costType": null,
-        "projectName": "",
-        "projectId": "",
-        "noAuth": false,
-        "children": []
-      }
-    ]
-  },
-  {
-    "id": 1155,
-    "title": "ceshi00001",
-    "category": "task",
-    "createdAt": "2022-05-11T06:16:37.038Z",
-    "originId": null,
-    "originLink": null,
-    "business": {
-      "id": 99999999,
-      "name": "测试"
-    },
-    "type": {
-      "id": 52,
-      "name": "4.25测试数据"
-    },
-    "PO": {
-      "id": 376,
-      "name": "gd_xionglei",
-      "cnName": "熊磊"
-    },
-    "PM": null,
-    "POGroup": [],
-    "PMGroup": [],
-    "processor": {
-      "id": 5,
-      "name": "lynne",
-      "cnName": "刘璇"
-    },
-    "creator": {
-      "id": 84,
-      "name": "yangliangliang0509",
-      "cnName": "yangliangliang0509"
-    },
-    "updater": {
-      "id": 84,
-      "name": "yangliangliang0509",
-      "cnName": "yangliangliang0509"
-    },
-    "executors": [
-      {
-        "id": 362,
-        "title": "yang001",
-        "user": {
-          "id": 84,
-          "name": "yangliangliang0509",
-          "cnName": "yangliangliang0509"
-        },
-        "cost": 88,
-        "startTime": "2022-05-09T00:00:00.000Z",
-        "endTime": "2022-05-19T00:00:00.000Z",
-        "storyEXDailies": [
-          {
-            "id": 383,
-            "date": "2022-05-09T00:00:00.000Z",
-            "workHours": 3.5,
-            "actualHours": 3.5,
-            "overTimeHours": 0,
-            "approveState": null
-          },
-          {
-            "id": 408,
-            "date": "2022-05-23T00:00:00.000Z",
-            "workHours": 3,
-            "actualHours": 3,
-            "overTimeHours": 4,
-            "approveState": "withdrawed"
-          },
-          {
-            "id": 424,
-            "date": "2022-05-30T00:00:00.000Z",
-            "workHours": 7.5,
-            "actualHours": 7.5,
-            "overTimeHours": 8,
-            "approveState": "withdrawed"
-          },
-          {
-            "id": 455,
-            "date": "2022-06-13T00:00:00.000Z",
-            "workHours": 0,
-            "actualHours": 7,
-            "overTimeHours": 7,
-            "approveState": "approved"
-          },
-          {
-            "id": 456,
-            "date": "2022-06-14T00:00:00.000Z",
-            "workHours": 0,
-            "actualHours": 4.5,
-            "overTimeHours": 4.5,
-            "approveState": "approved"
-          },
-          {
-            "id": 457,
-            "date": "2022-06-15T00:00:00.000Z",
-            "workHours": 0,
-            "actualHours": 0,
-            "overTimeHours": 5.5,
-            "approveState": "rejected"
-          },
-          {
-            "id": 478,
-            "date": "2022-06-20T00:00:00.000Z",
-            "workHours": 2.5,
-            "actualHours": 2.5,
-            "overTimeHours": 12.5,
-            "approveState": "rejected"
-          }
-        ]
-      },
-      {
-        "id": 436,
-        "title": "yang001",
-        "user": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "cost": 88,
-        "startTime": "2022-05-09T00:00:00.000Z",
-        "endTime": "2022-05-19T00:00:00.000Z",
-        "storyEXDailies": [
-          {
-            "id": 459,
-            "date": "2022-06-20T00:00:00.000Z",
-            "workHours": 0,
-            "actualHours": 0,
-            "overTimeHours": 3,
-            "approveState": "withdrawed"
-          }
-        ]
-      }
-    ],
-    "priority": null,
-    "visibilityRange": "tag",
-    "state": "preCommunicate",
-    "cost": 176,
-    "startDate": "2022-05-09T00:00:00.000Z",
-    "endDate": "2022-05-19T00:00:00.000Z",
-    "updatedAt": "2022-06-27T06:04:42.099Z",
-    "parentSetId": null,
-    "rootSetId": null,
-    "commercials": ",77,2,",
-    "users": ",84,5,376,",
-    "visibilityTags": ",1,",
-    "workGroup": null,
-    "costType": "business",
-    "projectName": "",
-    "projectId": "P20220124001",
-    "noAuth": false,
-    "children": []
-  },
-  {
     "id": 1262,
     "title": "审批人优先取业务类角色",
     "category": "task",
@@ -727,9 +4323,9 @@
             "id": 497,
             "date": "2022-06-24T00:00:00.000Z",
             "workHours": 0,
-            "actualHours": 0,
+            "actualHours": 2,
             "overTimeHours": 2,
-            "approveState": "approving"
+            "approveState": "approved"
           }
         ]
       }
@@ -1864,397 +5460,6 @@
     ]
   },
   {
-    "id": 1245,
-    "title": "LX的set",
-    "category": "set",
-    "createdAt": "2022-06-24T02:25:39.955Z",
-    "originId": null,
-    "originLink": null,
-    "business": {
-      "id": 90675,
-      "name": "天涯明月刀-端游-韩国版"
-    },
-    "type": null,
-    "PO": null,
-    "PM": null,
-    "POGroup": [],
-    "PMGroup": [],
-    "processor": {
-      "id": 5,
-      "name": "lynne",
-      "cnName": "刘璇"
-    },
-    "creator": {
-      "id": 5,
-      "name": "lynne",
-      "cnName": "刘璇"
-    },
-    "updater": {
-      "id": 5,
-      "name": "lynne",
-      "cnName": "刘璇"
-    },
-    "executors": [],
-    "priority": null,
-    "visibilityRange": null,
-    "state": null,
-    "cost": null,
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2022-06-24T03:24:52.638Z",
-    "parentSetId": null,
-    "rootSetId": null,
-    "commercials": ",2,",
-    "users": ",5,",
-    "visibilityTags": null,
-    "workGroup": null,
-    "costType": null,
-    "projectName": null,
-    "projectId": null,
-    "noAuth": false,
-    "children": [
-      {
-        "id": 1248,
-        "title": "有subtask权限但无父级task权限",
-        "category": "task",
-        "createdAt": "2022-06-24T02:35:01.854Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 90675,
-          "name": "天涯明月刀-端游-韩国版"
-        },
-        "type": null,
-        "PO": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "PM": null,
-        "POGroup": [],
-        "PMGroup": [],
-        "processor": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "creator": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "updater": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "executors": [],
-        "priority": null,
-        "visibilityRange": "tag",
-        "state": "editing",
-        "cost": 0,
-        "startDate": null,
-        "endDate": null,
-        "updatedAt": "2022-06-24T03:24:52.638Z",
-        "parentSetId": 1245,
-        "rootSetId": 1245,
-        "commercials": ",2,",
-        "users": ",5,",
-        "visibilityTags": ",2,",
-        "workGroup": null,
-        "costType": null,
-        "projectName": "",
-        "projectId": "",
-        "noAuth": false,
-        "children": [
-          {
-            "id": 1252,
-            "title": "LX",
-            "category": "subtask",
-            "createdAt": "2022-06-24T03:24:30.075Z",
-            "originId": null,
-            "originLink": null,
-            "business": {
-              "id": 90675,
-              "name": "天涯明月刀-端游-韩国版"
-            },
-            "type": null,
-            "PO": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "PM": {
-              "id": 119,
-              "name": "wangzhen",
-              "cnName": "wangzhen"
-            },
-            "POGroup": [],
-            "PMGroup": [],
-            "processor": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "creator": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "updater": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "executors": [],
-            "priority": null,
-            "visibilityRange": "tag",
-            "state": "preDevelop",
-            "cost": 0,
-            "startDate": null,
-            "endDate": null,
-            "updatedAt": "2022-06-24T03:24:52.675Z",
-            "parentSetId": 1248,
-            "rootSetId": 1245,
-            "commercials": ",2,",
-            "users": ",5,119,",
-            "visibilityTags": null,
-            "workGroup": null,
-            "costType": null,
-            "projectName": "",
-            "projectId": "",
-            "noAuth": false
-          },
-          {
-            "id": 1249,
-            "title": "有该subtask权限",
-            "category": "subtask",
-            "createdAt": "2022-06-24T02:36:47.604Z",
-            "originId": null,
-            "originLink": null,
-            "business": {
-              "id": 90675,
-              "name": "天涯明月刀-端游-韩国版"
-            },
-            "type": null,
-            "PO": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "PM": null,
-            "POGroup": [
-              {
-                "id": 119,
-                "name": "wangzhen",
-                "cnName": "wangzhen"
-              }
-            ],
-            "PMGroup": [],
-            "processor": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "creator": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "updater": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "executors": [],
-            "priority": null,
-            "visibilityRange": "tag",
-            "state": "preDevelop",
-            "cost": 0,
-            "startDate": null,
-            "endDate": null,
-            "updatedAt": "2022-06-24T02:41:04.482Z",
-            "parentSetId": 1248,
-            "rootSetId": 1245,
-            "commercials": ",2,",
-            "users": ",5,119,",
-            "visibilityTags": ",2,",
-            "workGroup": null,
-            "costType": null,
-            "projectName": "",
-            "projectId": "",
-            "noAuth": false
-          }
-        ]
-      },
-      {
-        "id": 1244,
-        "title": "可见范围：标签可见",
-        "category": "task",
-        "createdAt": "2022-06-24T02:25:18.752Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 90675,
-          "name": "天涯明月刀-端游-韩国版"
-        },
-        "type": null,
-        "PO": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "PM": null,
-        "POGroup": [],
-        "PMGroup": [],
-        "processor": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "creator": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "updater": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "executors": [],
-        "priority": null,
-        "visibilityRange": "tag",
-        "state": "editing",
-        "cost": null,
-        "startDate": null,
-        "endDate": null,
-        "updatedAt": "2022-06-24T02:47:55.035Z",
-        "parentSetId": 1245,
-        "rootSetId": 1245,
-        "commercials": ",2,",
-        "users": ",5,",
-        "visibilityTags": ",1,",
-        "workGroup": null,
-        "costType": null,
-        "projectName": "",
-        "projectId": "",
-        "noAuth": false,
-        "children": []
-      },
-      {
-        "id": 1246,
-        "title": "可见范围：私密",
-        "category": "task",
-        "createdAt": "2022-06-24T02:29:18.827Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 90675,
-          "name": "天涯明月刀-端游-韩国版"
-        },
-        "type": null,
-        "PO": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "PM": null,
-        "POGroup": [],
-        "PMGroup": [],
-        "processor": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "creator": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "updater": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "executors": [],
-        "priority": null,
-        "visibilityRange": "private",
-        "state": "editing",
-        "cost": null,
-        "startDate": null,
-        "endDate": null,
-        "updatedAt": "2022-06-24T02:35:29.568Z",
-        "parentSetId": 1245,
-        "rootSetId": 1245,
-        "commercials": ",2,",
-        "users": ",5,",
-        "visibilityTags": "",
-        "workGroup": null,
-        "costType": null,
-        "projectName": "",
-        "projectId": "",
-        "noAuth": false,
-        "children": []
-      },
-      {
-        "id": 1247,
-        "title": "可见范围：全部可见",
-        "category": "task",
-        "createdAt": "2022-06-24T02:29:32.094Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 90675,
-          "name": "天涯明月刀-端游-韩国版"
-        },
-        "type": null,
-        "PO": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "PM": null,
-        "POGroup": [],
-        "PMGroup": [],
-        "processor": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "creator": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "updater": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "executors": [],
-        "priority": null,
-        "visibilityRange": null,
-        "state": "editing",
-        "cost": null,
-        "startDate": null,
-        "endDate": null,
-        "updatedAt": "2022-06-24T02:35:19.849Z",
-        "parentSetId": 1245,
-        "rootSetId": 1245,
-        "commercials": ",2,",
-        "users": ",5,",
-        "visibilityTags": "",
-        "workGroup": null,
-        "costType": null,
-        "projectName": "",
-        "projectId": "",
-        "noAuth": false,
-        "children": []
-      }
-    ]
-  },
-  {
     "id": 1250,
     "title": "test2343",
     "category": "task",
@@ -3079,184 +6284,6 @@
         "costType": null,
         "projectName": null,
         "projectId": null,
-        "noAuth": false,
-        "children": []
-      }
-    ]
-  },
-  {
-    "id": 1220,
-    "title": "天刀的父级set",
-    "category": "set",
-    "createdAt": "2022-06-20T02:45:29.757Z",
-    "originId": null,
-    "originLink": null,
-    "business": {
-      "id": 90675,
-      "name": "天涯明月刀-端游-韩国版"
-    },
-    "type": null,
-    "PO": null,
-    "PM": null,
-    "POGroup": [],
-    "PMGroup": [],
-    "processor": {
-      "id": 5,
-      "name": "lynne",
-      "cnName": "刘璇"
-    },
-    "creator": {
-      "id": 5,
-      "name": "lynne",
-      "cnName": "刘璇"
-    },
-    "updater": {
-      "id": 5,
-      "name": "lynne",
-      "cnName": "刘璇"
-    },
-    "executors": [],
-    "priority": null,
-    "visibilityRange": null,
-    "state": null,
-    "cost": null,
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2022-06-21T08:20:33.580Z",
-    "parentSetId": null,
-    "rootSetId": null,
-    "commercials": ",2,",
-    "users": ",5,139,374,119,",
-    "visibilityTags": null,
-    "workGroup": null,
-    "costType": null,
-    "projectName": null,
-    "projectId": null,
-    "noAuth": false,
-    "children": [
-      {
-        "id": 1221,
-        "title": "天刀的子需求",
-        "category": "task",
-        "createdAt": "2022-06-20T02:46:02.802Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 90675,
-          "name": "天涯明月刀-端游-韩国版"
-        },
-        "type": null,
-        "PO": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "PM": null,
-        "POGroup": [],
-        "PMGroup": [],
-        "processor": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "creator": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "updater": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "executors": [
-          {
-            "id": 437,
-            "title": "2",
-            "user": {
-              "id": 139,
-              "name": "yangll050901",
-              "cnName": "杨亮亮"
-            },
-            "cost": 8,
-            "startTime": "2022-06-20T00:00:00.000Z",
-            "endTime": "2022-06-20T00:00:00.000Z",
-            "storyEXDailies": []
-          },
-          {
-            "id": 438,
-            "title": "3",
-            "user": {
-              "id": 374,
-              "name": "428ceshi",
-              "cnName": "4.28测试数据"
-            },
-            "cost": 8,
-            "startTime": "2022-06-20T00:00:00.000Z",
-            "endTime": "2022-06-20T00:00:00.000Z",
-            "storyEXDailies": []
-          },
-          {
-            "id": 439,
-            "title": "2",
-            "user": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "cost": 8,
-            "startTime": "2022-06-20T00:00:00.000Z",
-            "endTime": "2022-06-20T00:00:00.000Z",
-            "storyEXDailies": [
-              {
-                "id": 460,
-                "date": "2022-06-20T00:00:00.000Z",
-                "workHours": 0,
-                "actualHours": 0,
-                "overTimeHours": 3.5,
-                "approveState": "withdrawed"
-              }
-            ]
-          },
-          {
-            "id": 442,
-            "title": "王震测试",
-            "user": {
-              "id": 119,
-              "name": "wangzhen",
-              "cnName": "wangzhen"
-            },
-            "cost": 8,
-            "startTime": "2022-06-20T00:00:00.000Z",
-            "endTime": "2022-06-20T00:00:00.000Z",
-            "storyEXDailies": [
-              {
-                "id": 479,
-                "date": "2022-06-20T00:00:00.000Z",
-                "workHours": 8,
-                "actualHours": 8,
-                "overTimeHours": 0,
-                "approveState": null
-              }
-            ]
-          }
-        ],
-        "priority": null,
-        "visibilityRange": "tag",
-        "state": "editing",
-        "cost": 32,
-        "startDate": "2022-06-20T00:00:00.000Z",
-        "endDate": "2022-06-20T00:00:00.000Z",
-        "updatedAt": "2022-06-21T08:20:33.580Z",
-        "parentSetId": 1220,
-        "rootSetId": 1220,
-        "commercials": ",2,",
-        "users": ",5,139,374,119,",
-        "visibilityTags": null,
-        "workGroup": null,
-        "costType": null,
-        "projectName": "交付清单刷新 - 01（业务）",
-        "projectId": "P20220524001",
         "noAuth": false,
         "children": []
       }
@@ -4288,666 +7315,6 @@
     "projectId": "P20220311026",
     "noAuth": false,
     "children": []
-  },
-  {
-    "id": 1224,
-    "title": "LX的set",
-    "category": "set",
-    "createdAt": "2022-06-20T07:45:24.775Z",
-    "originId": null,
-    "originLink": null,
-    "business": {
-      "id": 90675,
-      "name": "天涯明月刀-端游-韩国版"
-    },
-    "type": null,
-    "PO": null,
-    "PM": null,
-    "POGroup": [],
-    "PMGroup": [],
-    "processor": {
-      "id": 5,
-      "name": "lynne",
-      "cnName": "刘璇"
-    },
-    "creator": {
-      "id": 5,
-      "name": "lynne",
-      "cnName": "刘璇"
-    },
-    "updater": {
-      "id": 5,
-      "name": "lynne",
-      "cnName": "刘璇"
-    },
-    "executors": [],
-    "priority": null,
-    "visibilityRange": "tag",
-    "state": null,
-    "cost": null,
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2022-06-20T07:46:14.755Z",
-    "parentSetId": null,
-    "rootSetId": null,
-    "commercials": ",2,",
-    "users": ",5,",
-    "visibilityTags": null,
-    "workGroup": null,
-    "costType": null,
-    "projectName": "",
-    "projectId": "",
-    "noAuth": false,
-    "children": [
-      {
-        "id": 1222,
-        "title": "测试人力报表",
-        "category": "task",
-        "createdAt": "2022-06-20T04:12:01.263Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 90675,
-          "name": "天涯明月刀-端游-韩国版"
-        },
-        "type": null,
-        "PO": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "PM": null,
-        "POGroup": [],
-        "PMGroup": [],
-        "processor": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "creator": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "updater": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "executors": [
-          {
-            "id": 440,
-            "title": "2",
-            "user": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "cost": 8,
-            "startTime": "2022-06-20T00:00:00.000Z",
-            "endTime": "2022-06-20T00:00:00.000Z",
-            "storyEXDailies": [
-              {
-                "id": 461,
-                "date": "2022-06-20T00:00:00.000Z",
-                "workHours": 0,
-                "actualHours": 5,
-                "overTimeHours": 5,
-                "approveState": "approved"
-              },
-              {
-                "id": 467,
-                "date": "2022-06-15T00:00:00.000Z",
-                "workHours": 0,
-                "actualHours": 0,
-                "overTimeHours": 3.5,
-                "approveState": "withdrawed"
-              },
-              {
-                "id": 472,
-                "date": "2022-06-21T00:00:00.000Z",
-                "workHours": 0,
-                "actualHours": 0,
-                "overTimeHours": 0,
-                "approveState": null
-              }
-            ]
-          }
-        ],
-        "priority": null,
-        "visibilityRange": "tag",
-        "state": "editing",
-        "cost": 8,
-        "startDate": "2022-06-20T00:00:00.000Z",
-        "endDate": "2022-06-20T00:00:00.000Z",
-        "updatedAt": "2022-06-20T07:46:14.811Z",
-        "parentSetId": 1224,
-        "rootSetId": 1224,
-        "commercials": ",2,",
-        "users": ",5,",
-        "visibilityTags": null,
-        "workGroup": null,
-        "costType": null,
-        "projectName": "交付清单刷新 - 01（业务）",
-        "projectId": "P20220524001",
-        "noAuth": false,
-        "children": [
-          {
-            "id": 1223,
-            "title": "2",
-            "category": "subtask",
-            "createdAt": "2022-06-20T07:41:24.687Z",
-            "originId": null,
-            "originLink": null,
-            "business": {
-              "id": 90675,
-              "name": "天涯明月刀-端游-韩国版"
-            },
-            "type": null,
-            "PO": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "PM": null,
-            "POGroup": [],
-            "PMGroup": [],
-            "processor": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "creator": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "updater": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "executors": [],
-            "priority": null,
-            "visibilityRange": "tag",
-            "state": "preDevelop",
-            "cost": null,
-            "startDate": null,
-            "endDate": null,
-            "updatedAt": "2022-06-20T07:46:14.811Z",
-            "parentSetId": 1222,
-            "rootSetId": 1224,
-            "commercials": ",2,",
-            "users": ",5,",
-            "visibilityTags": null,
-            "workGroup": null,
-            "costType": null,
-            "projectName": "交付清单刷新 - 01（业务）",
-            "projectId": "P20220524001",
-            "noAuth": false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 1015,
-    "title": "测试",
-    "category": "set",
-    "createdAt": "2022-04-21T06:53:01.062Z",
-    "originId": null,
-    "originLink": null,
-    "business": {
-      "id": 90802,
-      "name": "PUBGM越南版"
-    },
-    "type": null,
-    "PO": null,
-    "PM": null,
-    "POGroup": [],
-    "PMGroup": [],
-    "processor": {
-      "id": 279,
-      "name": "v_leixiong",
-      "cnName": "熊磊"
-    },
-    "creator": {
-      "id": 279,
-      "name": "v_leixiong",
-      "cnName": "熊磊"
-    },
-    "updater": {
-      "id": 279,
-      "name": "v_leixiong",
-      "cnName": "熊磊"
-    },
-    "executors": [],
-    "priority": null,
-    "visibilityRange": null,
-    "state": null,
-    "cost": null,
-    "startDate": null,
-    "endDate": null,
-    "updatedAt": "2022-06-20T07:27:48.488Z",
-    "parentSetId": null,
-    "rootSetId": null,
-    "commercials": ",4,2,77,",
-    "users": ",279,5,94,358,",
-    "visibilityTags": null,
-    "workGroup": null,
-    "costType": null,
-    "projectName": null,
-    "projectId": null,
-    "noAuth": false,
-    "children": [
-      {
-        "id": 1215,
-        "title": "5.33",
-        "category": "task",
-        "createdAt": "2022-05-31T08:02:57.381Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 90830,
-          "name": "王者荣耀海外版"
-        },
-        "type": {
-          "id": 48,
-          "name": "管理端"
-        },
-        "PO": {
-          "id": 358,
-          "name": "gc_linie",
-          "cnName": "gc_linie"
-        },
-        "PM": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "POGroup": [
-          {
-            "id": 94,
-            "name": "v_lishihui",
-            "cnName": "李世会"
-          },
-          {
-            "id": 358,
-            "name": "gc_linie",
-            "cnName": "gc_linie"
-          }
-        ],
-        "PMGroup": [
-          {
-            "id": 94,
-            "name": "v_lishihui",
-            "cnName": "李世会"
-          },
-          {
-            "id": 358,
-            "name": "gc_linie",
-            "cnName": "gc_linie"
-          }
-        ],
-        "processor": {
-          "id": 358,
-          "name": "gc_linie",
-          "cnName": "gc_linie"
-        },
-        "creator": {
-          "id": 358,
-          "name": "gc_linie",
-          "cnName": "gc_linie"
-        },
-        "updater": {
-          "id": 358,
-          "name": "gc_linie",
-          "cnName": "gc_linie"
-        },
-        "executors": [
-          {
-            "id": 433,
-            "title": "22",
-            "user": {
-              "id": 5,
-              "name": "lynne",
-              "cnName": "刘璇"
-            },
-            "cost": 64,
-            "startTime": "2022-06-02T00:00:00.000Z",
-            "endTime": "2022-06-09T00:00:00.000Z",
-            "storyEXDailies": [
-              {
-                "id": 449,
-                "date": "2022-06-13T00:00:00.000Z",
-                "workHours": 0,
-                "actualHours": 0,
-                "overTimeHours": 0,
-                "approveState": null
-              },
-              {
-                "id": 454,
-                "date": "2022-06-14T00:00:00.000Z",
-                "workHours": 3,
-                "actualHours": 3,
-                "overTimeHours": 0,
-                "approveState": null
-              },
-              {
-                "id": 462,
-                "date": "2022-06-20T00:00:00.000Z",
-                "workHours": 0,
-                "actualHours": 0,
-                "overTimeHours": 0,
-                "approveState": null
-              },
-              {
-                "id": 473,
-                "date": "2022-06-21T00:00:00.000Z",
-                "workHours": 0,
-                "actualHours": 0,
-                "overTimeHours": 0,
-                "approveState": null
-              }
-            ]
-          }
-        ],
-        "priority": "P0",
-        "visibilityRange": "tag",
-        "state": "editing",
-        "cost": 64,
-        "startDate": "2022-06-02T00:00:00.000Z",
-        "endDate": "2022-06-09T00:00:00.000Z",
-        "updatedAt": "2022-06-20T07:27:48.488Z",
-        "parentSetId": 1015,
-        "rootSetId": 1015,
-        "commercials": ",77,",
-        "users": ",358,94,5,",
-        "visibilityTags": null,
-        "workGroup": null,
-        "costType": "platform",
-        "projectName": "",
-        "projectId": "",
-        "noAuth": false,
-        "children": [
-          {
-            "id": 1217,
-            "title": "abc",
-            "category": "subtask",
-            "createdAt": "2022-05-31T09:43:14.828Z",
-            "originId": null,
-            "originLink": null,
-            "business": {
-              "id": 90830,
-              "name": "王者荣耀海外版"
-            },
-            "type": null,
-            "PO": {
-              "id": 379,
-              "name": "cn_liulongqing",
-              "cnName": "cn_liulongqing"
-            },
-            "PM": null,
-            "POGroup": [],
-            "PMGroup": [],
-            "processor": {
-              "id": 379,
-              "name": "cn_liulongqing",
-              "cnName": "cn_liulongqing"
-            },
-            "creator": {
-              "id": 379,
-              "name": "cn_liulongqing",
-              "cnName": "cn_liulongqing"
-            },
-            "updater": {
-              "id": 379,
-              "name": "cn_liulongqing",
-              "cnName": "cn_liulongqing"
-            },
-            "executors": [
-              {
-                "id": 432,
-                "title": "abc",
-                "user": {
-                  "id": 379,
-                  "name": "cn_liulongqing",
-                  "cnName": "cn_liulongqing"
-                },
-                "cost": 16,
-                "startTime": "2022-06-01T00:00:00.000Z",
-                "endTime": "2022-06-02T00:00:00.000Z",
-                "storyEXDailies": []
-              }
-            ],
-            "priority": null,
-            "visibilityRange": "tag",
-            "state": "preDevelop",
-            "cost": null,
-            "startDate": null,
-            "endDate": null,
-            "updatedAt": "2022-06-20T07:27:48.505Z",
-            "parentSetId": 1215,
-            "rootSetId": 1015,
-            "commercials": ",117,",
-            "users": ",379,358,94,5,",
-            "visibilityTags": null,
-            "workGroup": null,
-            "costType": "platform",
-            "projectName": "",
-            "projectId": "",
-            "noAuth": false
-          }
-        ]
-      },
-      {
-        "id": 1067,
-        "title": "TASK 测试111",
-        "category": "task",
-        "createdAt": "2022-04-26T03:35:41.714Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 91209,
-          "name": "NISHIKI海外手游"
-        },
-        "type": null,
-        "PO": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "PM": null,
-        "POGroup": [],
-        "PMGroup": [],
-        "processor": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "creator": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "updater": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "executors": [],
-        "priority": null,
-        "visibilityRange": null,
-        "state": "editing",
-        "cost": null,
-        "startDate": null,
-        "endDate": null,
-        "updatedAt": "2022-04-26T03:35:41.740Z",
-        "parentSetId": 1015,
-        "rootSetId": 1015,
-        "commercials": ",,",
-        "users": ",94,",
-        "visibilityTags": null,
-        "workGroup": null,
-        "costType": null,
-        "projectName": null,
-        "projectId": null,
-        "noAuth": false,
-        "children": []
-      },
-      {
-        "id": 1064,
-        "title": "TASK 测试1",
-        "category": "task",
-        "createdAt": "2022-04-26T03:32:31.332Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 91208,
-          "name": "NISHIKI海外NS版本"
-        },
-        "type": null,
-        "PO": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "PM": null,
-        "POGroup": [],
-        "PMGroup": [],
-        "processor": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "creator": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "updater": {
-          "id": 94,
-          "name": "v_lishihui",
-          "cnName": "李世会"
-        },
-        "executors": [],
-        "priority": null,
-        "visibilityRange": null,
-        "state": "editing",
-        "cost": null,
-        "startDate": null,
-        "endDate": null,
-        "updatedAt": "2022-04-26T03:32:31.353Z",
-        "parentSetId": 1015,
-        "rootSetId": 1015,
-        "commercials": ",,",
-        "users": ",94,",
-        "visibilityTags": null,
-        "workGroup": null,
-        "costType": null,
-        "projectName": null,
-        "projectId": null,
-        "noAuth": false,
-        "children": []
-      },
-      {
-        "id": 1016,
-        "title": "测试验证",
-        "category": "task",
-        "createdAt": "2022-04-21T06:56:02.382Z",
-        "originId": null,
-        "originLink": null,
-        "business": {
-          "id": 91208,
-          "name": "NISHIKI海外NS版本"
-        },
-        "type": {
-          "id": 19,
-          "name": "测试"
-        },
-        "PO": {
-          "id": 279,
-          "name": "v_leixiong",
-          "cnName": "熊磊"
-        },
-        "PM": {
-          "id": 5,
-          "name": "lynne",
-          "cnName": "刘璇"
-        },
-        "POGroup": [
-          {
-            "id": 5,
-            "name": "lynne",
-            "cnName": "刘璇"
-          }
-        ],
-        "PMGroup": [
-          {
-            "id": 5,
-            "name": "lynne",
-            "cnName": "刘璇"
-          }
-        ],
-        "processor": {
-          "id": 279,
-          "name": "v_leixiong",
-          "cnName": "熊磊"
-        },
-        "creator": {
-          "id": 279,
-          "name": "v_leixiong",
-          "cnName": "熊磊"
-        },
-        "updater": {
-          "id": 279,
-          "name": "v_leixiong",
-          "cnName": "熊磊"
-        },
-        "executors": [
-          {
-            "id": 296,
-            "title": "测试人员",
-            "user": {
-              "id": 279,
-              "name": "v_leixiong",
-              "cnName": "熊磊"
-            },
-            "cost": 16,
-            "startTime": "2022-04-22T00:00:00.000Z",
-            "endTime": "2022-04-23T00:00:00.000Z",
-            "storyEXDailies": [
-              {
-                "id": 328,
-                "date": "2022-04-21T00:00:00.000Z",
-                "workHours": 2,
-                "actualHours": 2,
-                "overTimeHours": 4,
-                "approveState": "withdrawed"
-              }
-            ]
-          }
-        ],
-        "priority": null,
-        "visibilityRange": null,
-        "state": "preCommunicate",
-        "cost": 16,
-        "startDate": "2022-04-22T00:00:00.000Z",
-        "endDate": "2022-04-23T00:00:00.000Z",
-        "updatedAt": "2022-04-24T07:42:08.387Z",
-        "parentSetId": 1015,
-        "rootSetId": 1015,
-        "commercials": ",4,2,",
-        "users": ",279,5,",
-        "visibilityTags": null,
-        "workGroup": null,
-        "costType": null,
-        "projectName": "POHO测试",
-        "projectId": "P20220124001",
-        "noAuth": false,
-        "children": []
-      }
-    ]
   },
   {
     "id": 1219,
