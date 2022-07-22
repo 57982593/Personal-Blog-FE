@@ -1,7 +1,7 @@
 import { List } from 'antd';
 import VirtualList from 'rc-virtual-list';
 import React, { useEffect, useState } from 'react';
-import originData from './data.json';
+import originData from '../../mockData/data.json';
 import './index.css';
 import _ from 'lodash';
 const ContainerHeight = 752;

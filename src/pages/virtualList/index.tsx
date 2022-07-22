@@ -1,6 +1,6 @@
 import { Layout } from 'antd';
 import { useState } from 'react';
-import originData from './data.json';
+import originData from '../../mockData/data.json';
 import AntdVirtualList from './antdVirtualList';
 
 const { Header, Footer, Content } = Layout;
