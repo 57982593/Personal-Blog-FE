@@ -7,6 +7,7 @@ import { Route, Switch, useHistory } from 'react-router-dom';
 import Canvas from './pages/canvas';
 import RecursiveComponent from './pages/recursiveComponent';
 import VirtualList from './pages/virtualList';
+import Demo from './pages/virtualList/virtualList';
 
 type MenuItem = Required<MenuProps>['items'][number];
 
@@ -75,7 +76,7 @@ function getRouterInfo() {
                 <Canvas/>
             </Route>
             <Route path='/virtualList' data-set={{name: '虚拟列表'}}>
-              <VirtualList/>
+              <Demo/>
             </Route>
         </Switch>
 );

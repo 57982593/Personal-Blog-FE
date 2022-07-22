@@ -67,7 +67,8 @@ function Gannt() {
   
   return <>
     <div style={{fontSize: '1px'}}>
-      <canvas id='canvas' className={`container`}></canvas>
+      {/* canvas 只能在标签上设置宽高，如果用css设置宽高会被解析成css同比宽高放大，例子：类似于一张小图片放在一个大的div容器里被拉伸填满div，会导致模糊。 */}
+      <canvas id='canvas' width={'900px'} height={'800px'} className={`container`}></canvas>
     </div>
   </>
 }
