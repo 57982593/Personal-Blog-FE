@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <canvas width="400px" height="400px" style="border: 1px solid red" id="iCan"></canvas>
+  <script>
+    const mycan = document.getElementById("iCan")
+const selp = document.getElementById("selPolygen")
+const ctx = mycan.getContext("2d")
+const {width, height} = mycan.getBoundingClientRect()
+const uw = ~~(height / 100)
+const covert = (num) => num * uw
+const panel = document.querySelector(".log-panel")
+
+const polygenMaps = {
+  "demo01": [
+    {ident: "A", x: covert(10), y: covert(10)},
+    {ident: "B", x: covert(20), y: covert(60)},
+    {ident: "C", x: covert(30), y: covert(20)},
+    {ident: "D", x: covert(40), y: covert(70)},
+    {ident: "E", x: covert(50), y: covert(30)},
+    {ident: "F", x: covert(60), y: covert(70)},
+    {ident: "G", x: covert(80), y: covert(30)},
+    {ident: "H", x: covert(90), y: covert(40)},
+    {ident: "I", x: covert(50), y: covert(90)},
+    {ident: "J", x: covert(110), y: covert(98)},
+    {ident: "K", x: covert(100), y: covert(40)},
+    {ident: "L", x: covert(130), y: covert(90)},
+    {ident: "M", x: covert(120), y: covert(10)},
+  ],
+  "demo02": [
+    {ident: "A", x: covert(20), y: covert(20)},
+    {ident: "B", x: covert(20), y: covert(80)},
+    {ident: "C", x: covert(40), y: covert(80)},
+    {ident: "D", x: covert(40), y: covert(50)},
+    {ident: "E", x: covert(70), y: covert(40)},
+    {ident: "F", x: covert(50), y: covert(80)},
+    {ident: "G", x: covert(120), y: covert(80)},
+    {ident: "H", x: covert(90), y: covert(10)},
+  ],
+  "demo03": [
+    {ident: "A", x: covert(20), y: covert(20)},
+    {ident: "B", x: covert(5), y: covert(80)},
+    {ident: "C", x: covert(30), y: covert(40)},
+    {ident: "D", x: covert(110), y: covert(30)},
+    {ident: "E", x: covert(40), y: covert(70)},
+    {ident: "F", x: covert(80), y: covert(60)},
+    {ident: "G", x: covert(90), y: covert(90)},
+    {ident: "H", x: covert(130), y: covert(10)},
+  ],
+  "demo04": [
+    {ident: "A", x: covert(10), y: covert(10)},
+    {ident: "B", x: covert(10), y: covert(60)},
+    {ident: "C", x: covert(40), y: covert(60)},
+    {ident: "D", x: covert(40), y: covert(90)},
+    {ident: "E", x: covert(50), y: covert(30)},
+    {ident: "F", x: covert(60), y: covert(70)},
+    {ident: "G", x: covert(80), y: covert(30)},
+    {ident: "H", x: covert(100), y: covert(40)},
+    {ident: "I", x: covert(50), y: covert(90)},
+    {ident: "J", x: covert(100), y: covert(90)},
+    {ident: "K", x: covert(110), y: covert(40)},
+    {ident: "L", x: covert(130), y: covert(90)},
+    {ident: "M", x: covert(120), y: covert(10)},
+  ],
+}
+
+let polygenPoints = polygenMaps["demo02"]
+
+function drawPolygen() {
+  ctx.beginPath()
+  ctx.strokeStyle = "red"
+  ctx.fillStyle = "green"
+  ctx.textAlign = "center"
+  ctx.font = "20px Times New Roman"
+  ctx.textBaseline = "middle"
+  
+  polygenPoints.forEach(({x, y, ident}, index) => {
+    setTimeout((text, x, y) => ctx.fillText(text, x, y), 0, ident, x, y)
+    if (index === 0) ctx.moveTo(x, y)
+    else ctx.lineTo(x, y)
+  })
+  ctx.closePath()
+  ctx.stroke()
+}
+
+function checkPointInPolygen(P) {
+  const len = polygenPoints.length
+  let flag = false
+
+  for (let i = 0; i < len; i++) {
+    let A = polygenPoints[i]
+    let B = polygenPoints[(i + 1) % len]
+    let sortByY = [A.y, B.y].sort((a, b) => a - b)
+    let sortByX = [A.x, B.x].sort((a, b) => a - b)
+
+    // 点与多边形顶点重合
+    if (
+      (A.x === P.x && A.y === P.y)
+      || (B.x === P.x && B.y === P.y) 
+    ) {
+      return true
+    }
+    
+    // 判断线段两端点是否在射线两侧
+    if (
+      P.y >= sortByY[0]
+      && P.y < sortByY[1] 
+    ) {
+      // 计算线段上与射线 Y 坐标相同的点的 X 坐标
+      let interX = B.x + (P.y - B.y) * (A.x - B.x) / (A.y - B.y)
+      // 点在多边形的边上
+      if (interX === P.x) {
+        return true
+      }
+      // 射线穿过多边形的边界
+      if (interX < P.x) {
+        flag = !flag
+      }
+    }
+  }
+  
+  return flag
+}
+
+function clickHandle(event) {
+  const {offsetX, offsetY} = event;
+  let point = {x: offsetX, y: offsetY}
+  let res = checkPointInPolygen(point)
+  // panel.insertAdjacentHTML("afterbegin", `<p>点-${JSON.stringify(point)} 检查结果-${res}</p>`)
+  console.log('res=>',res, event);
+}
+
+function initCanvas() {
+  mycan.setAttribute("width", width)
+  mycan.setAttribute("height", height)
+  ctx.transform(1, 0, 0, 1, 0, 0)
+  mycan.addEventListener("click", clickHandle)
+}
+
+initCanvas()
+drawPolygen()
+
+function selPolygenHandle(evt) {
+  polygenPoints = polygenMaps[this.value]
+  ctx.clearRect(0, 0, width, height)
+  panel.innerHTML = ""
+  drawPolygen()
+}
+// selp.addEventListener("change", selPolygenHandle)
+  </script>
+</body>
+</html>
