@@ -4,3 +4,28 @@
 .lastLevel{
   margin-left: 40px;
 }
+.height-fixed{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    width: calc(100% - 240px);
+    height: calc(100% - 40px);
+    position: absolute;
+    contain: layout;
+    will-change: transform;
+    background-color: #eee;
+    /* &__item,
+    &__placeholder {
+      position: absolute;
+      contain: layout;
+      will-change: transform;
+    }
+    &__scroll-runway {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      transition: transform 0.2s;
+    } */
+}

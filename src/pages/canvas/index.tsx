@@ -45,6 +45,8 @@ function Gannt() {
       const xLen = height / cellHeight;
       const canvas: any = document.getElementById("canvas");
       let index = 0;
+
+      canvas.addEventListener("mousemove", mouseMove)
       
       if (canvas.getContext) {
         const ctx = canvas.getContext("2d");
@@ -77,11 +79,62 @@ function Gannt() {
     }
     draw();
   }, [data])
+
+  function mouseMove(event: any) {
+    console.log(event);
+    const {offsetX, offsetY} = event;
+    const box = event.target.getBoundingClientRect();
+    // getEventPosition(box,)
+  }
+
+  // function checkPointInPolygen(P: any) {
+  //   const len = polygenPoints.length
+  //   let flag = false
+  
+  //   for (let i = 0; i < len; i++) {
+  //     let A = polygenPoints[i]
+  //     let B = polygenPoints[(i + 1) % len]
+  //     let sortByY = [A.y, B.y].sort((a, b) => a - b)
+  //     let sortByX = [A.x, B.x].sort((a, b) => a - b)
+  
+  //     // 点与多边形顶点重合
+  //     if (
+  //       (A.x === P.x && A.y === P.y)
+  //       || (B.x === P.x && B.y === P.y) 
+  //     ) {
+  //       return true
+  //     }
+      
+  //     // 判断线段两端点是否在射线两侧
+  //     if (
+  //       P.y >= sortByY[0]
+  //       && P.y < sortByY[1] 
+  //     ) {
+  //       // 计算线段上与射线 Y 坐标相同的点的 X 坐标
+  //       let interX = B.x + (P.y - B.y) * (A.x - B.x) / (A.y - B.y)
+  //       // 点在多边形的边上
+  //       if (interX === P.x) {
+  //         return true
+  //       }
+  //       // 射线穿过多边形的边界
+  //       if (interX < P.x) {
+  //         flag = !flag
+  //       }
+  //     }
+  //   }
+    
+  //   return flag
+  // }
+  
   
   return <>
     <div style={{fontSize: '1px'}}>
       {/* canvas 只能在标签上设置宽高，如果用css设置宽高会被解析成css同比宽高放大，例子：类似于一张小图片放在一个大的div容器里被拉伸填满div，会导致模糊。 */}
-      <canvas id='canvas' width={width} height={height} className={`container`}></canvas>
+      <canvas 
+        // onClick={(e: any) => mouseMove(e)} 
+        id='canvas' width={width} 
+        height={height} 
+        className={`container`}/>
     </div>
   </>
 }
