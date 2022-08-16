@@ -1,0 +1,116 @@
+// see https://www.jenkins.io/doc/book/pipeline/syntax/
+pipeline {
+  agent any
+  environment {
+    IMAGE_DOMAIN = 'ccr.ccs.tencentyun.com'
+    IMAGE_NAME_DEV = '/gadmin-dev/power-house'
+    IMAGE_NAME_DEFAULT = '/oit-portal/gadmin-power-house'
+    IMAGE_CREDIT_DEV = 'fd58edcf-bc19-438a-9eff-f730c1532547'
+    IMAGE_CREDIT_DEFAULT = 'a82bf8b0-afe5-4247-92b6-a60651c305f6'
+    IMAGE_VERSION = "build-${env.CI_BUILD_NUMBER}"
+    WEB_HOOK_SOURCE_TEST = 'gadmin-power-house-test'
+    WEB_HOOK_SOURCE_PRE = 'gadmin-power-house-pre'
+    WEB_HOOK_SOURCE_PROD = 'gadmin-power-house-prod'
+    WEB_HOOK_SOURCE_CODING = 'gadmin-power-house-coding'
+  }
+
+  stages {
+    stage('设置变量') {
+      steps {
+        script {
+          script {
+            switch (env.GIT_LOCAL_BRANCH) {
+              case "master":
+                env.WEB_HOOK_SOURCE = WEB_HOOK_SOURCE_PROD;
+                env.BUILD_SCRIPT = 'yarn build';
+                env.IMAGE_NAME = IMAGE_NAME_DEFAULT;
+                env.IMAGE_CREDIT = IMAGE_CREDIT_DEFAULT;
+                break;
+              case "pre":
+                env.WEB_HOOK_SOURCE = WEB_HOOK_SOURCE_PRE;
+                env.BUILD_SCRIPT = 'yarn build:pre';
+                env.IMAGE_NAME = IMAGE_NAME_DEFAULT;
+                env.IMAGE_CREDIT = IMAGE_CREDIT_DEFAULT;
+                break;
+              case "test":
+                env.WEB_HOOK_SOURCE = WEB_HOOK_SOURCE_TEST;
+                env.BUILD_SCRIPT = 'yarn build:test';
+                env.IMAGE_NAME = IMAGE_NAME_DEFAULT;
+                env.IMAGE_CREDIT = IMAGE_CREDIT_DEFAULT;
+                break;
+              case "coding":
+                env.WEB_HOOK_SOURCE = WEB_HOOK_SOURCE_CODING;
+                env.BUILD_SCRIPT = 'yarn build:dev';
+                env.IMAGE_NAME = IMAGE_NAME_DEFAULT;
+                env.IMAGE_CREDIT = IMAGE_CREDIT_DEFAULT;
+                break;
+              default:
+                env.BUILD_SCRIPT = 'yarn build:dev';
+                env.IMAGE_NAME = IMAGE_NAME_DEV;
+                env.IMAGE_CREDIT = IMAGE_CREDIT_DEV;
+                break;
+            }
+            env.IMAGE_FULL_NAME = "${IMAGE_DOMAIN}${IMAGE_NAME}:${IMAGE_VERSION}"
+            sh 'printenv'
+            echo "设置变量完成: IMAGE_NAME=${IMAGE_NAME};IMAGE_CREDIT=${IMAGE_CREDIT};BUILD_SCRIPT=${BUILD_SCRIPT}"
+          }
+        }
+      }
+    }
+
+    stage('检出Git') {
+      steps {
+        checkout([$class: 'GitSCM', branches: [[name: env.GIT_BUILD_REF]], userRemoteConfigs: [[url: env.GIT_REPO_URL, credentialsId: env.CREDENTIALS_ID]]])
+        echo '检出Git完成.'
+      }
+    }
+
+    stage('打包构建') {
+      agent {
+        docker {
+          reuseNode 'true'
+          registryUrl 'https://coding-public-docker.pkg.coding.net'
+          image 'public/docker/nodejs:14'
+        }
+      }
+      steps {
+        sh 'node -v'
+        sh 'yarn install'
+        echo '安装依赖完成.'
+        sh "CI=false ${BUILD_SCRIPT}"
+        echo '打包构建完成.'
+      }
+    }
+
+    stage('构建推送镜像') {
+      steps {
+        script {
+          withCredentials([usernamePassword(credentialsId: IMAGE_CREDIT, usernameVariable: 'CCR_USER_NAME', passwordVariable: 'CCR_PASS_WORD')]) {
+            echo "镜像构建中 ${IMAGE_FULL_NAME} ..."
+            sh "docker login ${IMAGE_DOMAIN} -u ${CCR_USER_NAME} -p ${CCR_PASS_WORD}"
+            sh "docker build -t ${IMAGE_FULL_NAME} ."
+            echo '镜像构建完成.'
+            sh "docker push ${IMAGE_FULL_NAME}"
+            sh "docker logout ccr.ccs.tencentyun.com"
+            sh "docker image rm ${IMAGE_FULL_NAME}"
+            echo '镜像推送完成.'
+          }
+        }
+      }
+    }
+
+    stage('自动部署') {
+      // 开发环境不处理（由容器镜像触发器触发TKE更新）
+      when {
+        anyOf { branch 'master'; branch 'pre'; branch 'test'; branch 'coding' }
+      }
+      steps {
+        script {
+          echo '部署中...'
+          sh 'curl https://api-spinnaker-beta.devops.intlgame.com/webhooks/webhook/${WEB_HOOK_SOURCE} -X POST -H "content-type: application/json" -d \'{"parameters": {"image_tag": "\'"${IMAGE_VERSION}"\'"}}\''
+          echo '部署已经触发，可以在Spinnaker查看状态: https://api-spinnaker-beta.devops.intlgame.com'
+        }
+      }
+    }
+  }
+}
